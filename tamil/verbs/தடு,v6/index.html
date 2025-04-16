@@ -30,7 +30,9 @@
 
       
 
+
 <article class="max-w-6xl mx-auto my-24 p-4">
+
 
 <header class="mb-8">
   <h1 class="mb-2 font-bold text-3xl">taɖu <span class="text-slate-400">தடு</span></h1>
@@ -46,6 +48,22 @@
   </nav>
 </header>
 
+<div x-data="{ activeTab: 0 }">
+
+<ul class="flex my-4">
+  <li><a class="p-2 border-b-2 border-transparent"
+    :class="{'border-black': activeTab === 0}" @click.prevent="activeTab = 0" href="#">Informal</a></li>
+  <li><a class="p-2 border-b-2 border-transparent"
+    :class="{'border-black': activeTab === 1}" @click.prevent="activeTab = 1" href="#">Formal</a></li>
+</ul>
+
+
+
+<div x-show="activeTab === 0" class="my-8">
+  <aside class="text-slate-500 text-sm bg-slate-50 rounded p-2">
+    <p>(Auto-generated, use with caution! Based on the consensus dialect heard in the popular
+    media of Tamil Nadu.)</p>
+  </aside>
 
 
 
@@ -63,254 +81,168 @@
 
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">நான்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">nān</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">தடுத்தேன்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">taɖuttēn</span></span>
+    <th class="text-slate-500"><span lang="ta">nān</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖuttēn</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">தடுக்கிறேன்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">taɖukkirēn</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖukkirēn</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">தடுப்பேன்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">taɖuppēn</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖuppēn</span>
 </div></td>
     
       <td rowspan="10" class="text-center align-middle border-r border-l">
-        <div class="text-center py-1">
-  <span class="text-lg">தடுக்கவில்லை</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">taɖukkavillai</span></span>
+        <div class="text-center p-1">
+  <span lang="ta">taɖukkale</span>
 </div>
       </td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">தடுக்கமாட்டேன்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">taɖukkamāʈʈēn</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖukkamāʈʈēn</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">நீ</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">nī</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">தடுத்தாய்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">taɖuttāy</span></span>
+    <th class="text-slate-500"><span lang="ta">nī</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖutte</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">தடுக்கிறாய்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">taɖukkirāy</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖukkire</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">தடுப்பாய்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">taɖuppāy</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖuppe</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">தடுக்கமாட்டாய்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">taɖukkamāʈʈāy</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖukkamāʈʈe</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அவன்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">avan</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">தடுத்தான்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">taɖuttān</span></span>
+    <th class="text-slate-500"><span lang="ta">avan</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖuttān</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">தடுக்கிறான்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">taɖukkirān</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖukkirān</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">தடுப்பான்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">taɖuppān</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖuppān</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">தடுக்கமாட்டான்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">taɖukkamāʈʈān</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖukkamāʈʈān</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அவள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">avaɭ</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">தடுத்தாள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">taɖuttāɭ</span></span>
+    <th class="text-slate-500"><span lang="ta">ava</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖuttā</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">தடுக்கிறாள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">taɖukkirāɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖukkirā</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">தடுப்பாள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">taɖuppāɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖuppā</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">தடுக்கமாட்டாள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">taɖukkamāʈʈāɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖukkamāʈʈā</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அவர்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">avar</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">தடுத்தார்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">taɖuttār</span></span>
+    <th class="text-slate-500"><span lang="ta">avaru</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖuttāru</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">தடுக்கிறார்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">taɖukkirār</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖukkirāru</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">தடுப்பார்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">taɖuppār</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖuppāru</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">தடுக்கமாட்டார்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">taɖukkamāʈʈār</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖukkamāʈʈāru</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அது</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">adu</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">தடுத்தது</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">taɖuttadu</span></span>
+    <th class="text-slate-500"><span lang="ta">adu</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖuttadu</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">தடுக்கிறது</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">taɖukkiradu</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖukkiradu</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">தடுக்கும்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">taɖukkum</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖukkum</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">தடுக்காது</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">taɖukkādu</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖukkādu</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">நாங்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">nāṅgaɭ</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">தடுத்தோம்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">taɖuttōm</span></span>
+    <th class="text-slate-500"><span lang="ta">nāṅga</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖuttōm</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">தடுக்கிறோம்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">taɖukkirōm</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖukkirōm</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">தடுப்போம்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">taɖuppōm</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖuppōm</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">தடுக்கமாட்டோம்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">taɖukkamāʈʈōm</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖukkamāʈʈōm</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">நீங்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">nīṅgaɭ</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">தடுத்தீர்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">taɖuttīrgaɭ</span></span>
+    <th class="text-slate-500"><span lang="ta">nīṅga</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖuttīṅga</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">தடுக்கிறீர்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">taɖukkirīrgaɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖukkirīṅga</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">தடுப்பீர்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">taɖuppīrgaɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖuppīṅga</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">தடுக்கமாட்டீர்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">taɖukkamāʈʈīrgaɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖukkamāʈʈīṅga</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அவர்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">avargaɭ</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">தடுத்தார்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">taɖuttārgaɭ</span></span>
+    <th class="text-slate-500"><span lang="ta">avaṅga</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖuttāṅga</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">தடுக்கிறார்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">taɖukkirārgaɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖukkirāṅga</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">தடுப்பார்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">taɖuppārgaɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖuppāṅga</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">தடுக்கமாட்டார்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">taɖukkamāʈʈārgaɭ</span></span>
-</div></td>
-  </tr>
-  
-  <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அவை</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">avai</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">தடுத்தன</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">taɖuttana</span></span>
-</div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">தடுக்கின்றன</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">taɖukkinrana</span></span>
-</div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">தடுப்பன</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">taɖuppana</span></span>
-</div></td>
-    
-    <td><div class="text-center py-1">
-  <span class="text-lg">தடா</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">taɖā</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖukkamāʈʈāṅga</span>
 </div></td>
   </tr>
   
 
 </table>
+
+
 
 
 
@@ -322,22 +254,512 @@
   </tr>
   <tr>
     <th class="text-sm">Singular</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖu</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖukkādē</span>
+</div></td>
+  </tr>
+  <tr>
+    <th class="text-sm">Plural</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖuṅga</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖukkādīṅga</span>
+</div></td>
+  </tr>
+
+</table>
+
+
+
+
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+  
+  <caption class="font-bold text-lg my-4">taɖu (தடு) &mdash; Non-finite verbs</caption>
+  <tr class="text-sm !border-l-0">
+    <th class="!bg-transparent">&nbsp;</th><th>Positive</th><th>Negative</th>
+  </tr>
+  <tr>
+    <th class="text-sm">Infinitive<br>("to do X")</th><td><div class="text-center p-1">
+  <span lang="ta">taɖukka</span>
+</div></td>
+    <td class="text-center">&mdash;</td>
+  </tr>
+  <tr>
+    <th class="text-sm">Adverb<br>("having done X")</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖuttu</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖukkāma</span>
+</div></td>
+  </tr>
+  <tr>
+    <th class="text-sm">Potential<br>("might do X")</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖukkalām</span>
+</div></td>
+    <td class="text-center">&mdash;</td>
+  </tr>
+  <tr>
+    <th class="text-sm">Permissive<br>("let do X")</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖukkaʈʈum</span>
+</div></td>
+    <td class="text-center">&mdash;</td>
+  </tr>
+  <tr>
+    <th class="text-sm">Conditional<br>("if one does X")</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖuttā</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖukkāʈʈā</span>
+</div></td>
+  </tr>
+
+</table>
+
+
+
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+  
+  <caption class="font-bold text-lg my-4">taɖu (தடு) &mdash; Verbal adjectives</caption>
+
+  <tr class="text-sm !border-l-0">
+    <th class="!bg-transparent">&nbsp;</th><th>Positive</th><th>Negative</th>
+  </tr>
+  <tr>
+    <th class="text-sm">Past</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖutta</span>
+</div></td>
+    <td rowspan="3" class="border-l align-middle"><div class="text-center p-1">
+  <span lang="ta">taɖukkāda</span>
+</div></td>
+  </tr>
+  <tr>
+    <th class="text-sm">Present</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖukkira</span>
+</div></td>
+  </tr>
+  <tr>
+    <th class="text-sm">Future</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖukkum</span>
+</div></td>
+  </tr>
+
+</table>
+
+
+
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+  
+  <caption class="font-bold text-lg my-4">taɖu (தடு) &mdash; Verbal nouns</caption>
+  <tr class="text-sm !border-l-0">
+    <th class="!bg-transparent w-28">&nbsp;</th>
+    <th>Past</th>
+    <th>Present</th>
+    <th>Future</th>
+    <th>Negative</th>
+  </tr>
+
+  
+ <tr>
+    <th><div class="text-center p-1">
+  <span lang="ta">avan</span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖuttavan</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖukkiravan</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖuppavan</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖukkādavan</span>
+</div></td>
+  </tr>
+  
+ <tr>
+    <th><div class="text-center p-1">
+  <span lang="ta">ava</span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖuttava</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖukkirava</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖuppava</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖukkādava</span>
+</div></td>
+  </tr>
+  
+ <tr>
+    <th><div class="text-center p-1">
+  <span lang="ta">avaru</span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖuttavaru</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖukkiravaru</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖuppavaru</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖukkādavaru</span>
+</div></td>
+  </tr>
+  
+ <tr>
+    <th><div class="text-center p-1">
+  <span lang="ta">adu</span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖuttadu</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖukkiradu</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖuppadu</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖukkādatu</span>
+</div></td>
+  </tr>
+  
+ <tr>
+    <th><div class="text-center p-1">
+  <span lang="ta">avaṅga</span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖuttavaṅga</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖukkiravaṅga</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖuppavaṅga</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">taɖukkādavaṅga</span>
+</div></td>
+  </tr>
+  
+
+</table>
+
+
+</div>
+
+
+
+<div x-show="activeTab === 1">
+
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+  
+  <caption class="font-bold text-lg my-4">taɖu (தடு) &mdash; Statements</caption>
+  <tr class="text-sm !border-l-0">
+    <th class="!bg-transparent w-28">&nbsp;</th>
+    <th>Past</th>
+    <th>Present</th>
+    <th>Future</th>
+    <th>Negative non-future</th>
+    <th>Negative future</th>
+  </tr>
+
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">நான்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">nān</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">தடுத்தேன்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">taɖuttēn</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">தடுக்கிறேன்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">taɖukkirēn</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">தடுப்பேன்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">taɖuppēn</span></span>
+</div></td>
+    
+      <td rowspan="10" class="text-center align-middle border-r border-l">
+        <div class="text-center p-1">
+  <span class="text-lg">தடுக்கவில்லை</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">taɖukkavillai</span></span>
+</div>
+      </td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">தடுக்கமாட்டேன்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">taɖukkamāʈʈēn</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">நீ</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">nī</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">தடுத்தாய்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">taɖuttāy</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">தடுக்கிறாய்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">taɖukkirāy</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">தடுப்பாய்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">taɖuppāy</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">தடுக்கமாட்டாய்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">taɖukkamāʈʈāy</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அவன்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">avan</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">தடுத்தான்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">taɖuttān</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">தடுக்கிறான்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">taɖukkirān</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">தடுப்பான்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">taɖuppān</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">தடுக்கமாட்டான்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">taɖukkamāʈʈān</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அவள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">avaɭ</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">தடுத்தாள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">taɖuttāɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">தடுக்கிறாள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">taɖukkirāɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">தடுப்பாள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">taɖuppāɭ</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">தடுக்கமாட்டாள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">taɖukkamāʈʈāɭ</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அவர்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">avar</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">தடுத்தார்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">taɖuttār</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">தடுக்கிறார்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">taɖukkirār</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">தடுப்பார்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">taɖuppār</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">தடுக்கமாட்டார்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">taɖukkamāʈʈār</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அது</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">adu</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">தடுத்தது</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">taɖuttadu</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">தடுக்கிறது</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">taɖukkiradu</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">தடுக்கும்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">taɖukkum</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">தடுக்காது</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">taɖukkādu</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">நாங்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">nāṅgaɭ</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">தடுத்தோம்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">taɖuttōm</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">தடுக்கிறோம்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">taɖukkirōm</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">தடுப்போம்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">taɖuppōm</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">தடுக்கமாட்டோம்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">taɖukkamāʈʈōm</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">நீங்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">nīṅgaɭ</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">தடுத்தீர்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">taɖuttīrgaɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">தடுக்கிறீர்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">taɖukkirīrgaɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">தடுப்பீர்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">taɖuppīrgaɭ</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">தடுக்கமாட்டீர்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">taɖukkamāʈʈīrgaɭ</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அவர்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">avargaɭ</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">தடுத்தார்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">taɖuttārgaɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">தடுக்கிறார்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">taɖukkirārgaɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">தடுப்பார்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">taɖuppārgaɭ</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">தடுக்கமாட்டார்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">taɖukkamāʈʈārgaɭ</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அவை</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">avai</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">தடன</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">taɖana</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">தடுக்கிற்ன்றன</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">taɖukkirnrana</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">தடன</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">taɖana</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">தடா</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">taɖā</span></span>
+</div></td>
+  </tr>
+  
+
+</table>
+
+
+
+
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+  
+  <caption class="font-bold text-lg my-4">taɖu (தடு) &mdash; Commands</caption>
+  <tr class="text-sm !border-l-0">
+    <th class="!bg-transparent">&nbsp;</th><th>Positive</th><th>Negative</th>
+  </tr>
+  <tr>
+    <th class="text-sm">Singular</th>
+    <td><div class="text-center p-1">
   <span class="text-lg">தடு</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">taɖu</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தடுக்காதே</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">taɖukkādē</span></span>
 </div></td>
   </tr>
   <tr>
     <th class="text-sm">Plural</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தடுங்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">taɖuṅgaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தடுக்காதீர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">taɖukkādīrgaɭ</span></span>
 </div></td>
@@ -355,7 +777,7 @@
     <th class="!bg-transparent">&nbsp;</th><th>Positive</th><th>Negative</th>
   </tr>
   <tr>
-    <th class="text-sm">Infinitive<br>("to do X")</th><td><div class="text-center py-1">
+    <th class="text-sm">Infinitive<br>("to do X")</th><td><div class="text-center p-1">
   <span class="text-lg">தடுக்க</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">taɖukka</span></span>
 </div></td>
@@ -363,18 +785,18 @@
   </tr>
   <tr>
     <th class="text-sm">Adverb<br>("having done X")</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தடுத்து</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">taɖuttu</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தடுக்காமல்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">taɖukkāmal</span></span>
 </div></td>
   </tr>
   <tr>
     <th class="text-sm">Potential<br>("might do X")</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தடுக்கலாம்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">taɖukkalām</span></span>
 </div></td>
@@ -382,7 +804,7 @@
   </tr>
   <tr>
     <th class="text-sm">Permissive<br>("let do X")</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தடுக்கட்டும்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">taɖukkaʈʈum</span></span>
 </div></td>
@@ -390,11 +812,11 @@
   </tr>
   <tr>
     <th class="text-sm">Conditional<br>("if one does X")</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தடுத்தால்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">taɖuttāl</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தடுக்காவிட்டால்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">taɖukkāviʈʈāl</span></span>
 </div></td>
@@ -413,25 +835,25 @@
   </tr>
   <tr>
     <th class="text-sm">Past</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தடுத்த</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">taɖutta</span></span>
 </div></td>
-    <td rowspan="3" class="border-l align-middle"><div class="text-center py-1">
+    <td rowspan="3" class="border-l align-middle"><div class="text-center p-1">
   <span class="text-lg">தடுக்காத</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">taɖukkāda</span></span>
 </div></td>
   </tr>
   <tr>
     <th class="text-sm">Present</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தடுக்கிற</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">taɖukkira</span></span>
 </div></td>
   </tr>
   <tr>
     <th class="text-sm">Future</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தடுக்கும்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">taɖukkum</span></span>
 </div></td>
@@ -454,138 +876,138 @@
 
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அவன்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">avan</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தடுத்தவன்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">taɖuttavan</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தடுக்கிறவன்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">taɖukkiravan</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தடுப்பவன்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">taɖuppavan</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தடுக்காதவன்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">taɖukkādavan</span></span>
 </div></td>
   </tr>
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அவள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">avaɭ</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தடுத்தவள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">taɖuttavaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தடுக்கிறவள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">taɖukkiravaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தடுப்பவள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">taɖuppavaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தடுக்காதவள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">taɖukkādavaɭ</span></span>
 </div></td>
   </tr>
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அவர்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">avar</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தடுத்தவர்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">taɖuttavar</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தடுக்கிறவர்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">taɖukkiravar</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தடுப்பவர்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">taɖuppavar</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தடுக்காதவர்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">taɖukkādavar</span></span>
 </div></td>
   </tr>
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அது</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">adu</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தடுத்தது</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">taɖuttadu</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தடுக்கிறது</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">taɖukkiradu</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தடுப்பது</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">taɖuppadu</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தடுக்காதது</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">taɖukkādadu</span></span>
 </div></td>
   </tr>
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அவர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">avargaɭ</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தடுத்தவர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">taɖuttavargaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தடுக்கிறவர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">taɖukkiravargaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தடுப்பவர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">taɖuppavargaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தடுக்காதவர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">taɖukkādavargaɭ</span></span>
 </div></td>
   </tr>
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அவை</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">avai</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தடுத்தவை</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">taɖuttavai</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தடுக்கிறவை</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">taɖukkiravai</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தடுப்பவை</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">taɖuppavai</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தடுக்காதவை</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">taɖukkādavai</span></span>
 </div></td>

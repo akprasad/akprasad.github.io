@@ -30,7 +30,9 @@
 
       
 
+
 <article class="max-w-6xl mx-auto my-24 p-4">
+
 
 <header class="mb-8">
   <h1 class="mb-2 font-bold text-3xl">viri <span class="text-slate-400">விரி</span></h1>
@@ -46,6 +48,22 @@
   </nav>
 </header>
 
+<div x-data="{ activeTab: 0 }">
+
+<ul class="flex my-4">
+  <li><a class="p-2 border-b-2 border-transparent"
+    :class="{'border-black': activeTab === 0}" @click.prevent="activeTab = 0" href="#">Informal</a></li>
+  <li><a class="p-2 border-b-2 border-transparent"
+    :class="{'border-black': activeTab === 1}" @click.prevent="activeTab = 1" href="#">Formal</a></li>
+</ul>
+
+
+
+<div x-show="activeTab === 0" class="my-8">
+  <aside class="text-slate-500 text-sm bg-slate-50 rounded p-2">
+    <p>(Auto-generated, use with caution! Based on the consensus dialect heard in the popular
+    media of Tamil Nadu.)</p>
+  </aside>
 
 
 
@@ -63,254 +81,168 @@
 
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">நான்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">nān</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">விரிந்தேன்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">virindēn</span></span>
+    <th class="text-slate-500"><span lang="ta">nān</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">viriñjēn</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">விரிகிறேன்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">virigirēn</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">virirēn</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">விரிவேன்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">virivēn</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">virivēn</span>
 </div></td>
     
       <td rowspan="10" class="text-center align-middle border-r border-l">
-        <div class="text-center py-1">
-  <span class="text-lg">விரியவில்லை</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">viriyavillai</span></span>
+        <div class="text-center p-1">
+  <span lang="ta">viriyale</span>
 </div>
       </td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">விரியமாட்டேன்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">viriyamāʈʈēn</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">viriyamāʈʈēn</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">நீ</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">nī</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">விரிந்தாய்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">virindāy</span></span>
+    <th class="text-slate-500"><span lang="ta">nī</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">viriñje</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">விரிகிறாய்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">virigirāy</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">virire</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">விரிவாய்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">virivāy</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">virive</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">விரியமாட்டாய்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">viriyamāʈʈāy</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">viriyamāʈʈe</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அவன்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">avan</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">விரிந்தான்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">virindān</span></span>
+    <th class="text-slate-500"><span lang="ta">avan</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">viriñjān</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">விரிகிறான்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">virigirān</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">virirān</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">விரிவான்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">virivān</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">virivān</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">விரியமாட்டான்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">viriyamāʈʈān</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">viriyamāʈʈān</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அவள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">avaɭ</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">விரிந்தாள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">virindāɭ</span></span>
+    <th class="text-slate-500"><span lang="ta">ava</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">viriñjā</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">விரிகிறாள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">virigirāɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">virirā</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">விரிவாள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">virivāɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">virivā</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">விரியமாட்டாள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">viriyamāʈʈāɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">viriyamāʈʈā</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அவர்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">avar</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">விரிந்தார்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">virindār</span></span>
+    <th class="text-slate-500"><span lang="ta">avaru</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">viriñjāru</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">விரிகிறார்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">virigirār</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">virirāru</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">விரிவார்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">virivār</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">virivāru</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">விரியமாட்டார்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">viriyamāʈʈār</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">viriyamāʈʈāru</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அது</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">adu</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">விரிந்தது</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">virindadu</span></span>
+    <th class="text-slate-500"><span lang="ta">adu</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">viriñjadu</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">விரிகிறது</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">virigiradu</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">viriradu</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">விரியும்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">viriyum</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">viriyum</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">விரியாது</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">viriyādu</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">viriyādu</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">நாங்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">nāṅgaɭ</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">விரிந்தோம்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">virindōm</span></span>
+    <th class="text-slate-500"><span lang="ta">nāṅga</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">viriñjōm</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">விரிகிறோம்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">virigirōm</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">virirōm</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">விரிவோம்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">virivōm</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">virivōm</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">விரியமாட்டோம்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">viriyamāʈʈōm</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">viriyamāʈʈōm</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">நீங்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">nīṅgaɭ</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">விரிந்தீர்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">virindīrgaɭ</span></span>
+    <th class="text-slate-500"><span lang="ta">nīṅga</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">viriñjīṅga</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">விரிகிறீர்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">virigirīrgaɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">virirīṅga</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">விரிவீர்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">virivīrgaɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">virivīṅga</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">விரியமாட்டீர்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">viriyamāʈʈīrgaɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">viriyamāʈʈīṅga</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அவர்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">avargaɭ</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">விரிந்தார்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">virindārgaɭ</span></span>
+    <th class="text-slate-500"><span lang="ta">avaṅga</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">viriñjāṅga</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">விரிகிறார்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">virigirārgaɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">virirāṅga</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">விரிவார்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">virivārgaɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">virivāṅga</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">விரியமாட்டார்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">viriyamāʈʈārgaɭ</span></span>
-</div></td>
-  </tr>
-  
-  <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அவை</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">avai</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">விரிந்தன</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">virindana</span></span>
-</div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">விரிகின்றன</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">viriginrana</span></span>
-</div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">விரிவன</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">virivana</span></span>
-</div></td>
-    
-    <td><div class="text-center py-1">
-  <span class="text-lg">விரியா</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">viriyā</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">viriyamāʈʈāṅga</span>
 </div></td>
   </tr>
   
 
 </table>
+
+
 
 
 
@@ -322,22 +254,512 @@
   </tr>
   <tr>
     <th class="text-sm">Singular</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
+  <span lang="ta">viri</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">viriyādē</span>
+</div></td>
+  </tr>
+  <tr>
+    <th class="text-sm">Plural</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">viriṅga</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">viriyādīṅga</span>
+</div></td>
+  </tr>
+
+</table>
+
+
+
+
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+  
+  <caption class="font-bold text-lg my-4">viri (விரி) &mdash; Non-finite verbs</caption>
+  <tr class="text-sm !border-l-0">
+    <th class="!bg-transparent">&nbsp;</th><th>Positive</th><th>Negative</th>
+  </tr>
+  <tr>
+    <th class="text-sm">Infinitive<br>("to do X")</th><td><div class="text-center p-1">
+  <span lang="ta">viriya</span>
+</div></td>
+    <td class="text-center">&mdash;</td>
+  </tr>
+  <tr>
+    <th class="text-sm">Adverb<br>("having done X")</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">viriñju</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">viriyāma</span>
+</div></td>
+  </tr>
+  <tr>
+    <th class="text-sm">Potential<br>("might do X")</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">viriyalām</span>
+</div></td>
+    <td class="text-center">&mdash;</td>
+  </tr>
+  <tr>
+    <th class="text-sm">Permissive<br>("let do X")</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">viriyaʈʈum</span>
+</div></td>
+    <td class="text-center">&mdash;</td>
+  </tr>
+  <tr>
+    <th class="text-sm">Conditional<br>("if one does X")</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">viriñjā</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">viriyāʈʈā</span>
+</div></td>
+  </tr>
+
+</table>
+
+
+
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+  
+  <caption class="font-bold text-lg my-4">viri (விரி) &mdash; Verbal adjectives</caption>
+
+  <tr class="text-sm !border-l-0">
+    <th class="!bg-transparent">&nbsp;</th><th>Positive</th><th>Negative</th>
+  </tr>
+  <tr>
+    <th class="text-sm">Past</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">viriñja</span>
+</div></td>
+    <td rowspan="3" class="border-l align-middle"><div class="text-center p-1">
+  <span lang="ta">viriyāda</span>
+</div></td>
+  </tr>
+  <tr>
+    <th class="text-sm">Present</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">virira</span>
+</div></td>
+  </tr>
+  <tr>
+    <th class="text-sm">Future</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">viriyum</span>
+</div></td>
+  </tr>
+
+</table>
+
+
+
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+  
+  <caption class="font-bold text-lg my-4">viri (விரி) &mdash; Verbal nouns</caption>
+  <tr class="text-sm !border-l-0">
+    <th class="!bg-transparent w-28">&nbsp;</th>
+    <th>Past</th>
+    <th>Present</th>
+    <th>Future</th>
+    <th>Negative</th>
+  </tr>
+
+  
+ <tr>
+    <th><div class="text-center p-1">
+  <span lang="ta">avan</span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">viriñjavan</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">viriravan</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">viribavan</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">viriyādavan</span>
+</div></td>
+  </tr>
+  
+ <tr>
+    <th><div class="text-center p-1">
+  <span lang="ta">ava</span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">viriñjava</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">virirava</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">viribava</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">viriyādava</span>
+</div></td>
+  </tr>
+  
+ <tr>
+    <th><div class="text-center p-1">
+  <span lang="ta">avaru</span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">viriñjavaru</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">viriravaru</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">viribavaru</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">viriyādavaru</span>
+</div></td>
+  </tr>
+  
+ <tr>
+    <th><div class="text-center p-1">
+  <span lang="ta">adu</span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">viriñjadu</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">viriradu</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">viribadu</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">viriyādatu</span>
+</div></td>
+  </tr>
+  
+ <tr>
+    <th><div class="text-center p-1">
+  <span lang="ta">avaṅga</span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">viriñjavaṅga</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">viriravaṅga</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">viribavaṅga</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">viriyādavaṅga</span>
+</div></td>
+  </tr>
+  
+
+</table>
+
+
+</div>
+
+
+
+<div x-show="activeTab === 1">
+
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+  
+  <caption class="font-bold text-lg my-4">viri (விரி) &mdash; Statements</caption>
+  <tr class="text-sm !border-l-0">
+    <th class="!bg-transparent w-28">&nbsp;</th>
+    <th>Past</th>
+    <th>Present</th>
+    <th>Future</th>
+    <th>Negative non-future</th>
+    <th>Negative future</th>
+  </tr>
+
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">நான்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">nān</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">விரிந்தேன்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">virindēn</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">விரிகிறேன்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">virigirēn</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">விரிவேன்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">virivēn</span></span>
+</div></td>
+    
+      <td rowspan="10" class="text-center align-middle border-r border-l">
+        <div class="text-center p-1">
+  <span class="text-lg">விரியவில்லை</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">viriyavillai</span></span>
+</div>
+      </td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">விரியமாட்டேன்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">viriyamāʈʈēn</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">நீ</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">nī</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">விரிந்தாய்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">virindāy</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">விரிகிறாய்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">virigirāy</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">விரிவாய்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">virivāy</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">விரியமாட்டாய்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">viriyamāʈʈāy</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அவன்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">avan</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">விரிந்தான்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">virindān</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">விரிகிறான்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">virigirān</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">விரிவான்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">virivān</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">விரியமாட்டான்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">viriyamāʈʈān</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அவள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">avaɭ</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">விரிந்தாள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">virindāɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">விரிகிறாள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">virigirāɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">விரிவாள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">virivāɭ</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">விரியமாட்டாள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">viriyamāʈʈāɭ</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அவர்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">avar</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">விரிந்தார்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">virindār</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">விரிகிறார்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">virigirār</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">விரிவார்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">virivār</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">விரியமாட்டார்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">viriyamāʈʈār</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அது</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">adu</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">விரிந்தது</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">virindadu</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">விரிகிறது</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">virigiradu</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">விரியும்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">viriyum</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">விரியாது</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">viriyādu</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">நாங்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">nāṅgaɭ</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">விரிந்தோம்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">virindōm</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">விரிகிறோம்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">virigirōm</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">விரிவோம்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">virivōm</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">விரியமாட்டோம்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">viriyamāʈʈōm</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">நீங்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">nīṅgaɭ</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">விரிந்தீர்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">virindīrgaɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">விரிகிறீர்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">virigirīrgaɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">விரிவீர்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">virivīrgaɭ</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">விரியமாட்டீர்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">viriyamāʈʈīrgaɭ</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அவர்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">avargaɭ</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">விரிந்தார்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">virindārgaɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">விரிகிறார்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">virigirārgaɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">விரிவார்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">virivārgaɭ</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">விரியமாட்டார்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">viriyamāʈʈārgaɭ</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அவை</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">avai</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">விரியன</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">viriyana</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">விரிகிற்ன்றன</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">virigirnrana</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">விரியன</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">viriyana</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">விரியா</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">viriyā</span></span>
+</div></td>
+  </tr>
+  
+
+</table>
+
+
+
+
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+  
+  <caption class="font-bold text-lg my-4">viri (விரி) &mdash; Commands</caption>
+  <tr class="text-sm !border-l-0">
+    <th class="!bg-transparent">&nbsp;</th><th>Positive</th><th>Negative</th>
+  </tr>
+  <tr>
+    <th class="text-sm">Singular</th>
+    <td><div class="text-center p-1">
   <span class="text-lg">விரி</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">viri</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விரியாதே</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">viriyādē</span></span>
 </div></td>
   </tr>
   <tr>
     <th class="text-sm">Plural</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விரியுங்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">viriyuṅgaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விரியாதீர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">viriyādīrgaɭ</span></span>
 </div></td>
@@ -355,7 +777,7 @@
     <th class="!bg-transparent">&nbsp;</th><th>Positive</th><th>Negative</th>
   </tr>
   <tr>
-    <th class="text-sm">Infinitive<br>("to do X")</th><td><div class="text-center py-1">
+    <th class="text-sm">Infinitive<br>("to do X")</th><td><div class="text-center p-1">
   <span class="text-lg">விரிய</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">viriya</span></span>
 </div></td>
@@ -363,18 +785,18 @@
   </tr>
   <tr>
     <th class="text-sm">Adverb<br>("having done X")</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விரிந்து</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">virindu</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விரியாமல்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">viriyāmal</span></span>
 </div></td>
   </tr>
   <tr>
     <th class="text-sm">Potential<br>("might do X")</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விரியலாம்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">viriyalām</span></span>
 </div></td>
@@ -382,7 +804,7 @@
   </tr>
   <tr>
     <th class="text-sm">Permissive<br>("let do X")</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விரியட்டும்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">viriyaʈʈum</span></span>
 </div></td>
@@ -390,11 +812,11 @@
   </tr>
   <tr>
     <th class="text-sm">Conditional<br>("if one does X")</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விரிந்தால்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">virindāl</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விரியாவிட்டால்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">viriyāviʈʈāl</span></span>
 </div></td>
@@ -413,25 +835,25 @@
   </tr>
   <tr>
     <th class="text-sm">Past</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விரிந்த</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">virinda</span></span>
 </div></td>
-    <td rowspan="3" class="border-l align-middle"><div class="text-center py-1">
+    <td rowspan="3" class="border-l align-middle"><div class="text-center p-1">
   <span class="text-lg">விரியாத</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">viriyāda</span></span>
 </div></td>
   </tr>
   <tr>
     <th class="text-sm">Present</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விரிகிற</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">virigira</span></span>
 </div></td>
   </tr>
   <tr>
     <th class="text-sm">Future</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விரியும்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">viriyum</span></span>
 </div></td>
@@ -454,138 +876,138 @@
 
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அவன்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">avan</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விரிந்தவன்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">virindavan</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விரிகிறவன்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">virigiravan</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விரிபவன்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">viribavan</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விரியாதவன்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">viriyādavan</span></span>
 </div></td>
   </tr>
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அவள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">avaɭ</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விரிந்தவள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">virindavaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விரிகிறவள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">virigiravaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விரிபவள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">viribavaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விரியாதவள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">viriyādavaɭ</span></span>
 </div></td>
   </tr>
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அவர்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">avar</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விரிந்தவர்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">virindavar</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விரிகிறவர்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">virigiravar</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விரிபவர்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">viribavar</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விரியாதவர்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">viriyādavar</span></span>
 </div></td>
   </tr>
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அது</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">adu</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விரிந்தது</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">virindadu</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விரிகிறது</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">virigiradu</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விரிபது</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">viribadu</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விரியாதது</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">viriyādadu</span></span>
 </div></td>
   </tr>
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அவர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">avargaɭ</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விரிந்தவர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">virindavargaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விரிகிறவர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">virigiravargaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விரிபவர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">viribavargaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விரியாதவர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">viriyādavargaɭ</span></span>
 </div></td>
   </tr>
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அவை</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">avai</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விரிந்தவை</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">virindavai</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விரிகிறவை</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">virigiravai</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விரிபவை</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">viribavai</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விரியாதவை</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">viriyādavai</span></span>
 </div></td>

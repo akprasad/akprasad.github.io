@@ -30,7 +30,9 @@
 
       
 
+
 <article class="max-w-6xl mx-auto my-24 p-4">
+
 
 <header class="mb-8">
   <h1 class="mb-2 font-bold text-3xl">malar <span class="text-slate-400">மலர்</span></h1>
@@ -46,6 +48,22 @@
   </nav>
 </header>
 
+<div x-data="{ activeTab: 0 }">
+
+<ul class="flex my-4">
+  <li><a class="p-2 border-b-2 border-transparent"
+    :class="{'border-black': activeTab === 0}" @click.prevent="activeTab = 0" href="#">Informal</a></li>
+  <li><a class="p-2 border-b-2 border-transparent"
+    :class="{'border-black': activeTab === 1}" @click.prevent="activeTab = 1" href="#">Formal</a></li>
+</ul>
+
+
+
+<div x-show="activeTab === 0" class="my-8">
+  <aside class="text-slate-500 text-sm bg-slate-50 rounded p-2">
+    <p>(Auto-generated, use with caution! Based on the consensus dialect heard in the popular
+    media of Tamil Nadu.)</p>
+  </aside>
 
 
 
@@ -63,254 +81,168 @@
 
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">நான்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">nān</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மலர்ந்தேன்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">malarndēn</span></span>
+    <th class="text-slate-500"><span lang="ta">nān</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">malandēn</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மலர்கிறேன்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">malargirēn</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">malarēn</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மலர்வேன்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">malarvēn</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">malarvēn</span>
 </div></td>
     
       <td rowspan="10" class="text-center align-middle border-r border-l">
-        <div class="text-center py-1">
-  <span class="text-lg">மலரவில்லை</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">malaravillai</span></span>
+        <div class="text-center p-1">
+  <span lang="ta">malarale</span>
 </div>
       </td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">மலரமாட்டேன்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">malaramāʈʈēn</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">malaramāʈʈēn</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">நீ</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">nī</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மலர்ந்தாய்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">malarndāy</span></span>
+    <th class="text-slate-500"><span lang="ta">nī</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">malande</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மலர்கிறாய்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">malargirāy</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">malare</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மலர்வாய்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">malarvāy</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">malarve</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">மலரமாட்டாய்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">malaramāʈʈāy</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">malaramāʈʈe</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அவன்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">avan</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மலர்ந்தான்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">malarndān</span></span>
+    <th class="text-slate-500"><span lang="ta">avan</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">malandān</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மலர்கிறான்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">malargirān</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">malarān</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மலர்வான்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">malarvān</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">malarvān</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">மலரமாட்டான்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">malaramāʈʈān</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">malaramāʈʈān</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அவள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">avaɭ</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மலர்ந்தாள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">malarndāɭ</span></span>
+    <th class="text-slate-500"><span lang="ta">ava</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">malandā</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மலர்கிறாள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">malargirāɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">malarā</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மலர்வாள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">malarvāɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">malarvā</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">மலரமாட்டாள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">malaramāʈʈāɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">malaramāʈʈā</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அவர்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">avar</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மலர்ந்தார்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">malarndār</span></span>
+    <th class="text-slate-500"><span lang="ta">avaru</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">malandāru</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மலர்கிறார்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">malargirār</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">malarāru</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மலர்வார்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">malarvār</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">malarvāru</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">மலரமாட்டார்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">malaramāʈʈār</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">malaramāʈʈāru</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அது</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">adu</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மலர்ந்தது</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">malarndadu</span></span>
+    <th class="text-slate-500"><span lang="ta">adu</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">malandatu</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மலர்கிறது</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">malargiradu</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">malaradu</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மலரும்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">malarum</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">malarum</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">மலராது</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">malarādu</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">malarādu</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">நாங்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">nāṅgaɭ</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மலர்ந்தோம்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">malarndōm</span></span>
+    <th class="text-slate-500"><span lang="ta">nāṅga</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">malandōm</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மலர்கிறோம்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">malargirōm</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">malarōm</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மலர்வோம்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">malarvōm</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">malarvōm</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">மலரமாட்டோம்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">malaramāʈʈōm</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">malaramāʈʈōm</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">நீங்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">nīṅgaɭ</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மலர்ந்தீர்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">malarndīrgaɭ</span></span>
+    <th class="text-slate-500"><span lang="ta">nīṅga</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">malandīṅga</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மலர்கிறீர்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">malargirīrgaɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">malarīṅga</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மலர்வீர்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">malarvīrgaɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">malarvīṅga</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">மலரமாட்டீர்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">malaramāʈʈīrgaɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">malaramāʈʈīṅga</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அவர்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">avargaɭ</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மலர்ந்தார்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">malarndārgaɭ</span></span>
+    <th class="text-slate-500"><span lang="ta">avaṅga</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">malandāṅga</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மலர்கிறார்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">malargirārgaɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">malarāṅga</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மலர்வார்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">malarvārgaɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">malarvāṅga</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">மலரமாட்டார்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">malaramāʈʈārgaɭ</span></span>
-</div></td>
-  </tr>
-  
-  <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அவை</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">avai</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மலர்ந்தன</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">malarndana</span></span>
-</div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மலர்கின்றன</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">malarginrana</span></span>
-</div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மலர்வன</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">malarvana</span></span>
-</div></td>
-    
-    <td><div class="text-center py-1">
-  <span class="text-lg">மலரா</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">malarā</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">malaramāʈʈāṅga</span>
 </div></td>
   </tr>
   
 
 </table>
+
+
 
 
 
@@ -322,22 +254,512 @@
   </tr>
   <tr>
     <th class="text-sm">Singular</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
+  <span lang="ta">malaru</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">malarādē</span>
+</div></td>
+  </tr>
+  <tr>
+    <th class="text-sm">Plural</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">malaruṅga</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">malarādīṅga</span>
+</div></td>
+  </tr>
+
+</table>
+
+
+
+
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+  
+  <caption class="font-bold text-lg my-4">malar (மலர்) &mdash; Non-finite verbs</caption>
+  <tr class="text-sm !border-l-0">
+    <th class="!bg-transparent">&nbsp;</th><th>Positive</th><th>Negative</th>
+  </tr>
+  <tr>
+    <th class="text-sm">Infinitive<br>("to do X")</th><td><div class="text-center p-1">
+  <span lang="ta">malara</span>
+</div></td>
+    <td class="text-center">&mdash;</td>
+  </tr>
+  <tr>
+    <th class="text-sm">Adverb<br>("having done X")</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">malandu</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">malarāma</span>
+</div></td>
+  </tr>
+  <tr>
+    <th class="text-sm">Potential<br>("might do X")</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">malaralām</span>
+</div></td>
+    <td class="text-center">&mdash;</td>
+  </tr>
+  <tr>
+    <th class="text-sm">Permissive<br>("let do X")</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">malaraʈʈum</span>
+</div></td>
+    <td class="text-center">&mdash;</td>
+  </tr>
+  <tr>
+    <th class="text-sm">Conditional<br>("if one does X")</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">malandā</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">malarāʈʈā</span>
+</div></td>
+  </tr>
+
+</table>
+
+
+
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+  
+  <caption class="font-bold text-lg my-4">malar (மலர்) &mdash; Verbal adjectives</caption>
+
+  <tr class="text-sm !border-l-0">
+    <th class="!bg-transparent">&nbsp;</th><th>Positive</th><th>Negative</th>
+  </tr>
+  <tr>
+    <th class="text-sm">Past</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">malanda</span>
+</div></td>
+    <td rowspan="3" class="border-l align-middle"><div class="text-center p-1">
+  <span lang="ta">malarāda</span>
+</div></td>
+  </tr>
+  <tr>
+    <th class="text-sm">Present</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">malara</span>
+</div></td>
+  </tr>
+  <tr>
+    <th class="text-sm">Future</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">malarum</span>
+</div></td>
+  </tr>
+
+</table>
+
+
+
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+  
+  <caption class="font-bold text-lg my-4">malar (மலர்) &mdash; Verbal nouns</caption>
+  <tr class="text-sm !border-l-0">
+    <th class="!bg-transparent w-28">&nbsp;</th>
+    <th>Past</th>
+    <th>Present</th>
+    <th>Future</th>
+    <th>Negative</th>
+  </tr>
+
+  
+ <tr>
+    <th><div class="text-center p-1">
+  <span lang="ta">avan</span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">malandavan</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">malaravan</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">malabavan</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">malarādavan</span>
+</div></td>
+  </tr>
+  
+ <tr>
+    <th><div class="text-center p-1">
+  <span lang="ta">ava</span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">malandava</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">malarava</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">malabava</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">malarādava</span>
+</div></td>
+  </tr>
+  
+ <tr>
+    <th><div class="text-center p-1">
+  <span lang="ta">avaru</span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">malandavaru</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">malaravaru</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">malabavaru</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">malarādavaru</span>
+</div></td>
+  </tr>
+  
+ <tr>
+    <th><div class="text-center p-1">
+  <span lang="ta">adu</span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">malandatu</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">malaradu</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">malabadu</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">malarādatu</span>
+</div></td>
+  </tr>
+  
+ <tr>
+    <th><div class="text-center p-1">
+  <span lang="ta">avaṅga</span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">malandavaṅga</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">malaravaṅga</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">malabavaṅga</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">malarādavaṅga</span>
+</div></td>
+  </tr>
+  
+
+</table>
+
+
+</div>
+
+
+
+<div x-show="activeTab === 1">
+
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+  
+  <caption class="font-bold text-lg my-4">malar (மலர்) &mdash; Statements</caption>
+  <tr class="text-sm !border-l-0">
+    <th class="!bg-transparent w-28">&nbsp;</th>
+    <th>Past</th>
+    <th>Present</th>
+    <th>Future</th>
+    <th>Negative non-future</th>
+    <th>Negative future</th>
+  </tr>
+
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">நான்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">nān</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மலர்ந்தேன்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">malarndēn</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மலர்கிறேன்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">malargirēn</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மலர்வேன்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">malarvēn</span></span>
+</div></td>
+    
+      <td rowspan="10" class="text-center align-middle border-r border-l">
+        <div class="text-center p-1">
+  <span class="text-lg">மலரவில்லை</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">malaravillai</span></span>
+</div>
+      </td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">மலரமாட்டேன்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">malaramāʈʈēn</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">நீ</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">nī</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மலர்ந்தாய்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">malarndāy</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மலர்கிறாய்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">malargirāy</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மலர்வாய்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">malarvāy</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">மலரமாட்டாய்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">malaramāʈʈāy</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அவன்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">avan</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மலர்ந்தான்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">malarndān</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மலர்கிறான்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">malargirān</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மலர்வான்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">malarvān</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">மலரமாட்டான்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">malaramāʈʈān</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அவள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">avaɭ</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மலர்ந்தாள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">malarndāɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மலர்கிறாள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">malargirāɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மலர்வாள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">malarvāɭ</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">மலரமாட்டாள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">malaramāʈʈāɭ</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அவர்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">avar</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மலர்ந்தார்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">malarndār</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மலர்கிறார்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">malargirār</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மலர்வார்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">malarvār</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">மலரமாட்டார்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">malaramāʈʈār</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அது</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">adu</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மலர்ந்தது</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">malarndadu</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மலர்கிறது</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">malargiradu</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மலரும்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">malarum</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">மலராது</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">malarādu</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">நாங்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">nāṅgaɭ</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மலர்ந்தோம்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">malarndōm</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மலர்கிறோம்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">malargirōm</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மலர்வோம்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">malarvōm</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">மலரமாட்டோம்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">malaramāʈʈōm</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">நீங்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">nīṅgaɭ</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மலர்ந்தீர்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">malarndīrgaɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மலர்கிறீர்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">malargirīrgaɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மலர்வீர்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">malarvīrgaɭ</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">மலரமாட்டீர்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">malaramāʈʈīrgaɭ</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அவர்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">avargaɭ</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மலர்ந்தார்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">malarndārgaɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மலர்கிறார்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">malargirārgaɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மலர்வார்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">malarvārgaɭ</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">மலரமாட்டார்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">malaramāʈʈārgaɭ</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அவை</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">avai</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மலரன</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">malarana</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மலர்கிற்ன்றன</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">malargirnrana</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மலரன</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">malarana</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">மலரா</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">malarā</span></span>
+</div></td>
+  </tr>
+  
+
+</table>
+
+
+
+
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+  
+  <caption class="font-bold text-lg my-4">malar (மலர்) &mdash; Commands</caption>
+  <tr class="text-sm !border-l-0">
+    <th class="!bg-transparent">&nbsp;</th><th>Positive</th><th>Negative</th>
+  </tr>
+  <tr>
+    <th class="text-sm">Singular</th>
+    <td><div class="text-center p-1">
   <span class="text-lg">மலர்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">malar</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மலராதே</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">malarādē</span></span>
 </div></td>
   </tr>
   <tr>
     <th class="text-sm">Plural</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மலருங்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">malaruṅgaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மலராதீர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">malarādīrgaɭ</span></span>
 </div></td>
@@ -355,7 +777,7 @@
     <th class="!bg-transparent">&nbsp;</th><th>Positive</th><th>Negative</th>
   </tr>
   <tr>
-    <th class="text-sm">Infinitive<br>("to do X")</th><td><div class="text-center py-1">
+    <th class="text-sm">Infinitive<br>("to do X")</th><td><div class="text-center p-1">
   <span class="text-lg">மலர</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">malara</span></span>
 </div></td>
@@ -363,18 +785,18 @@
   </tr>
   <tr>
     <th class="text-sm">Adverb<br>("having done X")</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மலர்ந்து</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">malarndu</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மலராமல்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">malarāmal</span></span>
 </div></td>
   </tr>
   <tr>
     <th class="text-sm">Potential<br>("might do X")</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மலரலாம்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">malaralām</span></span>
 </div></td>
@@ -382,7 +804,7 @@
   </tr>
   <tr>
     <th class="text-sm">Permissive<br>("let do X")</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மலரட்டும்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">malaraʈʈum</span></span>
 </div></td>
@@ -390,11 +812,11 @@
   </tr>
   <tr>
     <th class="text-sm">Conditional<br>("if one does X")</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மலர்ந்தால்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">malarndāl</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மலராவிட்டால்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">malarāviʈʈāl</span></span>
 </div></td>
@@ -413,25 +835,25 @@
   </tr>
   <tr>
     <th class="text-sm">Past</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மலர்ந்த</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">malarnda</span></span>
 </div></td>
-    <td rowspan="3" class="border-l align-middle"><div class="text-center py-1">
+    <td rowspan="3" class="border-l align-middle"><div class="text-center p-1">
   <span class="text-lg">மலராத</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">malarāda</span></span>
 </div></td>
   </tr>
   <tr>
     <th class="text-sm">Present</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மலர்கிற</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">malargira</span></span>
 </div></td>
   </tr>
   <tr>
     <th class="text-sm">Future</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மலரும்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">malarum</span></span>
 </div></td>
@@ -454,138 +876,138 @@
 
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அவன்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">avan</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மலர்ந்தவன்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">malarndavan</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மலர்கிறவன்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">malargiravan</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மலர்பவன்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">malarbavan</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மலராதவன்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">malarādavan</span></span>
 </div></td>
   </tr>
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அவள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">avaɭ</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மலர்ந்தவள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">malarndavaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மலர்கிறவள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">malargiravaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மலர்பவள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">malarbavaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மலராதவள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">malarādavaɭ</span></span>
 </div></td>
   </tr>
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அவர்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">avar</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மலர்ந்தவர்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">malarndavar</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மலர்கிறவர்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">malargiravar</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மலர்பவர்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">malarbavar</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மலராதவர்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">malarādavar</span></span>
 </div></td>
   </tr>
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அது</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">adu</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மலர்ந்தது</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">malarndadu</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மலர்கிறது</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">malargiradu</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மலர்பது</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">malarbadu</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மலராதது</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">malarādadu</span></span>
 </div></td>
   </tr>
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அவர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">avargaɭ</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மலர்ந்தவர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">malarndavargaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மலர்கிறவர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">malargiravargaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மலர்பவர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">malarbavargaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மலராதவர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">malarādavargaɭ</span></span>
 </div></td>
   </tr>
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அவை</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">avai</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மலர்ந்தவை</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">malarndavai</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மலர்கிறவை</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">malargiravai</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மலர்பவை</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">malarbavai</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மலராதவை</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">malarādavai</span></span>
 </div></td>

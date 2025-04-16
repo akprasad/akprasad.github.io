@@ -30,7 +30,9 @@
 
       
 
+
 <article class="max-w-6xl mx-auto my-24 p-4">
+
 
 <header class="mb-8">
   <h1 class="mb-2 font-bold text-3xl">tinnu <span class="text-slate-400">தின்</span></h1>
@@ -46,6 +48,22 @@
   </nav>
 </header>
 
+<div x-data="{ activeTab: 0 }">
+
+<ul class="flex my-4">
+  <li><a class="p-2 border-b-2 border-transparent"
+    :class="{'border-black': activeTab === 0}" @click.prevent="activeTab = 0" href="#">Informal</a></li>
+  <li><a class="p-2 border-b-2 border-transparent"
+    :class="{'border-black': activeTab === 1}" @click.prevent="activeTab = 1" href="#">Formal</a></li>
+</ul>
+
+
+
+<div x-show="activeTab === 0" class="my-8">
+  <aside class="text-slate-500 text-sm bg-slate-50 rounded p-2">
+    <p>(Auto-generated, use with caution! Based on the consensus dialect heard in the popular
+    media of Tamil Nadu.)</p>
+  </aside>
 
 
 
@@ -63,254 +81,168 @@
 
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">நான்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">nān</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">தின்றேன்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tinrēn</span></span>
+    <th class="text-slate-500"><span lang="ta">nān</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">tinrēn</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">தின்கிறேன்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tinkirēn</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">tingirēn</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">தின்பேன்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tinpēn</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">tinbēn</span>
 </div></td>
     
       <td rowspan="10" class="text-center align-middle border-r border-l">
-        <div class="text-center py-1">
-  <span class="text-lg">தின்னவில்லை</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tinnavillai</span></span>
+        <div class="text-center p-1">
+  <span lang="ta">tinnale</span>
 </div>
       </td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">தின்னமாட்டேன்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tinnamāʈʈēn</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">tinnamāʈʈēn</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">நீ</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">nī</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">தின்றாய்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tinrāy</span></span>
+    <th class="text-slate-500"><span lang="ta">nī</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">tinre</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">தின்கிறாய்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tinkirāy</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">tingire</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">தின்பாய்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tinpāy</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">tinbe</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">தின்னமாட்டாய்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tinnamāʈʈāy</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">tinnamāʈʈe</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அவன்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">avan</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">தின்றான்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tinrān</span></span>
+    <th class="text-slate-500"><span lang="ta">avan</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">tinrān</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">தின்கிறான்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tinkirān</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">tingirān</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">தின்பான்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tinpān</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">tinbān</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">தின்னமாட்டான்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tinnamāʈʈān</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">tinnamāʈʈān</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அவள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">avaɭ</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">தின்றாள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tinrāɭ</span></span>
+    <th class="text-slate-500"><span lang="ta">ava</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">tinrā</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">தின்கிறாள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tinkirāɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">tingirā</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">தின்பாள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tinpāɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">tinbā</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">தின்னமாட்டாள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tinnamāʈʈāɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">tinnamāʈʈā</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அவர்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">avar</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">தின்றார்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tinrār</span></span>
+    <th class="text-slate-500"><span lang="ta">avaru</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">tinrāru</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">தின்கிறார்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tinkirār</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">tingirāru</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">தின்பார்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tinpār</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">tinbāru</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">தின்னமாட்டார்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tinnamāʈʈār</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">tinnamāʈʈāru</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அது</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">adu</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">தின்றது</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tinradu</span></span>
+    <th class="text-slate-500"><span lang="ta">adu</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">tinradu</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">தின்கிறது</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tinkiradu</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">tingiradu</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">தின்னும்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tinnum</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">tinnum</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">தின்னாது</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tinnādu</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">tinnādu</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">நாங்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">nāṅgaɭ</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">தின்றோம்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tinrōm</span></span>
+    <th class="text-slate-500"><span lang="ta">nāṅga</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">tinrōm</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">தின்கிறோம்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tinkirōm</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">tingirōm</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">தின்போம்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tinpōm</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">tinbōm</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">தின்னமாட்டோம்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tinnamāʈʈōm</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">tinnamāʈʈōm</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">நீங்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">nīṅgaɭ</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">தின்றீர்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tinrīrgaɭ</span></span>
+    <th class="text-slate-500"><span lang="ta">nīṅga</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">tinrīṅga</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">தின்கிறீர்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tinkirīrgaɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">tingirīṅga</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">தின்பீர்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tinpīrgaɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">tinbīṅga</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">தின்னமாட்டீர்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tinnamāʈʈīrgaɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">tinnamāʈʈīṅga</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அவர்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">avargaɭ</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">தின்றார்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tinrārgaɭ</span></span>
+    <th class="text-slate-500"><span lang="ta">avaṅga</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">tinrāṅga</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">தின்கிறார்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tinkirārgaɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">tingirāṅga</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">தின்பார்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tinpārgaɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">tinbāṅga</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">தின்னமாட்டார்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tinnamāʈʈārgaɭ</span></span>
-</div></td>
-  </tr>
-  
-  <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அவை</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">avai</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">தின்றன</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tinrana</span></span>
-</div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">தின்கின்றன</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tinkinrana</span></span>
-</div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">தின்பன</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tinpana</span></span>
-</div></td>
-    
-    <td><div class="text-center py-1">
-  <span class="text-lg">தினா</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tinā</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">tinnamāʈʈāṅga</span>
 </div></td>
   </tr>
   
 
 </table>
+
+
 
 
 
@@ -322,22 +254,512 @@
   </tr>
   <tr>
     <th class="text-sm">Singular</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
+  <span lang="ta">tinu</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">tinnādē</span>
+</div></td>
+  </tr>
+  <tr>
+    <th class="text-sm">Plural</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">tinuṅga</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">tinnādīṅga</span>
+</div></td>
+  </tr>
+
+</table>
+
+
+
+
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+  
+  <caption class="font-bold text-lg my-4">tinnu (தின்) &mdash; Non-finite verbs</caption>
+  <tr class="text-sm !border-l-0">
+    <th class="!bg-transparent">&nbsp;</th><th>Positive</th><th>Negative</th>
+  </tr>
+  <tr>
+    <th class="text-sm">Infinitive<br>("to do X")</th><td><div class="text-center p-1">
+  <span lang="ta">tinna</span>
+</div></td>
+    <td class="text-center">&mdash;</td>
+  </tr>
+  <tr>
+    <th class="text-sm">Adverb<br>("having done X")</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">tinru</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">tinnāma</span>
+</div></td>
+  </tr>
+  <tr>
+    <th class="text-sm">Potential<br>("might do X")</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">tinnalām</span>
+</div></td>
+    <td class="text-center">&mdash;</td>
+  </tr>
+  <tr>
+    <th class="text-sm">Permissive<br>("let do X")</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">tinnaʈʈum</span>
+</div></td>
+    <td class="text-center">&mdash;</td>
+  </tr>
+  <tr>
+    <th class="text-sm">Conditional<br>("if one does X")</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">tinrā</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">tinnāʈʈā</span>
+</div></td>
+  </tr>
+
+</table>
+
+
+
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+  
+  <caption class="font-bold text-lg my-4">tinnu (தின்) &mdash; Verbal adjectives</caption>
+
+  <tr class="text-sm !border-l-0">
+    <th class="!bg-transparent">&nbsp;</th><th>Positive</th><th>Negative</th>
+  </tr>
+  <tr>
+    <th class="text-sm">Past</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">tinra</span>
+</div></td>
+    <td rowspan="3" class="border-l align-middle"><div class="text-center p-1">
+  <span lang="ta">tinnāda</span>
+</div></td>
+  </tr>
+  <tr>
+    <th class="text-sm">Present</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">tingira</span>
+</div></td>
+  </tr>
+  <tr>
+    <th class="text-sm">Future</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">tinnum</span>
+</div></td>
+  </tr>
+
+</table>
+
+
+
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+  
+  <caption class="font-bold text-lg my-4">tinnu (தின்) &mdash; Verbal nouns</caption>
+  <tr class="text-sm !border-l-0">
+    <th class="!bg-transparent w-28">&nbsp;</th>
+    <th>Past</th>
+    <th>Present</th>
+    <th>Future</th>
+    <th>Negative</th>
+  </tr>
+
+  
+ <tr>
+    <th><div class="text-center p-1">
+  <span lang="ta">avan</span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">tinravan</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">tingiravan</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">tinbavan</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">tinnādavan</span>
+</div></td>
+  </tr>
+  
+ <tr>
+    <th><div class="text-center p-1">
+  <span lang="ta">ava</span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">tinrava</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">tingirava</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">tinbava</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">tinnādava</span>
+</div></td>
+  </tr>
+  
+ <tr>
+    <th><div class="text-center p-1">
+  <span lang="ta">avaru</span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">tinravaru</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">tingiravaru</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">tinbavaru</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">tinnādavaru</span>
+</div></td>
+  </tr>
+  
+ <tr>
+    <th><div class="text-center p-1">
+  <span lang="ta">adu</span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">tinradu</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">tingiradu</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">tinbadu</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">tinnādatu</span>
+</div></td>
+  </tr>
+  
+ <tr>
+    <th><div class="text-center p-1">
+  <span lang="ta">avaṅga</span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">tinravaṅga</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">tingiravaṅga</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">tinbavaṅga</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">tinnādavaṅga</span>
+</div></td>
+  </tr>
+  
+
+</table>
+
+
+</div>
+
+
+
+<div x-show="activeTab === 1">
+
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+  
+  <caption class="font-bold text-lg my-4">tinnu (தின்) &mdash; Statements</caption>
+  <tr class="text-sm !border-l-0">
+    <th class="!bg-transparent w-28">&nbsp;</th>
+    <th>Past</th>
+    <th>Present</th>
+    <th>Future</th>
+    <th>Negative non-future</th>
+    <th>Negative future</th>
+  </tr>
+
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">நான்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">nān</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">தின்றேன்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tinrēn</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">தின்கிறேன்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tinkirēn</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">தின்பேன்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tinpēn</span></span>
+</div></td>
+    
+      <td rowspan="10" class="text-center align-middle border-r border-l">
+        <div class="text-center p-1">
+  <span class="text-lg">தின்னவில்லை</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tinnavillai</span></span>
+</div>
+      </td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">தின்னமாட்டேன்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tinnamāʈʈēn</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">நீ</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">nī</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">தின்றாய்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tinrāy</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">தின்கிறாய்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tinkirāy</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">தின்பாய்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tinpāy</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">தின்னமாட்டாய்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tinnamāʈʈāy</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அவன்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">avan</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">தின்றான்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tinrān</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">தின்கிறான்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tinkirān</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">தின்பான்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tinpān</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">தின்னமாட்டான்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tinnamāʈʈān</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அவள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">avaɭ</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">தின்றாள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tinrāɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">தின்கிறாள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tinkirāɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">தின்பாள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tinpāɭ</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">தின்னமாட்டாள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tinnamāʈʈāɭ</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அவர்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">avar</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">தின்றார்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tinrār</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">தின்கிறார்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tinkirār</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">தின்பார்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tinpār</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">தின்னமாட்டார்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tinnamāʈʈār</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அது</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">adu</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">தின்றது</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tinradu</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">தின்கிறது</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tinkiradu</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">தின்னும்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tinnum</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">தின்னாது</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tinnādu</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">நாங்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">nāṅgaɭ</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">தின்றோம்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tinrōm</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">தின்கிறோம்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tinkirōm</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">தின்போம்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tinpōm</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">தின்னமாட்டோம்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tinnamāʈʈōm</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">நீங்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">nīṅgaɭ</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">தின்றீர்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tinrīrgaɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">தின்கிறீர்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tinkirīrgaɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">தின்பீர்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tinpīrgaɭ</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">தின்னமாட்டீர்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tinnamāʈʈīrgaɭ</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அவர்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">avargaɭ</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">தின்றார்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tinrārgaɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">தின்கிறார்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tinkirārgaɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">தின்பார்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tinpārgaɭ</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">தின்னமாட்டார்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tinnamāʈʈārgaɭ</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அவை</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">avai</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">தினன</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tinana</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">தின்கிற்ன்றன</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tinkirnrana</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">தினன</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tinana</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">தினா</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tinā</span></span>
+</div></td>
+  </tr>
+  
+
+</table>
+
+
+
+
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+  
+  <caption class="font-bold text-lg my-4">tinnu (தின்) &mdash; Commands</caption>
+  <tr class="text-sm !border-l-0">
+    <th class="!bg-transparent">&nbsp;</th><th>Positive</th><th>Negative</th>
+  </tr>
+  <tr>
+    <th class="text-sm">Singular</th>
+    <td><div class="text-center p-1">
   <span class="text-lg">தின்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tin</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தின்னாதே</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tinnādē</span></span>
 </div></td>
   </tr>
   <tr>
     <th class="text-sm">Plural</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தினுங்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tinuṅgaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தின்னாதீர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tinnādīrgaɭ</span></span>
 </div></td>
@@ -355,7 +777,7 @@
     <th class="!bg-transparent">&nbsp;</th><th>Positive</th><th>Negative</th>
   </tr>
   <tr>
-    <th class="text-sm">Infinitive<br>("to do X")</th><td><div class="text-center py-1">
+    <th class="text-sm">Infinitive<br>("to do X")</th><td><div class="text-center p-1">
   <span class="text-lg">தின்ன</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tinna</span></span>
 </div></td>
@@ -363,18 +785,18 @@
   </tr>
   <tr>
     <th class="text-sm">Adverb<br>("having done X")</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தின்று</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tinru</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தின்னாமல்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tinnāmal</span></span>
 </div></td>
   </tr>
   <tr>
     <th class="text-sm">Potential<br>("might do X")</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தின்னலாம்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tinnalām</span></span>
 </div></td>
@@ -382,7 +804,7 @@
   </tr>
   <tr>
     <th class="text-sm">Permissive<br>("let do X")</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தின்னட்டும்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tinnaʈʈum</span></span>
 </div></td>
@@ -390,11 +812,11 @@
   </tr>
   <tr>
     <th class="text-sm">Conditional<br>("if one does X")</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தின்றால்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tinrāl</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தின்னாவிட்டால்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tinnāviʈʈāl</span></span>
 </div></td>
@@ -413,25 +835,25 @@
   </tr>
   <tr>
     <th class="text-sm">Past</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தின்ற</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tinra</span></span>
 </div></td>
-    <td rowspan="3" class="border-l align-middle"><div class="text-center py-1">
+    <td rowspan="3" class="border-l align-middle"><div class="text-center p-1">
   <span class="text-lg">தின்னாத</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tinnāda</span></span>
 </div></td>
   </tr>
   <tr>
     <th class="text-sm">Present</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தின்கிற</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tinkira</span></span>
 </div></td>
   </tr>
   <tr>
     <th class="text-sm">Future</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தின்னும்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tinnum</span></span>
 </div></td>
@@ -454,138 +876,138 @@
 
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அவன்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">avan</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தின்றவன்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tinravan</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தின்கிறவன்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tinkiravan</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தின்பவன்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tinpavan</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தின்னாதவன்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tinnādavan</span></span>
 </div></td>
   </tr>
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அவள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">avaɭ</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தின்றவள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tinravaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தின்கிறவள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tinkiravaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தின்பவள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tinpavaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தின்னாதவள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tinnādavaɭ</span></span>
 </div></td>
   </tr>
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அவர்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">avar</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தின்றவர்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tinravar</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தின்கிறவர்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tinkiravar</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தின்பவர்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tinpavar</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தின்னாதவர்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tinnādavar</span></span>
 </div></td>
   </tr>
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அது</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">adu</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தின்றது</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tinradu</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தின்கிறது</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tinkiradu</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தின்பது</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tinpadu</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தின்னாதது</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tinnādadu</span></span>
 </div></td>
   </tr>
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அவர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">avargaɭ</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தின்றவர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tinravargaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தின்கிறவர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tinkiravargaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தின்பவர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tinpavargaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தின்னாதவர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tinnādavargaɭ</span></span>
 </div></td>
   </tr>
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அவை</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">avai</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தின்றவை</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tinravai</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தின்கிறவை</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tinkiravai</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தின்பவை</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tinpavai</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">தின்னாதவை</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tinnādavai</span></span>
 </div></td>

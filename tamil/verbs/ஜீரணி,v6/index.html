@@ -30,7 +30,9 @@
 
       
 
+
 <article class="max-w-6xl mx-auto my-24 p-4">
+
 
 <header class="mb-8">
   <h1 class="mb-2 font-bold text-3xl">jīraɳi <span class="text-slate-400">ஜீரணி</span></h1>
@@ -46,6 +48,22 @@
   </nav>
 </header>
 
+<div x-data="{ activeTab: 0 }">
+
+<ul class="flex my-4">
+  <li><a class="p-2 border-b-2 border-transparent"
+    :class="{'border-black': activeTab === 0}" @click.prevent="activeTab = 0" href="#">Informal</a></li>
+  <li><a class="p-2 border-b-2 border-transparent"
+    :class="{'border-black': activeTab === 1}" @click.prevent="activeTab = 1" href="#">Formal</a></li>
+</ul>
+
+
+
+<div x-show="activeTab === 0" class="my-8">
+  <aside class="text-slate-500 text-sm bg-slate-50 rounded p-2">
+    <p>(Auto-generated, use with caution! Based on the consensus dialect heard in the popular
+    media of Tamil Nadu.)</p>
+  </aside>
 
 
 
@@ -63,254 +81,168 @@
 
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">நான்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">nān</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">ஜீரணித்தேன்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳittēn</span></span>
+    <th class="text-slate-500"><span lang="ta">nān</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳiccēn</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">ஜீரணிக்கிறேன்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳikkirēn</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳikkirēn</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">ஜீரணிப்பேன்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳippēn</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳippēn</span>
 </div></td>
     
       <td rowspan="10" class="text-center align-middle border-r border-l">
-        <div class="text-center py-1">
-  <span class="text-lg">ஜீரணிக்கவில்லை</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳikkavillai</span></span>
+        <div class="text-center p-1">
+  <span lang="ta">jīraɳikkale</span>
 </div>
       </td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">ஜீரணிக்கமாட்டேன்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳikkamāʈʈēn</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳikkamāʈʈēn</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">நீ</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">nī</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">ஜீரணித்தாய்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳittāy</span></span>
+    <th class="text-slate-500"><span lang="ta">nī</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳicce</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">ஜீரணிக்கிறாய்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳikkirāy</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳikkire</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">ஜீரணிப்பாய்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳippāy</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳippe</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">ஜீரணிக்கமாட்டாய்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳikkamāʈʈāy</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳikkamāʈʈe</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அவன்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">avan</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">ஜீரணித்தான்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳittān</span></span>
+    <th class="text-slate-500"><span lang="ta">avan</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳiccān</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">ஜீரணிக்கிறான்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳikkirān</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳikkirān</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">ஜீரணிப்பான்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳippān</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳippān</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">ஜீரணிக்கமாட்டான்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳikkamāʈʈān</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳikkamāʈʈān</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அவள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">avaɭ</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">ஜீரணித்தாள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳittāɭ</span></span>
+    <th class="text-slate-500"><span lang="ta">ava</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳiccā</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">ஜீரணிக்கிறாள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳikkirāɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳikkirā</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">ஜீரணிப்பாள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳippāɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳippā</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">ஜீரணிக்கமாட்டாள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳikkamāʈʈāɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳikkamāʈʈā</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அவர்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">avar</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">ஜீரணித்தார்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳittār</span></span>
+    <th class="text-slate-500"><span lang="ta">avaru</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳiccāru</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">ஜீரணிக்கிறார்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳikkirār</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳikkirāru</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">ஜீரணிப்பார்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳippār</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳippāru</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">ஜீரணிக்கமாட்டார்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳikkamāʈʈār</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳikkamāʈʈāru</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அது</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">adu</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">ஜீரணித்தது</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳittadu</span></span>
+    <th class="text-slate-500"><span lang="ta">adu</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳiccadu</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">ஜீரணிக்கிறது</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳikkiradu</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳikkiradu</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">ஜீரணிக்கும்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳikkum</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳikkum</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">ஜீரணிக்காது</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳikkādu</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳikkādu</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">நாங்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">nāṅgaɭ</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">ஜீரணித்தோம்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳittōm</span></span>
+    <th class="text-slate-500"><span lang="ta">nāṅga</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳiccōm</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">ஜீரணிக்கிறோம்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳikkirōm</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳikkirōm</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">ஜீரணிப்போம்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳippōm</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳippōm</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">ஜீரணிக்கமாட்டோம்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳikkamāʈʈōm</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳikkamāʈʈōm</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">நீங்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">nīṅgaɭ</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">ஜீரணித்தீர்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳittīrgaɭ</span></span>
+    <th class="text-slate-500"><span lang="ta">nīṅga</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳiccīṅga</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">ஜீரணிக்கிறீர்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳikkirīrgaɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳikkirīṅga</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">ஜீரணிப்பீர்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳippīrgaɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳippīṅga</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">ஜீரணிக்கமாட்டீர்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳikkamāʈʈīrgaɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳikkamāʈʈīṅga</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அவர்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">avargaɭ</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">ஜீரணித்தார்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳittārgaɭ</span></span>
+    <th class="text-slate-500"><span lang="ta">avaṅga</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳiccāṅga</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">ஜீரணிக்கிறார்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳikkirārgaɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳikkirāṅga</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">ஜீரணிப்பார்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳippārgaɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳippāṅga</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">ஜீரணிக்கமாட்டார்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳikkamāʈʈārgaɭ</span></span>
-</div></td>
-  </tr>
-  
-  <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அவை</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">avai</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">ஜீரணித்தன</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳittana</span></span>
-</div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">ஜீரணிக்கின்றன</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳikkinrana</span></span>
-</div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">ஜீரணிப்பன</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳippana</span></span>
-</div></td>
-    
-    <td><div class="text-center py-1">
-  <span class="text-lg">ஜீரணியா</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳiyā</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳikkamāʈʈāṅga</span>
 </div></td>
   </tr>
   
 
 </table>
+
+
 
 
 
@@ -322,22 +254,512 @@
   </tr>
   <tr>
     <th class="text-sm">Singular</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳi</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳikkādē</span>
+</div></td>
+  </tr>
+  <tr>
+    <th class="text-sm">Plural</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳiṅga</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳikkādīṅga</span>
+</div></td>
+  </tr>
+
+</table>
+
+
+
+
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+  
+  <caption class="font-bold text-lg my-4">jīraɳi (ஜீரணி) &mdash; Non-finite verbs</caption>
+  <tr class="text-sm !border-l-0">
+    <th class="!bg-transparent">&nbsp;</th><th>Positive</th><th>Negative</th>
+  </tr>
+  <tr>
+    <th class="text-sm">Infinitive<br>("to do X")</th><td><div class="text-center p-1">
+  <span lang="ta">jīraɳikka</span>
+</div></td>
+    <td class="text-center">&mdash;</td>
+  </tr>
+  <tr>
+    <th class="text-sm">Adverb<br>("having done X")</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳiccu</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳikkāma</span>
+</div></td>
+  </tr>
+  <tr>
+    <th class="text-sm">Potential<br>("might do X")</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳikkalām</span>
+</div></td>
+    <td class="text-center">&mdash;</td>
+  </tr>
+  <tr>
+    <th class="text-sm">Permissive<br>("let do X")</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳikkaʈʈum</span>
+</div></td>
+    <td class="text-center">&mdash;</td>
+  </tr>
+  <tr>
+    <th class="text-sm">Conditional<br>("if one does X")</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳiccā</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳikkāʈʈā</span>
+</div></td>
+  </tr>
+
+</table>
+
+
+
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+  
+  <caption class="font-bold text-lg my-4">jīraɳi (ஜீரணி) &mdash; Verbal adjectives</caption>
+
+  <tr class="text-sm !border-l-0">
+    <th class="!bg-transparent">&nbsp;</th><th>Positive</th><th>Negative</th>
+  </tr>
+  <tr>
+    <th class="text-sm">Past</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳicca</span>
+</div></td>
+    <td rowspan="3" class="border-l align-middle"><div class="text-center p-1">
+  <span lang="ta">jīraɳikkāda</span>
+</div></td>
+  </tr>
+  <tr>
+    <th class="text-sm">Present</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳikkira</span>
+</div></td>
+  </tr>
+  <tr>
+    <th class="text-sm">Future</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳikkum</span>
+</div></td>
+  </tr>
+
+</table>
+
+
+
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+  
+  <caption class="font-bold text-lg my-4">jīraɳi (ஜீரணி) &mdash; Verbal nouns</caption>
+  <tr class="text-sm !border-l-0">
+    <th class="!bg-transparent w-28">&nbsp;</th>
+    <th>Past</th>
+    <th>Present</th>
+    <th>Future</th>
+    <th>Negative</th>
+  </tr>
+
+  
+ <tr>
+    <th><div class="text-center p-1">
+  <span lang="ta">avan</span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳiccavan</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳikkiravan</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳippavan</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳikkādavan</span>
+</div></td>
+  </tr>
+  
+ <tr>
+    <th><div class="text-center p-1">
+  <span lang="ta">ava</span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳiccava</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳikkirava</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳippava</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳikkādava</span>
+</div></td>
+  </tr>
+  
+ <tr>
+    <th><div class="text-center p-1">
+  <span lang="ta">avaru</span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳiccavaru</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳikkiravaru</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳippavaru</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳikkādavaru</span>
+</div></td>
+  </tr>
+  
+ <tr>
+    <th><div class="text-center p-1">
+  <span lang="ta">adu</span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳiccadu</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳikkiradu</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳippadu</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳikkādatu</span>
+</div></td>
+  </tr>
+  
+ <tr>
+    <th><div class="text-center p-1">
+  <span lang="ta">avaṅga</span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳiccavaṅga</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳikkiravaṅga</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳippavaṅga</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">jīraɳikkādavaṅga</span>
+</div></td>
+  </tr>
+  
+
+</table>
+
+
+</div>
+
+
+
+<div x-show="activeTab === 1">
+
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+  
+  <caption class="font-bold text-lg my-4">jīraɳi (ஜீரணி) &mdash; Statements</caption>
+  <tr class="text-sm !border-l-0">
+    <th class="!bg-transparent w-28">&nbsp;</th>
+    <th>Past</th>
+    <th>Present</th>
+    <th>Future</th>
+    <th>Negative non-future</th>
+    <th>Negative future</th>
+  </tr>
+
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">நான்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">nān</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">ஜீரணித்தேன்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳittēn</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">ஜீரணிக்கிறேன்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳikkirēn</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">ஜீரணிப்பேன்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳippēn</span></span>
+</div></td>
+    
+      <td rowspan="10" class="text-center align-middle border-r border-l">
+        <div class="text-center p-1">
+  <span class="text-lg">ஜீரணிக்கவில்லை</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳikkavillai</span></span>
+</div>
+      </td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">ஜீரணிக்கமாட்டேன்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳikkamāʈʈēn</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">நீ</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">nī</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">ஜீரணித்தாய்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳittāy</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">ஜீரணிக்கிறாய்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳikkirāy</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">ஜீரணிப்பாய்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳippāy</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">ஜீரணிக்கமாட்டாய்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳikkamāʈʈāy</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அவன்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">avan</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">ஜீரணித்தான்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳittān</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">ஜீரணிக்கிறான்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳikkirān</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">ஜீரணிப்பான்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳippān</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">ஜீரணிக்கமாட்டான்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳikkamāʈʈān</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அவள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">avaɭ</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">ஜீரணித்தாள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳittāɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">ஜீரணிக்கிறாள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳikkirāɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">ஜீரணிப்பாள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳippāɭ</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">ஜீரணிக்கமாட்டாள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳikkamāʈʈāɭ</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அவர்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">avar</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">ஜீரணித்தார்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳittār</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">ஜீரணிக்கிறார்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳikkirār</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">ஜீரணிப்பார்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳippār</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">ஜீரணிக்கமாட்டார்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳikkamāʈʈār</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அது</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">adu</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">ஜீரணித்தது</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳittadu</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">ஜீரணிக்கிறது</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳikkiradu</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">ஜீரணிக்கும்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳikkum</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">ஜீரணிக்காது</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳikkādu</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">நாங்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">nāṅgaɭ</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">ஜீரணித்தோம்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳittōm</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">ஜீரணிக்கிறோம்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳikkirōm</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">ஜீரணிப்போம்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳippōm</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">ஜீரணிக்கமாட்டோம்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳikkamāʈʈōm</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">நீங்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">nīṅgaɭ</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">ஜீரணித்தீர்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳittīrgaɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">ஜீரணிக்கிறீர்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳikkirīrgaɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">ஜீரணிப்பீர்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳippīrgaɭ</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">ஜீரணிக்கமாட்டீர்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳikkamāʈʈīrgaɭ</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அவர்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">avargaɭ</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">ஜீரணித்தார்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳittārgaɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">ஜீரணிக்கிறார்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳikkirārgaɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">ஜீரணிப்பார்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳippārgaɭ</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">ஜீரணிக்கமாட்டார்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳikkamāʈʈārgaɭ</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அவை</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">avai</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">ஜீரணியன</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳiyana</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">ஜீரணிக்கிற்ன்றன</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳikkirnrana</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">ஜீரணியன</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳiyana</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">ஜீரணியா</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳiyā</span></span>
+</div></td>
+  </tr>
+  
+
+</table>
+
+
+
+
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+  
+  <caption class="font-bold text-lg my-4">jīraɳi (ஜீரணி) &mdash; Commands</caption>
+  <tr class="text-sm !border-l-0">
+    <th class="!bg-transparent">&nbsp;</th><th>Positive</th><th>Negative</th>
+  </tr>
+  <tr>
+    <th class="text-sm">Singular</th>
+    <td><div class="text-center p-1">
   <span class="text-lg">ஜீரணி</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳi</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">ஜீரணிக்காதே</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳikkādē</span></span>
 </div></td>
   </tr>
   <tr>
     <th class="text-sm">Plural</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">ஜீரணியுங்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳiyuṅgaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">ஜீரணிக்காதீர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳikkādīrgaɭ</span></span>
 </div></td>
@@ -355,7 +777,7 @@
     <th class="!bg-transparent">&nbsp;</th><th>Positive</th><th>Negative</th>
   </tr>
   <tr>
-    <th class="text-sm">Infinitive<br>("to do X")</th><td><div class="text-center py-1">
+    <th class="text-sm">Infinitive<br>("to do X")</th><td><div class="text-center p-1">
   <span class="text-lg">ஜீரணிக்க</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳikka</span></span>
 </div></td>
@@ -363,18 +785,18 @@
   </tr>
   <tr>
     <th class="text-sm">Adverb<br>("having done X")</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">ஜீரணித்து</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳittu</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">ஜீரணிக்காமல்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳikkāmal</span></span>
 </div></td>
   </tr>
   <tr>
     <th class="text-sm">Potential<br>("might do X")</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">ஜீரணிக்கலாம்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳikkalām</span></span>
 </div></td>
@@ -382,7 +804,7 @@
   </tr>
   <tr>
     <th class="text-sm">Permissive<br>("let do X")</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">ஜீரணிக்கட்டும்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳikkaʈʈum</span></span>
 </div></td>
@@ -390,11 +812,11 @@
   </tr>
   <tr>
     <th class="text-sm">Conditional<br>("if one does X")</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">ஜீரணித்தால்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳittāl</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">ஜீரணிக்காவிட்டால்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳikkāviʈʈāl</span></span>
 </div></td>
@@ -413,25 +835,25 @@
   </tr>
   <tr>
     <th class="text-sm">Past</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">ஜீரணித்த</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳitta</span></span>
 </div></td>
-    <td rowspan="3" class="border-l align-middle"><div class="text-center py-1">
+    <td rowspan="3" class="border-l align-middle"><div class="text-center p-1">
   <span class="text-lg">ஜீரணிக்காத</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳikkāda</span></span>
 </div></td>
   </tr>
   <tr>
     <th class="text-sm">Present</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">ஜீரணிக்கிற</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳikkira</span></span>
 </div></td>
   </tr>
   <tr>
     <th class="text-sm">Future</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">ஜீரணிக்கும்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳikkum</span></span>
 </div></td>
@@ -454,138 +876,138 @@
 
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அவன்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">avan</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">ஜீரணித்தவன்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳittavan</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">ஜீரணிக்கிறவன்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳikkiravan</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">ஜீரணிப்பவன்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳippavan</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">ஜீரணிக்காதவன்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳikkādavan</span></span>
 </div></td>
   </tr>
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அவள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">avaɭ</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">ஜீரணித்தவள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳittavaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">ஜீரணிக்கிறவள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳikkiravaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">ஜீரணிப்பவள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳippavaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">ஜீரணிக்காதவள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳikkādavaɭ</span></span>
 </div></td>
   </tr>
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அவர்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">avar</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">ஜீரணித்தவர்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳittavar</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">ஜீரணிக்கிறவர்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳikkiravar</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">ஜீரணிப்பவர்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳippavar</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">ஜீரணிக்காதவர்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳikkādavar</span></span>
 </div></td>
   </tr>
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அது</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">adu</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">ஜீரணித்தது</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳittadu</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">ஜீரணிக்கிறது</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳikkiradu</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">ஜீரணிப்பது</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳippadu</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">ஜீரணிக்காதது</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳikkādadu</span></span>
 </div></td>
   </tr>
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அவர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">avargaɭ</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">ஜீரணித்தவர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳittavargaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">ஜீரணிக்கிறவர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳikkiravargaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">ஜீரணிப்பவர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳippavargaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">ஜீரணிக்காதவர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳikkādavargaɭ</span></span>
 </div></td>
   </tr>
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அவை</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">avai</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">ஜீரணித்தவை</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳittavai</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">ஜீரணிக்கிறவை</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳikkiravai</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">ஜீரணிப்பவை</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳippavai</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">ஜீரணிக்காதவை</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">jīraɳikkādavai</span></span>
 </div></td>

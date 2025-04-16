@@ -30,7 +30,9 @@
 
       
 
+
 <article class="max-w-6xl mx-auto my-24 p-4">
+
 
 <header class="mb-8">
   <h1 class="mb-2 font-bold text-3xl">manni <span class="text-slate-400">மன்னி</span></h1>
@@ -46,6 +48,22 @@
   </nav>
 </header>
 
+<div x-data="{ activeTab: 0 }">
+
+<ul class="flex my-4">
+  <li><a class="p-2 border-b-2 border-transparent"
+    :class="{'border-black': activeTab === 0}" @click.prevent="activeTab = 0" href="#">Informal</a></li>
+  <li><a class="p-2 border-b-2 border-transparent"
+    :class="{'border-black': activeTab === 1}" @click.prevent="activeTab = 1" href="#">Formal</a></li>
+</ul>
+
+
+
+<div x-show="activeTab === 0" class="my-8">
+  <aside class="text-slate-500 text-sm bg-slate-50 rounded p-2">
+    <p>(Auto-generated, use with caution! Based on the consensus dialect heard in the popular
+    media of Tamil Nadu.)</p>
+  </aside>
 
 
 
@@ -63,254 +81,168 @@
 
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">நான்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">nān</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மன்னித்தேன்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">mannittēn</span></span>
+    <th class="text-slate-500"><span lang="ta">nān</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">manniccēn</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மன்னிக்கிறேன்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">mannikkirēn</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">mannikkirēn</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மன்னிப்பேன்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">mannippēn</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">mannippēn</span>
 </div></td>
     
       <td rowspan="10" class="text-center align-middle border-r border-l">
-        <div class="text-center py-1">
-  <span class="text-lg">மன்னிக்கவில்லை</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">mannikkavillai</span></span>
+        <div class="text-center p-1">
+  <span lang="ta">mannikkale</span>
 </div>
       </td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">மன்னிக்கமாட்டேன்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">mannikkamāʈʈēn</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">mannikkamāʈʈēn</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">நீ</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">nī</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மன்னித்தாய்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">mannittāy</span></span>
+    <th class="text-slate-500"><span lang="ta">nī</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">mannicce</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மன்னிக்கிறாய்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">mannikkirāy</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">mannikkire</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மன்னிப்பாய்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">mannippāy</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">mannippe</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">மன்னிக்கமாட்டாய்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">mannikkamāʈʈāy</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">mannikkamāʈʈe</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அவன்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">avan</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மன்னித்தான்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">mannittān</span></span>
+    <th class="text-slate-500"><span lang="ta">avan</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">manniccān</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மன்னிக்கிறான்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">mannikkirān</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">mannikkirān</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மன்னிப்பான்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">mannippān</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">mannippān</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">மன்னிக்கமாட்டான்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">mannikkamāʈʈān</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">mannikkamāʈʈān</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அவள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">avaɭ</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மன்னித்தாள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">mannittāɭ</span></span>
+    <th class="text-slate-500"><span lang="ta">ava</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">manniccā</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மன்னிக்கிறாள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">mannikkirāɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">mannikkirā</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மன்னிப்பாள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">mannippāɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">mannippā</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">மன்னிக்கமாட்டாள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">mannikkamāʈʈāɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">mannikkamāʈʈā</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அவர்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">avar</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மன்னித்தார்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">mannittār</span></span>
+    <th class="text-slate-500"><span lang="ta">avaru</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">manniccāru</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மன்னிக்கிறார்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">mannikkirār</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">mannikkirāru</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மன்னிப்பார்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">mannippār</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">mannippāru</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">மன்னிக்கமாட்டார்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">mannikkamāʈʈār</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">mannikkamāʈʈāru</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அது</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">adu</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மன்னித்தது</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">mannittadu</span></span>
+    <th class="text-slate-500"><span lang="ta">adu</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">manniccadu</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மன்னிக்கிறது</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">mannikkiradu</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">mannikkiradu</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மன்னிக்கும்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">mannikkum</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">mannikkum</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">மன்னிக்காது</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">mannikkādu</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">mannikkādu</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">நாங்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">nāṅgaɭ</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மன்னித்தோம்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">mannittōm</span></span>
+    <th class="text-slate-500"><span lang="ta">nāṅga</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">manniccōm</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மன்னிக்கிறோம்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">mannikkirōm</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">mannikkirōm</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மன்னிப்போம்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">mannippōm</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">mannippōm</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">மன்னிக்கமாட்டோம்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">mannikkamāʈʈōm</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">mannikkamāʈʈōm</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">நீங்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">nīṅgaɭ</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மன்னித்தீர்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">mannittīrgaɭ</span></span>
+    <th class="text-slate-500"><span lang="ta">nīṅga</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">manniccīṅga</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மன்னிக்கிறீர்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">mannikkirīrgaɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">mannikkirīṅga</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மன்னிப்பீர்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">mannippīrgaɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">mannippīṅga</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">மன்னிக்கமாட்டீர்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">mannikkamāʈʈīrgaɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">mannikkamāʈʈīṅga</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அவர்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">avargaɭ</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மன்னித்தார்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">mannittārgaɭ</span></span>
+    <th class="text-slate-500"><span lang="ta">avaṅga</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">manniccāṅga</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மன்னிக்கிறார்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">mannikkirārgaɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">mannikkirāṅga</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மன்னிப்பார்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">mannippārgaɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">mannippāṅga</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">மன்னிக்கமாட்டார்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">mannikkamāʈʈārgaɭ</span></span>
-</div></td>
-  </tr>
-  
-  <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அவை</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">avai</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மன்னித்தன</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">mannittana</span></span>
-</div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மன்னிக்கின்றன</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">mannikkinrana</span></span>
-</div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மன்னிப்பன</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">mannippana</span></span>
-</div></td>
-    
-    <td><div class="text-center py-1">
-  <span class="text-lg">மன்னியா</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">manniyā</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">mannikkamāʈʈāṅga</span>
 </div></td>
   </tr>
   
 
 </table>
+
+
 
 
 
@@ -322,22 +254,512 @@
   </tr>
   <tr>
     <th class="text-sm">Singular</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
+  <span lang="ta">manni</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">mannikkādē</span>
+</div></td>
+  </tr>
+  <tr>
+    <th class="text-sm">Plural</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">manniṅga</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">mannikkādīṅga</span>
+</div></td>
+  </tr>
+
+</table>
+
+
+
+
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+  
+  <caption class="font-bold text-lg my-4">manni (மன்னி) &mdash; Non-finite verbs</caption>
+  <tr class="text-sm !border-l-0">
+    <th class="!bg-transparent">&nbsp;</th><th>Positive</th><th>Negative</th>
+  </tr>
+  <tr>
+    <th class="text-sm">Infinitive<br>("to do X")</th><td><div class="text-center p-1">
+  <span lang="ta">mannikka</span>
+</div></td>
+    <td class="text-center">&mdash;</td>
+  </tr>
+  <tr>
+    <th class="text-sm">Adverb<br>("having done X")</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">manniccu</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">mannikkāma</span>
+</div></td>
+  </tr>
+  <tr>
+    <th class="text-sm">Potential<br>("might do X")</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">mannikkalām</span>
+</div></td>
+    <td class="text-center">&mdash;</td>
+  </tr>
+  <tr>
+    <th class="text-sm">Permissive<br>("let do X")</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">mannikkaʈʈum</span>
+</div></td>
+    <td class="text-center">&mdash;</td>
+  </tr>
+  <tr>
+    <th class="text-sm">Conditional<br>("if one does X")</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">manniccā</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">mannikkāʈʈā</span>
+</div></td>
+  </tr>
+
+</table>
+
+
+
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+  
+  <caption class="font-bold text-lg my-4">manni (மன்னி) &mdash; Verbal adjectives</caption>
+
+  <tr class="text-sm !border-l-0">
+    <th class="!bg-transparent">&nbsp;</th><th>Positive</th><th>Negative</th>
+  </tr>
+  <tr>
+    <th class="text-sm">Past</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">mannicca</span>
+</div></td>
+    <td rowspan="3" class="border-l align-middle"><div class="text-center p-1">
+  <span lang="ta">mannikkāda</span>
+</div></td>
+  </tr>
+  <tr>
+    <th class="text-sm">Present</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">mannikkira</span>
+</div></td>
+  </tr>
+  <tr>
+    <th class="text-sm">Future</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">mannikkum</span>
+</div></td>
+  </tr>
+
+</table>
+
+
+
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+  
+  <caption class="font-bold text-lg my-4">manni (மன்னி) &mdash; Verbal nouns</caption>
+  <tr class="text-sm !border-l-0">
+    <th class="!bg-transparent w-28">&nbsp;</th>
+    <th>Past</th>
+    <th>Present</th>
+    <th>Future</th>
+    <th>Negative</th>
+  </tr>
+
+  
+ <tr>
+    <th><div class="text-center p-1">
+  <span lang="ta">avan</span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">manniccavan</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">mannikkiravan</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">mannippavan</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">mannikkādavan</span>
+</div></td>
+  </tr>
+  
+ <tr>
+    <th><div class="text-center p-1">
+  <span lang="ta">ava</span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">manniccava</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">mannikkirava</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">mannippava</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">mannikkādava</span>
+</div></td>
+  </tr>
+  
+ <tr>
+    <th><div class="text-center p-1">
+  <span lang="ta">avaru</span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">manniccavaru</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">mannikkiravaru</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">mannippavaru</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">mannikkādavaru</span>
+</div></td>
+  </tr>
+  
+ <tr>
+    <th><div class="text-center p-1">
+  <span lang="ta">adu</span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">manniccadu</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">mannikkiradu</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">mannippadu</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">mannikkādatu</span>
+</div></td>
+  </tr>
+  
+ <tr>
+    <th><div class="text-center p-1">
+  <span lang="ta">avaṅga</span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">manniccavaṅga</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">mannikkiravaṅga</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">mannippavaṅga</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">mannikkādavaṅga</span>
+</div></td>
+  </tr>
+  
+
+</table>
+
+
+</div>
+
+
+
+<div x-show="activeTab === 1">
+
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+  
+  <caption class="font-bold text-lg my-4">manni (மன்னி) &mdash; Statements</caption>
+  <tr class="text-sm !border-l-0">
+    <th class="!bg-transparent w-28">&nbsp;</th>
+    <th>Past</th>
+    <th>Present</th>
+    <th>Future</th>
+    <th>Negative non-future</th>
+    <th>Negative future</th>
+  </tr>
+
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">நான்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">nān</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மன்னித்தேன்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">mannittēn</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மன்னிக்கிறேன்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">mannikkirēn</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மன்னிப்பேன்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">mannippēn</span></span>
+</div></td>
+    
+      <td rowspan="10" class="text-center align-middle border-r border-l">
+        <div class="text-center p-1">
+  <span class="text-lg">மன்னிக்கவில்லை</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">mannikkavillai</span></span>
+</div>
+      </td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">மன்னிக்கமாட்டேன்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">mannikkamāʈʈēn</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">நீ</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">nī</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மன்னித்தாய்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">mannittāy</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மன்னிக்கிறாய்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">mannikkirāy</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மன்னிப்பாய்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">mannippāy</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">மன்னிக்கமாட்டாய்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">mannikkamāʈʈāy</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அவன்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">avan</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மன்னித்தான்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">mannittān</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மன்னிக்கிறான்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">mannikkirān</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மன்னிப்பான்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">mannippān</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">மன்னிக்கமாட்டான்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">mannikkamāʈʈān</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அவள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">avaɭ</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மன்னித்தாள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">mannittāɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மன்னிக்கிறாள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">mannikkirāɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மன்னிப்பாள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">mannippāɭ</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">மன்னிக்கமாட்டாள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">mannikkamāʈʈāɭ</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அவர்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">avar</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மன்னித்தார்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">mannittār</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மன்னிக்கிறார்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">mannikkirār</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மன்னிப்பார்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">mannippār</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">மன்னிக்கமாட்டார்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">mannikkamāʈʈār</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அது</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">adu</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மன்னித்தது</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">mannittadu</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மன்னிக்கிறது</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">mannikkiradu</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மன்னிக்கும்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">mannikkum</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">மன்னிக்காது</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">mannikkādu</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">நாங்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">nāṅgaɭ</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மன்னித்தோம்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">mannittōm</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மன்னிக்கிறோம்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">mannikkirōm</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மன்னிப்போம்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">mannippōm</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">மன்னிக்கமாட்டோம்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">mannikkamāʈʈōm</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">நீங்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">nīṅgaɭ</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மன்னித்தீர்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">mannittīrgaɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மன்னிக்கிறீர்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">mannikkirīrgaɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மன்னிப்பீர்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">mannippīrgaɭ</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">மன்னிக்கமாட்டீர்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">mannikkamāʈʈīrgaɭ</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அவர்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">avargaɭ</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மன்னித்தார்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">mannittārgaɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மன்னிக்கிறார்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">mannikkirārgaɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மன்னிப்பார்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">mannippārgaɭ</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">மன்னிக்கமாட்டார்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">mannikkamāʈʈārgaɭ</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அவை</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">avai</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மன்னியன</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">manniyana</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மன்னிக்கிற்ன்றன</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">mannikkirnrana</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மன்னியன</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">manniyana</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">மன்னியா</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">manniyā</span></span>
+</div></td>
+  </tr>
+  
+
+</table>
+
+
+
+
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+  
+  <caption class="font-bold text-lg my-4">manni (மன்னி) &mdash; Commands</caption>
+  <tr class="text-sm !border-l-0">
+    <th class="!bg-transparent">&nbsp;</th><th>Positive</th><th>Negative</th>
+  </tr>
+  <tr>
+    <th class="text-sm">Singular</th>
+    <td><div class="text-center p-1">
   <span class="text-lg">மன்னி</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">manni</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மன்னிக்காதே</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">mannikkādē</span></span>
 </div></td>
   </tr>
   <tr>
     <th class="text-sm">Plural</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மன்னியுங்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">manniyuṅgaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மன்னிக்காதீர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">mannikkādīrgaɭ</span></span>
 </div></td>
@@ -355,7 +777,7 @@
     <th class="!bg-transparent">&nbsp;</th><th>Positive</th><th>Negative</th>
   </tr>
   <tr>
-    <th class="text-sm">Infinitive<br>("to do X")</th><td><div class="text-center py-1">
+    <th class="text-sm">Infinitive<br>("to do X")</th><td><div class="text-center p-1">
   <span class="text-lg">மன்னிக்க</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">mannikka</span></span>
 </div></td>
@@ -363,18 +785,18 @@
   </tr>
   <tr>
     <th class="text-sm">Adverb<br>("having done X")</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மன்னித்து</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">mannittu</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மன்னிக்காமல்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">mannikkāmal</span></span>
 </div></td>
   </tr>
   <tr>
     <th class="text-sm">Potential<br>("might do X")</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மன்னிக்கலாம்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">mannikkalām</span></span>
 </div></td>
@@ -382,7 +804,7 @@
   </tr>
   <tr>
     <th class="text-sm">Permissive<br>("let do X")</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மன்னிக்கட்டும்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">mannikkaʈʈum</span></span>
 </div></td>
@@ -390,11 +812,11 @@
   </tr>
   <tr>
     <th class="text-sm">Conditional<br>("if one does X")</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மன்னித்தால்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">mannittāl</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மன்னிக்காவிட்டால்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">mannikkāviʈʈāl</span></span>
 </div></td>
@@ -413,25 +835,25 @@
   </tr>
   <tr>
     <th class="text-sm">Past</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மன்னித்த</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">mannitta</span></span>
 </div></td>
-    <td rowspan="3" class="border-l align-middle"><div class="text-center py-1">
+    <td rowspan="3" class="border-l align-middle"><div class="text-center p-1">
   <span class="text-lg">மன்னிக்காத</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">mannikkāda</span></span>
 </div></td>
   </tr>
   <tr>
     <th class="text-sm">Present</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மன்னிக்கிற</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">mannikkira</span></span>
 </div></td>
   </tr>
   <tr>
     <th class="text-sm">Future</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மன்னிக்கும்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">mannikkum</span></span>
 </div></td>
@@ -454,138 +876,138 @@
 
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அவன்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">avan</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மன்னித்தவன்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">mannittavan</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மன்னிக்கிறவன்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">mannikkiravan</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மன்னிப்பவன்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">mannippavan</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மன்னிக்காதவன்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">mannikkādavan</span></span>
 </div></td>
   </tr>
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அவள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">avaɭ</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மன்னித்தவள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">mannittavaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மன்னிக்கிறவள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">mannikkiravaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மன்னிப்பவள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">mannippavaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மன்னிக்காதவள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">mannikkādavaɭ</span></span>
 </div></td>
   </tr>
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அவர்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">avar</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மன்னித்தவர்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">mannittavar</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மன்னிக்கிறவர்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">mannikkiravar</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மன்னிப்பவர்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">mannippavar</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மன்னிக்காதவர்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">mannikkādavar</span></span>
 </div></td>
   </tr>
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அது</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">adu</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மன்னித்தது</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">mannittadu</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மன்னிக்கிறது</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">mannikkiradu</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மன்னிப்பது</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">mannippadu</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மன்னிக்காதது</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">mannikkādadu</span></span>
 </div></td>
   </tr>
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அவர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">avargaɭ</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மன்னித்தவர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">mannittavargaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மன்னிக்கிறவர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">mannikkiravargaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மன்னிப்பவர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">mannippavargaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மன்னிக்காதவர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">mannikkādavargaɭ</span></span>
 </div></td>
   </tr>
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அவை</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">avai</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மன்னித்தவை</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">mannittavai</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மன்னிக்கிறவை</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">mannikkiravai</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மன்னிப்பவை</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">mannippavai</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மன்னிக்காதவை</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">mannikkādavai</span></span>
 </div></td>

@@ -30,7 +30,9 @@
 
       
 
+
 <article class="max-w-6xl mx-auto my-24 p-4">
+
 
 <header class="mb-8">
   <h1 class="mb-2 font-bold text-3xl">tirumbu <span class="text-slate-400">திரும்பு</span></h1>
@@ -46,6 +48,22 @@
   </nav>
 </header>
 
+<div x-data="{ activeTab: 0 }">
+
+<ul class="flex my-4">
+  <li><a class="p-2 border-b-2 border-transparent"
+    :class="{'border-black': activeTab === 0}" @click.prevent="activeTab = 0" href="#">Informal</a></li>
+  <li><a class="p-2 border-b-2 border-transparent"
+    :class="{'border-black': activeTab === 1}" @click.prevent="activeTab = 1" href="#">Formal</a></li>
+</ul>
+
+
+
+<div x-show="activeTab === 0" class="my-8">
+  <aside class="text-slate-500 text-sm bg-slate-50 rounded p-2">
+    <p>(Auto-generated, use with caution! Based on the consensus dialect heard in the popular
+    media of Tamil Nadu.)</p>
+  </aside>
 
 
 
@@ -63,254 +81,168 @@
 
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">நான்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">nān</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">திரும்பினேன்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbinēn</span></span>
+    <th class="text-slate-500"><span lang="ta">nān</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumbinēn</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">திரும்புகிறேன்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbugirēn</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumburēn</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">திரும்புவேன்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbuvēn</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumbuvēn</span>
 </div></td>
     
       <td rowspan="10" class="text-center align-middle border-r border-l">
-        <div class="text-center py-1">
-  <span class="text-lg">திரும்பவில்லை</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbavillai</span></span>
+        <div class="text-center p-1">
+  <span lang="ta">tirumbale</span>
 </div>
       </td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">திரும்பமாட்டேன்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbamāʈʈēn</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumbamāʈʈēn</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">நீ</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">nī</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">திரும்பினாய்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbināy</span></span>
+    <th class="text-slate-500"><span lang="ta">nī</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumbine</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">திரும்புகிறாய்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbugirāy</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumbure</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">திரும்புவாய்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbuvāy</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumbuve</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">திரும்பமாட்டாய்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbamāʈʈāy</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumbamāʈʈe</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அவன்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">avan</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">திரும்பினான்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbinān</span></span>
+    <th class="text-slate-500"><span lang="ta">avan</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumbinān</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">திரும்புகிறான்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbugirān</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumburān</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">திரும்புவான்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbuvān</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumbuvān</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">திரும்பமாட்டான்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbamāʈʈān</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumbamāʈʈān</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அவள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">avaɭ</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">திரும்பினாள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbināɭ</span></span>
+    <th class="text-slate-500"><span lang="ta">ava</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumbinā</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">திரும்புகிறாள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbugirāɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumburā</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">திரும்புவாள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbuvāɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumbuvā</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">திரும்பமாட்டாள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbamāʈʈāɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumbamāʈʈā</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அவர்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">avar</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">திரும்பினார்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbinār</span></span>
+    <th class="text-slate-500"><span lang="ta">avaru</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumbināru</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">திரும்புகிறார்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbugirār</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumburāru</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">திரும்புவார்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbuvār</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumbuvāru</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">திரும்பமாட்டார்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbamāʈʈār</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumbamāʈʈāru</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அது</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">adu</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">திரும்பினது</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbinadu</span></span>
+    <th class="text-slate-500"><span lang="ta">adu</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumbinadu</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">திரும்புகிறது</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbugiradu</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumburadu</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">திரும்பும்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbum</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumbum</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">திரும்பாது</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbādu</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumbādu</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">நாங்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">nāṅgaɭ</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">திரும்பினோம்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbinōm</span></span>
+    <th class="text-slate-500"><span lang="ta">nāṅga</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumbinōm</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">திரும்புகிறோம்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbugirōm</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumburōm</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">திரும்புவோம்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbuvōm</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumbuvōm</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">திரும்பமாட்டோம்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbamāʈʈōm</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumbamāʈʈōm</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">நீங்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">nīṅgaɭ</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">திரும்பினீர்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbinīrgaɭ</span></span>
+    <th class="text-slate-500"><span lang="ta">nīṅga</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumbinīṅga</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">திரும்புகிறீர்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbugirīrgaɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumburīṅga</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">திரும்புவீர்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbuvīrgaɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumbuvīṅga</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">திரும்பமாட்டீர்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbamāʈʈīrgaɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumbamāʈʈīṅga</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அவர்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">avargaɭ</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">திரும்பினார்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbinārgaɭ</span></span>
+    <th class="text-slate-500"><span lang="ta">avaṅga</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumbināṅga</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">திரும்புகிறார்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbugirārgaɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumburāṅga</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">திரும்புவார்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbuvārgaɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumbuvāṅga</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">திரும்பமாட்டார்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbamāʈʈārgaɭ</span></span>
-</div></td>
-  </tr>
-  
-  <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அவை</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">avai</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">திரும்பினன</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbinana</span></span>
-</div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">திரும்புகின்றன</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbuginrana</span></span>
-</div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">திரும்புவன</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbuvana</span></span>
-</div></td>
-    
-    <td><div class="text-center py-1">
-  <span class="text-lg">திரும்பா</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbā</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumbamāʈʈāṅga</span>
 </div></td>
   </tr>
   
 
 </table>
+
+
 
 
 
@@ -322,22 +254,512 @@
   </tr>
   <tr>
     <th class="text-sm">Singular</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumbu</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumbādē</span>
+</div></td>
+  </tr>
+  <tr>
+    <th class="text-sm">Plural</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumbuṅga</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumbādīṅga</span>
+</div></td>
+  </tr>
+
+</table>
+
+
+
+
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+  
+  <caption class="font-bold text-lg my-4">tirumbu (திரும்பு) &mdash; Non-finite verbs</caption>
+  <tr class="text-sm !border-l-0">
+    <th class="!bg-transparent">&nbsp;</th><th>Positive</th><th>Negative</th>
+  </tr>
+  <tr>
+    <th class="text-sm">Infinitive<br>("to do X")</th><td><div class="text-center p-1">
+  <span lang="ta">tirumba</span>
+</div></td>
+    <td class="text-center">&mdash;</td>
+  </tr>
+  <tr>
+    <th class="text-sm">Adverb<br>("having done X")</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumbi</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumbāma</span>
+</div></td>
+  </tr>
+  <tr>
+    <th class="text-sm">Potential<br>("might do X")</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumbalām</span>
+</div></td>
+    <td class="text-center">&mdash;</td>
+  </tr>
+  <tr>
+    <th class="text-sm">Permissive<br>("let do X")</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumbaʈʈum</span>
+</div></td>
+    <td class="text-center">&mdash;</td>
+  </tr>
+  <tr>
+    <th class="text-sm">Conditional<br>("if one does X")</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumbinā</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumbāʈʈā</span>
+</div></td>
+  </tr>
+
+</table>
+
+
+
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+  
+  <caption class="font-bold text-lg my-4">tirumbu (திரும்பு) &mdash; Verbal adjectives</caption>
+
+  <tr class="text-sm !border-l-0">
+    <th class="!bg-transparent">&nbsp;</th><th>Positive</th><th>Negative</th>
+  </tr>
+  <tr>
+    <th class="text-sm">Past</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumbina</span>
+</div></td>
+    <td rowspan="3" class="border-l align-middle"><div class="text-center p-1">
+  <span lang="ta">tirumbāda</span>
+</div></td>
+  </tr>
+  <tr>
+    <th class="text-sm">Present</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumbura</span>
+</div></td>
+  </tr>
+  <tr>
+    <th class="text-sm">Future</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumbum</span>
+</div></td>
+  </tr>
+
+</table>
+
+
+
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+  
+  <caption class="font-bold text-lg my-4">tirumbu (திரும்பு) &mdash; Verbal nouns</caption>
+  <tr class="text-sm !border-l-0">
+    <th class="!bg-transparent w-28">&nbsp;</th>
+    <th>Past</th>
+    <th>Present</th>
+    <th>Future</th>
+    <th>Negative</th>
+  </tr>
+
+  
+ <tr>
+    <th><div class="text-center p-1">
+  <span lang="ta">avan</span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumbinavan</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumburavan</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumbupavan</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumbādavan</span>
+</div></td>
+  </tr>
+  
+ <tr>
+    <th><div class="text-center p-1">
+  <span lang="ta">ava</span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumbinava</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumburava</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumbupava</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumbādava</span>
+</div></td>
+  </tr>
+  
+ <tr>
+    <th><div class="text-center p-1">
+  <span lang="ta">avaru</span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumbinavaru</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumburavaru</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumbupavaru</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumbādavaru</span>
+</div></td>
+  </tr>
+  
+ <tr>
+    <th><div class="text-center p-1">
+  <span lang="ta">adu</span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumbinadu</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumburadu</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumbupadu</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumbādatu</span>
+</div></td>
+  </tr>
+  
+ <tr>
+    <th><div class="text-center p-1">
+  <span lang="ta">avaṅga</span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumbinavaṅga</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumburavaṅga</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumbupavaṅga</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">tirumbādavaṅga</span>
+</div></td>
+  </tr>
+  
+
+</table>
+
+
+</div>
+
+
+
+<div x-show="activeTab === 1">
+
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+  
+  <caption class="font-bold text-lg my-4">tirumbu (திரும்பு) &mdash; Statements</caption>
+  <tr class="text-sm !border-l-0">
+    <th class="!bg-transparent w-28">&nbsp;</th>
+    <th>Past</th>
+    <th>Present</th>
+    <th>Future</th>
+    <th>Negative non-future</th>
+    <th>Negative future</th>
+  </tr>
+
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">நான்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">nān</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">திரும்பினேன்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbinēn</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">திரும்புகிறேன்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbugirēn</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">திரும்புவேன்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbuvēn</span></span>
+</div></td>
+    
+      <td rowspan="10" class="text-center align-middle border-r border-l">
+        <div class="text-center p-1">
+  <span class="text-lg">திரும்பவில்லை</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbavillai</span></span>
+</div>
+      </td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">திரும்பமாட்டேன்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbamāʈʈēn</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">நீ</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">nī</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">திரும்பினாய்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbināy</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">திரும்புகிறாய்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbugirāy</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">திரும்புவாய்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbuvāy</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">திரும்பமாட்டாய்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbamāʈʈāy</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அவன்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">avan</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">திரும்பினான்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbinān</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">திரும்புகிறான்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbugirān</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">திரும்புவான்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbuvān</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">திரும்பமாட்டான்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbamāʈʈān</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அவள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">avaɭ</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">திரும்பினாள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbināɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">திரும்புகிறாள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbugirāɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">திரும்புவாள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbuvāɭ</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">திரும்பமாட்டாள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbamāʈʈāɭ</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அவர்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">avar</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">திரும்பினார்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbinār</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">திரும்புகிறார்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbugirār</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">திரும்புவார்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbuvār</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">திரும்பமாட்டார்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbamāʈʈār</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அது</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">adu</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">திரும்பினது</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbinadu</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">திரும்புகிறது</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbugiradu</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">திரும்பும்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbum</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">திரும்பாது</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbādu</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">நாங்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">nāṅgaɭ</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">திரும்பினோம்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbinōm</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">திரும்புகிறோம்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbugirōm</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">திரும்புவோம்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbuvōm</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">திரும்பமாட்டோம்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbamāʈʈōm</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">நீங்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">nīṅgaɭ</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">திரும்பினீர்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbinīrgaɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">திரும்புகிறீர்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbugirīrgaɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">திரும்புவீர்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbuvīrgaɭ</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">திரும்பமாட்டீர்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbamāʈʈīrgaɭ</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அவர்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">avargaɭ</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">திரும்பினார்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbinārgaɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">திரும்புகிறார்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbugirārgaɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">திரும்புவார்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbuvārgaɭ</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">திரும்பமாட்டார்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbamāʈʈārgaɭ</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அவை</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">avai</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">திரும்பன</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbana</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">திரும்புகிற்ன்றன</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbugirnrana</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">திரும்பன</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbana</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">திரும்பா</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">tirumbā</span></span>
+</div></td>
+  </tr>
+  
+
+</table>
+
+
+
+
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+  
+  <caption class="font-bold text-lg my-4">tirumbu (திரும்பு) &mdash; Commands</caption>
+  <tr class="text-sm !border-l-0">
+    <th class="!bg-transparent">&nbsp;</th><th>Positive</th><th>Negative</th>
+  </tr>
+  <tr>
+    <th class="text-sm">Singular</th>
+    <td><div class="text-center p-1">
   <span class="text-lg">திரும்பு</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tirumbu</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">திரும்பாதே</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tirumbādē</span></span>
 </div></td>
   </tr>
   <tr>
     <th class="text-sm">Plural</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">திரும்புங்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tirumbuṅgaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">திரும்பாதீர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tirumbādīrgaɭ</span></span>
 </div></td>
@@ -355,7 +777,7 @@
     <th class="!bg-transparent">&nbsp;</th><th>Positive</th><th>Negative</th>
   </tr>
   <tr>
-    <th class="text-sm">Infinitive<br>("to do X")</th><td><div class="text-center py-1">
+    <th class="text-sm">Infinitive<br>("to do X")</th><td><div class="text-center p-1">
   <span class="text-lg">திரும்ப</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tirumba</span></span>
 </div></td>
@@ -363,18 +785,18 @@
   </tr>
   <tr>
     <th class="text-sm">Adverb<br>("having done X")</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">திரும்பி</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tirumbi</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">திரும்பாமல்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tirumbāmal</span></span>
 </div></td>
   </tr>
   <tr>
     <th class="text-sm">Potential<br>("might do X")</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">திரும்பலாம்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tirumbalām</span></span>
 </div></td>
@@ -382,7 +804,7 @@
   </tr>
   <tr>
     <th class="text-sm">Permissive<br>("let do X")</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">திரும்பட்டும்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tirumbaʈʈum</span></span>
 </div></td>
@@ -390,11 +812,11 @@
   </tr>
   <tr>
     <th class="text-sm">Conditional<br>("if one does X")</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">திரும்பினால்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tirumbināl</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">திரும்பாவிட்டால்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tirumbāviʈʈāl</span></span>
 </div></td>
@@ -413,25 +835,25 @@
   </tr>
   <tr>
     <th class="text-sm">Past</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">திரும்பின</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tirumbina</span></span>
 </div></td>
-    <td rowspan="3" class="border-l align-middle"><div class="text-center py-1">
+    <td rowspan="3" class="border-l align-middle"><div class="text-center p-1">
   <span class="text-lg">திரும்பாத</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tirumbāda</span></span>
 </div></td>
   </tr>
   <tr>
     <th class="text-sm">Present</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">திரும்புகிற</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tirumbugira</span></span>
 </div></td>
   </tr>
   <tr>
     <th class="text-sm">Future</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">திரும்பும்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tirumbum</span></span>
 </div></td>
@@ -454,138 +876,138 @@
 
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அவன்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">avan</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">திரும்பினவன்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tirumbinavan</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">திரும்புகிறவன்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tirumbugiravan</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">திரும்புபவன்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tirumbubavan</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">திரும்பாதவன்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tirumbādavan</span></span>
 </div></td>
   </tr>
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அவள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">avaɭ</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">திரும்பினவள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tirumbinavaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">திரும்புகிறவள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tirumbugiravaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">திரும்புபவள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tirumbubavaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">திரும்பாதவள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tirumbādavaɭ</span></span>
 </div></td>
   </tr>
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அவர்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">avar</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">திரும்பினவர்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tirumbinavar</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">திரும்புகிறவர்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tirumbugiravar</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">திரும்புபவர்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tirumbubavar</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">திரும்பாதவர்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tirumbādavar</span></span>
 </div></td>
   </tr>
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அது</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">adu</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">திரும்பினது</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tirumbinadu</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">திரும்புகிறது</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tirumbugiradu</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">திரும்புபது</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tirumbubadu</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">திரும்பாதது</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tirumbādadu</span></span>
 </div></td>
   </tr>
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அவர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">avargaɭ</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">திரும்பினவர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tirumbinavargaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">திரும்புகிறவர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tirumbugiravargaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">திரும்புபவர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tirumbubavargaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">திரும்பாதவர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tirumbādavargaɭ</span></span>
 </div></td>
   </tr>
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அவை</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">avai</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">திரும்பினவை</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tirumbinavai</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">திரும்புகிறவை</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tirumbugiravai</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">திரும்புபவை</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tirumbubavai</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">திரும்பாதவை</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">tirumbādavai</span></span>
 </div></td>

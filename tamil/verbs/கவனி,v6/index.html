@@ -30,7 +30,9 @@
 
       
 
+
 <article class="max-w-6xl mx-auto my-24 p-4">
+
 
 <header class="mb-8">
   <h1 class="mb-2 font-bold text-3xl">kavani <span class="text-slate-400">கவனி</span></h1>
@@ -46,6 +48,22 @@
   </nav>
 </header>
 
+<div x-data="{ activeTab: 0 }">
+
+<ul class="flex my-4">
+  <li><a class="p-2 border-b-2 border-transparent"
+    :class="{'border-black': activeTab === 0}" @click.prevent="activeTab = 0" href="#">Informal</a></li>
+  <li><a class="p-2 border-b-2 border-transparent"
+    :class="{'border-black': activeTab === 1}" @click.prevent="activeTab = 1" href="#">Formal</a></li>
+</ul>
+
+
+
+<div x-show="activeTab === 0" class="my-8">
+  <aside class="text-slate-500 text-sm bg-slate-50 rounded p-2">
+    <p>(Auto-generated, use with caution! Based on the consensus dialect heard in the popular
+    media of Tamil Nadu.)</p>
+  </aside>
 
 
 
@@ -63,254 +81,168 @@
 
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">நான்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">nān</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">கவனித்தேன்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">kavanittēn</span></span>
+    <th class="text-slate-500"><span lang="ta">nān</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">kavaniccēn</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">கவனிக்கிறேன்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">kavanikkirēn</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">kavanikkirēn</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">கவனிப்பேன்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">kavanippēn</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">kavanippēn</span>
 </div></td>
     
       <td rowspan="10" class="text-center align-middle border-r border-l">
-        <div class="text-center py-1">
-  <span class="text-lg">கவனிக்கவில்லை</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">kavanikkavillai</span></span>
+        <div class="text-center p-1">
+  <span lang="ta">kavanikkale</span>
 </div>
       </td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">கவனிக்கமாட்டேன்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">kavanikkamāʈʈēn</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">kavanikkamāʈʈēn</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">நீ</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">nī</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">கவனித்தாய்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">kavanittāy</span></span>
+    <th class="text-slate-500"><span lang="ta">nī</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">kavanicce</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">கவனிக்கிறாய்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">kavanikkirāy</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">kavanikkire</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">கவனிப்பாய்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">kavanippāy</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">kavanippe</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">கவனிக்கமாட்டாய்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">kavanikkamāʈʈāy</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">kavanikkamāʈʈe</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அவன்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">avan</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">கவனித்தான்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">kavanittān</span></span>
+    <th class="text-slate-500"><span lang="ta">avan</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">kavaniccān</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">கவனிக்கிறான்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">kavanikkirān</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">kavanikkirān</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">கவனிப்பான்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">kavanippān</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">kavanippān</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">கவனிக்கமாட்டான்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">kavanikkamāʈʈān</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">kavanikkamāʈʈān</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அவள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">avaɭ</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">கவனித்தாள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">kavanittāɭ</span></span>
+    <th class="text-slate-500"><span lang="ta">ava</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">kavaniccā</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">கவனிக்கிறாள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">kavanikkirāɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">kavanikkirā</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">கவனிப்பாள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">kavanippāɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">kavanippā</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">கவனிக்கமாட்டாள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">kavanikkamāʈʈāɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">kavanikkamāʈʈā</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அவர்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">avar</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">கவனித்தார்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">kavanittār</span></span>
+    <th class="text-slate-500"><span lang="ta">avaru</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">kavaniccāru</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">கவனிக்கிறார்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">kavanikkirār</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">kavanikkirāru</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">கவனிப்பார்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">kavanippār</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">kavanippāru</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">கவனிக்கமாட்டார்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">kavanikkamāʈʈār</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">kavanikkamāʈʈāru</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அது</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">adu</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">கவனித்தது</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">kavanittadu</span></span>
+    <th class="text-slate-500"><span lang="ta">adu</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">kavaniccadu</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">கவனிக்கிறது</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">kavanikkiradu</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">kavanikkiradu</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">கவனிக்கும்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">kavanikkum</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">kavanikkum</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">கவனிக்காது</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">kavanikkādu</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">kavanikkādu</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">நாங்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">nāṅgaɭ</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">கவனித்தோம்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">kavanittōm</span></span>
+    <th class="text-slate-500"><span lang="ta">nāṅga</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">kavaniccōm</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">கவனிக்கிறோம்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">kavanikkirōm</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">kavanikkirōm</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">கவனிப்போம்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">kavanippōm</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">kavanippōm</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">கவனிக்கமாட்டோம்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">kavanikkamāʈʈōm</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">kavanikkamāʈʈōm</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">நீங்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">nīṅgaɭ</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">கவனித்தீர்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">kavanittīrgaɭ</span></span>
+    <th class="text-slate-500"><span lang="ta">nīṅga</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">kavaniccīṅga</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">கவனிக்கிறீர்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">kavanikkirīrgaɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">kavanikkirīṅga</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">கவனிப்பீர்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">kavanippīrgaɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">kavanippīṅga</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">கவனிக்கமாட்டீர்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">kavanikkamāʈʈīrgaɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">kavanikkamāʈʈīṅga</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அவர்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">avargaɭ</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">கவனித்தார்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">kavanittārgaɭ</span></span>
+    <th class="text-slate-500"><span lang="ta">avaṅga</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">kavaniccāṅga</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">கவனிக்கிறார்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">kavanikkirārgaɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">kavanikkirāṅga</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">கவனிப்பார்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">kavanippārgaɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">kavanippāṅga</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">கவனிக்கமாட்டார்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">kavanikkamāʈʈārgaɭ</span></span>
-</div></td>
-  </tr>
-  
-  <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அவை</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">avai</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">கவனித்தன</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">kavanittana</span></span>
-</div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">கவனிக்கின்றன</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">kavanikkinrana</span></span>
-</div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">கவனிப்பன</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">kavanippana</span></span>
-</div></td>
-    
-    <td><div class="text-center py-1">
-  <span class="text-lg">கவனியா</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">kavaniyā</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">kavanikkamāʈʈāṅga</span>
 </div></td>
   </tr>
   
 
 </table>
+
+
 
 
 
@@ -322,22 +254,512 @@
   </tr>
   <tr>
     <th class="text-sm">Singular</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
+  <span lang="ta">kavani</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">kavanikkādē</span>
+</div></td>
+  </tr>
+  <tr>
+    <th class="text-sm">Plural</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">kavaniṅga</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">kavanikkādīṅga</span>
+</div></td>
+  </tr>
+
+</table>
+
+
+
+
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+  
+  <caption class="font-bold text-lg my-4">kavani (கவனி) &mdash; Non-finite verbs</caption>
+  <tr class="text-sm !border-l-0">
+    <th class="!bg-transparent">&nbsp;</th><th>Positive</th><th>Negative</th>
+  </tr>
+  <tr>
+    <th class="text-sm">Infinitive<br>("to do X")</th><td><div class="text-center p-1">
+  <span lang="ta">kavanikka</span>
+</div></td>
+    <td class="text-center">&mdash;</td>
+  </tr>
+  <tr>
+    <th class="text-sm">Adverb<br>("having done X")</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">kavaniccu</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">kavanikkāma</span>
+</div></td>
+  </tr>
+  <tr>
+    <th class="text-sm">Potential<br>("might do X")</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">kavanikkalām</span>
+</div></td>
+    <td class="text-center">&mdash;</td>
+  </tr>
+  <tr>
+    <th class="text-sm">Permissive<br>("let do X")</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">kavanikkaʈʈum</span>
+</div></td>
+    <td class="text-center">&mdash;</td>
+  </tr>
+  <tr>
+    <th class="text-sm">Conditional<br>("if one does X")</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">kavaniccā</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">kavanikkāʈʈā</span>
+</div></td>
+  </tr>
+
+</table>
+
+
+
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+  
+  <caption class="font-bold text-lg my-4">kavani (கவனி) &mdash; Verbal adjectives</caption>
+
+  <tr class="text-sm !border-l-0">
+    <th class="!bg-transparent">&nbsp;</th><th>Positive</th><th>Negative</th>
+  </tr>
+  <tr>
+    <th class="text-sm">Past</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">kavanicca</span>
+</div></td>
+    <td rowspan="3" class="border-l align-middle"><div class="text-center p-1">
+  <span lang="ta">kavanikkāda</span>
+</div></td>
+  </tr>
+  <tr>
+    <th class="text-sm">Present</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">kavanikkira</span>
+</div></td>
+  </tr>
+  <tr>
+    <th class="text-sm">Future</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">kavanikkum</span>
+</div></td>
+  </tr>
+
+</table>
+
+
+
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+  
+  <caption class="font-bold text-lg my-4">kavani (கவனி) &mdash; Verbal nouns</caption>
+  <tr class="text-sm !border-l-0">
+    <th class="!bg-transparent w-28">&nbsp;</th>
+    <th>Past</th>
+    <th>Present</th>
+    <th>Future</th>
+    <th>Negative</th>
+  </tr>
+
+  
+ <tr>
+    <th><div class="text-center p-1">
+  <span lang="ta">avan</span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">kavaniccavan</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">kavanikkiravan</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">kavanippavan</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">kavanikkādavan</span>
+</div></td>
+  </tr>
+  
+ <tr>
+    <th><div class="text-center p-1">
+  <span lang="ta">ava</span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">kavaniccava</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">kavanikkirava</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">kavanippava</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">kavanikkādava</span>
+</div></td>
+  </tr>
+  
+ <tr>
+    <th><div class="text-center p-1">
+  <span lang="ta">avaru</span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">kavaniccavaru</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">kavanikkiravaru</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">kavanippavaru</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">kavanikkādavaru</span>
+</div></td>
+  </tr>
+  
+ <tr>
+    <th><div class="text-center p-1">
+  <span lang="ta">adu</span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">kavaniccadu</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">kavanikkiradu</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">kavanippadu</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">kavanikkādatu</span>
+</div></td>
+  </tr>
+  
+ <tr>
+    <th><div class="text-center p-1">
+  <span lang="ta">avaṅga</span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">kavaniccavaṅga</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">kavanikkiravaṅga</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">kavanippavaṅga</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">kavanikkādavaṅga</span>
+</div></td>
+  </tr>
+  
+
+</table>
+
+
+</div>
+
+
+
+<div x-show="activeTab === 1">
+
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+  
+  <caption class="font-bold text-lg my-4">kavani (கவனி) &mdash; Statements</caption>
+  <tr class="text-sm !border-l-0">
+    <th class="!bg-transparent w-28">&nbsp;</th>
+    <th>Past</th>
+    <th>Present</th>
+    <th>Future</th>
+    <th>Negative non-future</th>
+    <th>Negative future</th>
+  </tr>
+
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">நான்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">nān</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">கவனித்தேன்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">kavanittēn</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">கவனிக்கிறேன்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">kavanikkirēn</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">கவனிப்பேன்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">kavanippēn</span></span>
+</div></td>
+    
+      <td rowspan="10" class="text-center align-middle border-r border-l">
+        <div class="text-center p-1">
+  <span class="text-lg">கவனிக்கவில்லை</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">kavanikkavillai</span></span>
+</div>
+      </td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">கவனிக்கமாட்டேன்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">kavanikkamāʈʈēn</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">நீ</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">nī</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">கவனித்தாய்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">kavanittāy</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">கவனிக்கிறாய்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">kavanikkirāy</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">கவனிப்பாய்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">kavanippāy</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">கவனிக்கமாட்டாய்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">kavanikkamāʈʈāy</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அவன்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">avan</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">கவனித்தான்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">kavanittān</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">கவனிக்கிறான்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">kavanikkirān</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">கவனிப்பான்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">kavanippān</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">கவனிக்கமாட்டான்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">kavanikkamāʈʈān</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அவள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">avaɭ</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">கவனித்தாள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">kavanittāɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">கவனிக்கிறாள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">kavanikkirāɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">கவனிப்பாள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">kavanippāɭ</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">கவனிக்கமாட்டாள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">kavanikkamāʈʈāɭ</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அவர்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">avar</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">கவனித்தார்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">kavanittār</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">கவனிக்கிறார்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">kavanikkirār</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">கவனிப்பார்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">kavanippār</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">கவனிக்கமாட்டார்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">kavanikkamāʈʈār</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அது</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">adu</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">கவனித்தது</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">kavanittadu</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">கவனிக்கிறது</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">kavanikkiradu</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">கவனிக்கும்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">kavanikkum</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">கவனிக்காது</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">kavanikkādu</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">நாங்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">nāṅgaɭ</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">கவனித்தோம்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">kavanittōm</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">கவனிக்கிறோம்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">kavanikkirōm</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">கவனிப்போம்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">kavanippōm</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">கவனிக்கமாட்டோம்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">kavanikkamāʈʈōm</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">நீங்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">nīṅgaɭ</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">கவனித்தீர்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">kavanittīrgaɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">கவனிக்கிறீர்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">kavanikkirīrgaɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">கவனிப்பீர்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">kavanippīrgaɭ</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">கவனிக்கமாட்டீர்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">kavanikkamāʈʈīrgaɭ</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அவர்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">avargaɭ</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">கவனித்தார்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">kavanittārgaɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">கவனிக்கிறார்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">kavanikkirārgaɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">கவனிப்பார்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">kavanippārgaɭ</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">கவனிக்கமாட்டார்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">kavanikkamāʈʈārgaɭ</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அவை</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">avai</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">கவனியன</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">kavaniyana</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">கவனிக்கிற்ன்றன</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">kavanikkirnrana</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">கவனியன</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">kavaniyana</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">கவனியா</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">kavaniyā</span></span>
+</div></td>
+  </tr>
+  
+
+</table>
+
+
+
+
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+  
+  <caption class="font-bold text-lg my-4">kavani (கவனி) &mdash; Commands</caption>
+  <tr class="text-sm !border-l-0">
+    <th class="!bg-transparent">&nbsp;</th><th>Positive</th><th>Negative</th>
+  </tr>
+  <tr>
+    <th class="text-sm">Singular</th>
+    <td><div class="text-center p-1">
   <span class="text-lg">கவனி</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">kavani</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">கவனிக்காதே</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">kavanikkādē</span></span>
 </div></td>
   </tr>
   <tr>
     <th class="text-sm">Plural</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">கவனியுங்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">kavaniyuṅgaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">கவனிக்காதீர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">kavanikkādīrgaɭ</span></span>
 </div></td>
@@ -355,7 +777,7 @@
     <th class="!bg-transparent">&nbsp;</th><th>Positive</th><th>Negative</th>
   </tr>
   <tr>
-    <th class="text-sm">Infinitive<br>("to do X")</th><td><div class="text-center py-1">
+    <th class="text-sm">Infinitive<br>("to do X")</th><td><div class="text-center p-1">
   <span class="text-lg">கவனிக்க</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">kavanikka</span></span>
 </div></td>
@@ -363,18 +785,18 @@
   </tr>
   <tr>
     <th class="text-sm">Adverb<br>("having done X")</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">கவனித்து</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">kavanittu</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">கவனிக்காமல்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">kavanikkāmal</span></span>
 </div></td>
   </tr>
   <tr>
     <th class="text-sm">Potential<br>("might do X")</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">கவனிக்கலாம்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">kavanikkalām</span></span>
 </div></td>
@@ -382,7 +804,7 @@
   </tr>
   <tr>
     <th class="text-sm">Permissive<br>("let do X")</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">கவனிக்கட்டும்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">kavanikkaʈʈum</span></span>
 </div></td>
@@ -390,11 +812,11 @@
   </tr>
   <tr>
     <th class="text-sm">Conditional<br>("if one does X")</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">கவனித்தால்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">kavanittāl</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">கவனிக்காவிட்டால்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">kavanikkāviʈʈāl</span></span>
 </div></td>
@@ -413,25 +835,25 @@
   </tr>
   <tr>
     <th class="text-sm">Past</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">கவனித்த</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">kavanitta</span></span>
 </div></td>
-    <td rowspan="3" class="border-l align-middle"><div class="text-center py-1">
+    <td rowspan="3" class="border-l align-middle"><div class="text-center p-1">
   <span class="text-lg">கவனிக்காத</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">kavanikkāda</span></span>
 </div></td>
   </tr>
   <tr>
     <th class="text-sm">Present</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">கவனிக்கிற</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">kavanikkira</span></span>
 </div></td>
   </tr>
   <tr>
     <th class="text-sm">Future</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">கவனிக்கும்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">kavanikkum</span></span>
 </div></td>
@@ -454,138 +876,138 @@
 
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அவன்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">avan</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">கவனித்தவன்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">kavanittavan</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">கவனிக்கிறவன்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">kavanikkiravan</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">கவனிப்பவன்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">kavanippavan</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">கவனிக்காதவன்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">kavanikkādavan</span></span>
 </div></td>
   </tr>
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அவள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">avaɭ</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">கவனித்தவள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">kavanittavaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">கவனிக்கிறவள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">kavanikkiravaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">கவனிப்பவள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">kavanippavaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">கவனிக்காதவள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">kavanikkādavaɭ</span></span>
 </div></td>
   </tr>
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அவர்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">avar</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">கவனித்தவர்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">kavanittavar</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">கவனிக்கிறவர்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">kavanikkiravar</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">கவனிப்பவர்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">kavanippavar</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">கவனிக்காதவர்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">kavanikkādavar</span></span>
 </div></td>
   </tr>
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அது</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">adu</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">கவனித்தது</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">kavanittadu</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">கவனிக்கிறது</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">kavanikkiradu</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">கவனிப்பது</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">kavanippadu</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">கவனிக்காதது</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">kavanikkādadu</span></span>
 </div></td>
   </tr>
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அவர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">avargaɭ</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">கவனித்தவர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">kavanittavargaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">கவனிக்கிறவர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">kavanikkiravargaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">கவனிப்பவர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">kavanippavargaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">கவனிக்காதவர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">kavanikkādavargaɭ</span></span>
 </div></td>
   </tr>
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அவை</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">avai</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">கவனித்தவை</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">kavanittavai</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">கவனிக்கிறவை</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">kavanikkiravai</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">கவனிப்பவை</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">kavanippavai</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">கவனிக்காதவை</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">kavanikkādavai</span></span>
 </div></td>

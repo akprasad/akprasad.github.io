@@ -30,7 +30,9 @@
 
       
 
+
 <article class="max-w-6xl mx-auto my-24 p-4">
+
 
 <header class="mb-8">
   <h1 class="mb-2 font-bold text-3xl">viniyōgi <span class="text-slate-400">விநியோகி</span></h1>
@@ -46,6 +48,22 @@
   </nav>
 </header>
 
+<div x-data="{ activeTab: 0 }">
+
+<ul class="flex my-4">
+  <li><a class="p-2 border-b-2 border-transparent"
+    :class="{'border-black': activeTab === 0}" @click.prevent="activeTab = 0" href="#">Informal</a></li>
+  <li><a class="p-2 border-b-2 border-transparent"
+    :class="{'border-black': activeTab === 1}" @click.prevent="activeTab = 1" href="#">Formal</a></li>
+</ul>
+
+
+
+<div x-show="activeTab === 0" class="my-8">
+  <aside class="text-slate-500 text-sm bg-slate-50 rounded p-2">
+    <p>(Auto-generated, use with caution! Based on the consensus dialect heard in the popular
+    media of Tamil Nadu.)</p>
+  </aside>
 
 
 
@@ -63,254 +81,168 @@
 
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">நான்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">nān</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">விநியோகித்தேன்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgittēn</span></span>
+    <th class="text-slate-500"><span lang="ta">nān</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgiccēn</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">விநியோகிக்கிறேன்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgikkirēn</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgikkirēn</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">விநியோகிப்பேன்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgippēn</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgippēn</span>
 </div></td>
     
       <td rowspan="10" class="text-center align-middle border-r border-l">
-        <div class="text-center py-1">
-  <span class="text-lg">விநியோகிக்கவில்லை</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgikkavillai</span></span>
+        <div class="text-center p-1">
+  <span lang="ta">viniyōgikkale</span>
 </div>
       </td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">விநியோகிக்கமாட்டேன்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgikkamāʈʈēn</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgikkamāʈʈēn</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">நீ</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">nī</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">விநியோகித்தாய்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgittāy</span></span>
+    <th class="text-slate-500"><span lang="ta">nī</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgicce</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">விநியோகிக்கிறாய்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgikkirāy</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgikkire</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">விநியோகிப்பாய்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgippāy</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgippe</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">விநியோகிக்கமாட்டாய்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgikkamāʈʈāy</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgikkamāʈʈe</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அவன்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">avan</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">விநியோகித்தான்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgittān</span></span>
+    <th class="text-slate-500"><span lang="ta">avan</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgiccān</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">விநியோகிக்கிறான்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgikkirān</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgikkirān</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">விநியோகிப்பான்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgippān</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgippān</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">விநியோகிக்கமாட்டான்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgikkamāʈʈān</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgikkamāʈʈān</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அவள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">avaɭ</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">விநியோகித்தாள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgittāɭ</span></span>
+    <th class="text-slate-500"><span lang="ta">ava</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgiccā</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">விநியோகிக்கிறாள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgikkirāɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgikkirā</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">விநியோகிப்பாள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgippāɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgippā</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">விநியோகிக்கமாட்டாள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgikkamāʈʈāɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgikkamāʈʈā</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அவர்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">avar</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">விநியோகித்தார்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgittār</span></span>
+    <th class="text-slate-500"><span lang="ta">avaru</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgiccāru</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">விநியோகிக்கிறார்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgikkirār</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgikkirāru</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">விநியோகிப்பார்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgippār</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgippāru</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">விநியோகிக்கமாட்டார்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgikkamāʈʈār</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgikkamāʈʈāru</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அது</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">adu</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">விநியோகித்தது</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgittadu</span></span>
+    <th class="text-slate-500"><span lang="ta">adu</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgiccadu</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">விநியோகிக்கிறது</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgikkiradu</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgikkiradu</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">விநியோகிக்கும்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgikkum</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgikkum</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">விநியோகிக்காது</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgikkādu</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgikkādu</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">நாங்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">nāṅgaɭ</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">விநியோகித்தோம்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgittōm</span></span>
+    <th class="text-slate-500"><span lang="ta">nāṅga</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgiccōm</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">விநியோகிக்கிறோம்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgikkirōm</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgikkirōm</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">விநியோகிப்போம்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgippōm</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgippōm</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">விநியோகிக்கமாட்டோம்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgikkamāʈʈōm</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgikkamāʈʈōm</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">நீங்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">nīṅgaɭ</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">விநியோகித்தீர்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgittīrgaɭ</span></span>
+    <th class="text-slate-500"><span lang="ta">nīṅga</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgiccīṅga</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">விநியோகிக்கிறீர்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgikkirīrgaɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgikkirīṅga</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">விநியோகிப்பீர்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgippīrgaɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgippīṅga</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">விநியோகிக்கமாட்டீர்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgikkamāʈʈīrgaɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgikkamāʈʈīṅga</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அவர்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">avargaɭ</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">விநியோகித்தார்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgittārgaɭ</span></span>
+    <th class="text-slate-500"><span lang="ta">avaṅga</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgiccāṅga</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">விநியோகிக்கிறார்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgikkirārgaɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgikkirāṅga</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">விநியோகிப்பார்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgippārgaɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgippāṅga</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">விநியோகிக்கமாட்டார்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgikkamāʈʈārgaɭ</span></span>
-</div></td>
-  </tr>
-  
-  <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அவை</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">avai</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">விநியோகித்தன</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgittana</span></span>
-</div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">விநியோகிக்கின்றன</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgikkinrana</span></span>
-</div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">விநியோகிப்பன</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgippana</span></span>
-</div></td>
-    
-    <td><div class="text-center py-1">
-  <span class="text-lg">விநியோகியா</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgiyā</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgikkamāʈʈāṅga</span>
 </div></td>
   </tr>
   
 
 </table>
+
+
 
 
 
@@ -322,22 +254,512 @@
   </tr>
   <tr>
     <th class="text-sm">Singular</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgi</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgikkādē</span>
+</div></td>
+  </tr>
+  <tr>
+    <th class="text-sm">Plural</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgiṅga</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgikkādīṅga</span>
+</div></td>
+  </tr>
+
+</table>
+
+
+
+
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+  
+  <caption class="font-bold text-lg my-4">viniyōgi (விநியோகி) &mdash; Non-finite verbs</caption>
+  <tr class="text-sm !border-l-0">
+    <th class="!bg-transparent">&nbsp;</th><th>Positive</th><th>Negative</th>
+  </tr>
+  <tr>
+    <th class="text-sm">Infinitive<br>("to do X")</th><td><div class="text-center p-1">
+  <span lang="ta">viniyōgikka</span>
+</div></td>
+    <td class="text-center">&mdash;</td>
+  </tr>
+  <tr>
+    <th class="text-sm">Adverb<br>("having done X")</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgiccu</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgikkāma</span>
+</div></td>
+  </tr>
+  <tr>
+    <th class="text-sm">Potential<br>("might do X")</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgikkalām</span>
+</div></td>
+    <td class="text-center">&mdash;</td>
+  </tr>
+  <tr>
+    <th class="text-sm">Permissive<br>("let do X")</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgikkaʈʈum</span>
+</div></td>
+    <td class="text-center">&mdash;</td>
+  </tr>
+  <tr>
+    <th class="text-sm">Conditional<br>("if one does X")</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgiccā</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgikkāʈʈā</span>
+</div></td>
+  </tr>
+
+</table>
+
+
+
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+  
+  <caption class="font-bold text-lg my-4">viniyōgi (விநியோகி) &mdash; Verbal adjectives</caption>
+
+  <tr class="text-sm !border-l-0">
+    <th class="!bg-transparent">&nbsp;</th><th>Positive</th><th>Negative</th>
+  </tr>
+  <tr>
+    <th class="text-sm">Past</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgicca</span>
+</div></td>
+    <td rowspan="3" class="border-l align-middle"><div class="text-center p-1">
+  <span lang="ta">viniyōgikkāda</span>
+</div></td>
+  </tr>
+  <tr>
+    <th class="text-sm">Present</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgikkira</span>
+</div></td>
+  </tr>
+  <tr>
+    <th class="text-sm">Future</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgikkum</span>
+</div></td>
+  </tr>
+
+</table>
+
+
+
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+  
+  <caption class="font-bold text-lg my-4">viniyōgi (விநியோகி) &mdash; Verbal nouns</caption>
+  <tr class="text-sm !border-l-0">
+    <th class="!bg-transparent w-28">&nbsp;</th>
+    <th>Past</th>
+    <th>Present</th>
+    <th>Future</th>
+    <th>Negative</th>
+  </tr>
+
+  
+ <tr>
+    <th><div class="text-center p-1">
+  <span lang="ta">avan</span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgiccavan</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgikkiravan</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgippavan</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgikkādavan</span>
+</div></td>
+  </tr>
+  
+ <tr>
+    <th><div class="text-center p-1">
+  <span lang="ta">ava</span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgiccava</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgikkirava</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgippava</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgikkādava</span>
+</div></td>
+  </tr>
+  
+ <tr>
+    <th><div class="text-center p-1">
+  <span lang="ta">avaru</span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgiccavaru</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgikkiravaru</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgippavaru</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgikkādavaru</span>
+</div></td>
+  </tr>
+  
+ <tr>
+    <th><div class="text-center p-1">
+  <span lang="ta">adu</span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgiccadu</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgikkiradu</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgippadu</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgikkādatu</span>
+</div></td>
+  </tr>
+  
+ <tr>
+    <th><div class="text-center p-1">
+  <span lang="ta">avaṅga</span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgiccavaṅga</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgikkiravaṅga</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgippavaṅga</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">viniyōgikkādavaṅga</span>
+</div></td>
+  </tr>
+  
+
+</table>
+
+
+</div>
+
+
+
+<div x-show="activeTab === 1">
+
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+  
+  <caption class="font-bold text-lg my-4">viniyōgi (விநியோகி) &mdash; Statements</caption>
+  <tr class="text-sm !border-l-0">
+    <th class="!bg-transparent w-28">&nbsp;</th>
+    <th>Past</th>
+    <th>Present</th>
+    <th>Future</th>
+    <th>Negative non-future</th>
+    <th>Negative future</th>
+  </tr>
+
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">நான்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">nān</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">விநியோகித்தேன்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgittēn</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">விநியோகிக்கிறேன்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgikkirēn</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">விநியோகிப்பேன்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgippēn</span></span>
+</div></td>
+    
+      <td rowspan="10" class="text-center align-middle border-r border-l">
+        <div class="text-center p-1">
+  <span class="text-lg">விநியோகிக்கவில்லை</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgikkavillai</span></span>
+</div>
+      </td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">விநியோகிக்கமாட்டேன்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgikkamāʈʈēn</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">நீ</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">nī</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">விநியோகித்தாய்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgittāy</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">விநியோகிக்கிறாய்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgikkirāy</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">விநியோகிப்பாய்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgippāy</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">விநியோகிக்கமாட்டாய்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgikkamāʈʈāy</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அவன்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">avan</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">விநியோகித்தான்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgittān</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">விநியோகிக்கிறான்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgikkirān</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">விநியோகிப்பான்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgippān</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">விநியோகிக்கமாட்டான்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgikkamāʈʈān</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அவள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">avaɭ</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">விநியோகித்தாள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgittāɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">விநியோகிக்கிறாள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgikkirāɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">விநியோகிப்பாள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgippāɭ</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">விநியோகிக்கமாட்டாள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgikkamāʈʈāɭ</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அவர்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">avar</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">விநியோகித்தார்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgittār</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">விநியோகிக்கிறார்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgikkirār</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">விநியோகிப்பார்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgippār</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">விநியோகிக்கமாட்டார்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgikkamāʈʈār</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அது</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">adu</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">விநியோகித்தது</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgittadu</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">விநியோகிக்கிறது</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgikkiradu</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">விநியோகிக்கும்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgikkum</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">விநியோகிக்காது</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgikkādu</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">நாங்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">nāṅgaɭ</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">விநியோகித்தோம்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgittōm</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">விநியோகிக்கிறோம்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgikkirōm</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">விநியோகிப்போம்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgippōm</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">விநியோகிக்கமாட்டோம்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgikkamāʈʈōm</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">நீங்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">nīṅgaɭ</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">விநியோகித்தீர்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgittīrgaɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">விநியோகிக்கிறீர்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgikkirīrgaɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">விநியோகிப்பீர்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgippīrgaɭ</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">விநியோகிக்கமாட்டீர்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgikkamāʈʈīrgaɭ</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அவர்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">avargaɭ</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">விநியோகித்தார்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgittārgaɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">விநியோகிக்கிறார்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgikkirārgaɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">விநியோகிப்பார்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgippārgaɭ</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">விநியோகிக்கமாட்டார்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgikkamāʈʈārgaɭ</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அவை</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">avai</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">விநியோகியன</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgiyana</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">விநியோகிக்கிற்ன்றன</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgikkirnrana</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">விநியோகியன</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgiyana</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">விநியோகியா</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgiyā</span></span>
+</div></td>
+  </tr>
+  
+
+</table>
+
+
+
+
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+  
+  <caption class="font-bold text-lg my-4">viniyōgi (விநியோகி) &mdash; Commands</caption>
+  <tr class="text-sm !border-l-0">
+    <th class="!bg-transparent">&nbsp;</th><th>Positive</th><th>Negative</th>
+  </tr>
+  <tr>
+    <th class="text-sm">Singular</th>
+    <td><div class="text-center p-1">
   <span class="text-lg">விநியோகி</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgi</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விநியோகிக்காதே</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgikkādē</span></span>
 </div></td>
   </tr>
   <tr>
     <th class="text-sm">Plural</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விநியோகியுங்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgiyuṅgaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விநியோகிக்காதீர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgikkādīrgaɭ</span></span>
 </div></td>
@@ -355,7 +777,7 @@
     <th class="!bg-transparent">&nbsp;</th><th>Positive</th><th>Negative</th>
   </tr>
   <tr>
-    <th class="text-sm">Infinitive<br>("to do X")</th><td><div class="text-center py-1">
+    <th class="text-sm">Infinitive<br>("to do X")</th><td><div class="text-center p-1">
   <span class="text-lg">விநியோகிக்க</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgikka</span></span>
 </div></td>
@@ -363,18 +785,18 @@
   </tr>
   <tr>
     <th class="text-sm">Adverb<br>("having done X")</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விநியோகித்து</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgittu</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விநியோகிக்காமல்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgikkāmal</span></span>
 </div></td>
   </tr>
   <tr>
     <th class="text-sm">Potential<br>("might do X")</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விநியோகிக்கலாம்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgikkalām</span></span>
 </div></td>
@@ -382,7 +804,7 @@
   </tr>
   <tr>
     <th class="text-sm">Permissive<br>("let do X")</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விநியோகிக்கட்டும்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgikkaʈʈum</span></span>
 </div></td>
@@ -390,11 +812,11 @@
   </tr>
   <tr>
     <th class="text-sm">Conditional<br>("if one does X")</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விநியோகித்தால்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgittāl</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விநியோகிக்காவிட்டால்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgikkāviʈʈāl</span></span>
 </div></td>
@@ -413,25 +835,25 @@
   </tr>
   <tr>
     <th class="text-sm">Past</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விநியோகித்த</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgitta</span></span>
 </div></td>
-    <td rowspan="3" class="border-l align-middle"><div class="text-center py-1">
+    <td rowspan="3" class="border-l align-middle"><div class="text-center p-1">
   <span class="text-lg">விநியோகிக்காத</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgikkāda</span></span>
 </div></td>
   </tr>
   <tr>
     <th class="text-sm">Present</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விநியோகிக்கிற</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgikkira</span></span>
 </div></td>
   </tr>
   <tr>
     <th class="text-sm">Future</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விநியோகிக்கும்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgikkum</span></span>
 </div></td>
@@ -454,138 +876,138 @@
 
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அவன்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">avan</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விநியோகித்தவன்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgittavan</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விநியோகிக்கிறவன்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgikkiravan</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விநியோகிப்பவன்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgippavan</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விநியோகிக்காதவன்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgikkādavan</span></span>
 </div></td>
   </tr>
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அவள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">avaɭ</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விநியோகித்தவள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgittavaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விநியோகிக்கிறவள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgikkiravaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விநியோகிப்பவள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgippavaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விநியோகிக்காதவள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgikkādavaɭ</span></span>
 </div></td>
   </tr>
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அவர்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">avar</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விநியோகித்தவர்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgittavar</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விநியோகிக்கிறவர்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgikkiravar</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விநியோகிப்பவர்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgippavar</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விநியோகிக்காதவர்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgikkādavar</span></span>
 </div></td>
   </tr>
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அது</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">adu</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விநியோகித்தது</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgittadu</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விநியோகிக்கிறது</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgikkiradu</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விநியோகிப்பது</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgippadu</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விநியோகிக்காதது</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgikkādadu</span></span>
 </div></td>
   </tr>
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அவர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">avargaɭ</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விநியோகித்தவர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgittavargaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விநியோகிக்கிறவர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgikkiravargaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விநியோகிப்பவர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgippavargaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விநியோகிக்காதவர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgikkādavargaɭ</span></span>
 </div></td>
   </tr>
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அவை</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">avai</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விநியோகித்தவை</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgittavai</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விநியோகிக்கிறவை</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgikkiravai</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விநியோகிப்பவை</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgippavai</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">விநியோகிக்காதவை</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">viniyōgikkādavai</span></span>
 </div></td>

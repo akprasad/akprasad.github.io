@@ -30,7 +30,9 @@
 
       
 
+
 <article class="max-w-6xl mx-auto my-24 p-4">
+
 
 <header class="mb-8">
   <h1 class="mb-2 font-bold text-3xl">pey <span class="text-slate-400">பெய்</span></h1>
@@ -46,6 +48,22 @@
   </nav>
 </header>
 
+<div x-data="{ activeTab: 0 }">
+
+<ul class="flex my-4">
+  <li><a class="p-2 border-b-2 border-transparent"
+    :class="{'border-black': activeTab === 0}" @click.prevent="activeTab = 0" href="#">Informal</a></li>
+  <li><a class="p-2 border-b-2 border-transparent"
+    :class="{'border-black': activeTab === 1}" @click.prevent="activeTab = 1" href="#">Formal</a></li>
+</ul>
+
+
+
+<div x-show="activeTab === 0" class="my-8">
+  <aside class="text-slate-500 text-sm bg-slate-50 rounded p-2">
+    <p>(Auto-generated, use with caution! Based on the consensus dialect heard in the popular
+    media of Tamil Nadu.)</p>
+  </aside>
 
 
 
@@ -63,254 +81,168 @@
 
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">நான்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">nān</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">பெய்தேன்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">peydēn</span></span>
+    <th class="text-slate-500"><span lang="ta">nān</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">peñjēn</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">பெய்கிறேன்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">peygirēn</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">peyrēn</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">பெய்வேன்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">peyvēn</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">peyvēn</span>
 </div></td>
     
       <td rowspan="10" class="text-center align-middle border-r border-l">
-        <div class="text-center py-1">
-  <span class="text-lg">பெய்யவில்லை</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">peyyavillai</span></span>
+        <div class="text-center p-1">
+  <span lang="ta">peyyale</span>
 </div>
       </td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">பெய்யமாட்டேன்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">peyyamāʈʈēn</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">peyyamāʈʈēn</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">நீ</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">nī</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">பெய்தாய்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">peydāy</span></span>
+    <th class="text-slate-500"><span lang="ta">nī</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">peñje</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">பெய்கிறாய்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">peygirāy</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">peyre</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">பெய்வாய்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">peyvāy</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">peyve</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">பெய்யமாட்டாய்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">peyyamāʈʈāy</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">peyyamāʈʈe</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அவன்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">avan</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">பெய்தான்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">peydān</span></span>
+    <th class="text-slate-500"><span lang="ta">avan</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">peñjān</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">பெய்கிறான்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">peygirān</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">peyrān</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">பெய்வான்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">peyvān</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">peyvān</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">பெய்யமாட்டான்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">peyyamāʈʈān</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">peyyamāʈʈān</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அவள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">avaɭ</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">பெய்தாள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">peydāɭ</span></span>
+    <th class="text-slate-500"><span lang="ta">ava</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">peñjā</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">பெய்கிறாள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">peygirāɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">peyrā</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">பெய்வாள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">peyvāɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">peyvā</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">பெய்யமாட்டாள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">peyyamāʈʈāɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">peyyamāʈʈā</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அவர்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">avar</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">பெய்தார்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">peydār</span></span>
+    <th class="text-slate-500"><span lang="ta">avaru</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">peñjāru</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">பெய்கிறார்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">peygirār</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">peyrāru</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">பெய்வார்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">peyvār</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">peyvāru</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">பெய்யமாட்டார்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">peyyamāʈʈār</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">peyyamāʈʈāru</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அது</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">adu</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">பெய்தது</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">peydadu</span></span>
+    <th class="text-slate-500"><span lang="ta">adu</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">peñjadu</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">பெய்கிறது</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">peygiradu</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">peyradu</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">பெய்யும்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">peyyum</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">peyyum</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">பெய்யாது</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">peyyādu</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">peyyādu</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">நாங்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">nāṅgaɭ</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">பெய்தோம்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">peydōm</span></span>
+    <th class="text-slate-500"><span lang="ta">nāṅga</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">peñjōm</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">பெய்கிறோம்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">peygirōm</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">peyrōm</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">பெய்வோம்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">peyvōm</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">peyvōm</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">பெய்யமாட்டோம்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">peyyamāʈʈōm</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">peyyamāʈʈōm</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">நீங்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">nīṅgaɭ</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">பெய்தீர்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">peydīrgaɭ</span></span>
+    <th class="text-slate-500"><span lang="ta">nīṅga</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">peñjīṅga</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">பெய்கிறீர்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">peygirīrgaɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">peyrīṅga</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">பெய்வீர்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">peyvīrgaɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">peyvīṅga</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">பெய்யமாட்டீர்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">peyyamāʈʈīrgaɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">peyyamāʈʈīṅga</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அவர்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">avargaɭ</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">பெய்தார்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">peydārgaɭ</span></span>
+    <th class="text-slate-500"><span lang="ta">avaṅga</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">peñjāṅga</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">பெய்கிறார்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">peygirārgaɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">peyrāṅga</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">பெய்வார்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">peyvārgaɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">peyvāṅga</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">பெய்யமாட்டார்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">peyyamāʈʈārgaɭ</span></span>
-</div></td>
-  </tr>
-  
-  <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அவை</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">avai</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">பெய்தன</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">peydana</span></span>
-</div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">பெய்கின்றன</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">peyginrana</span></span>
-</div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">பெய்வன</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">peyvana</span></span>
-</div></td>
-    
-    <td><div class="text-center py-1">
-  <span class="text-lg">பெயா</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">peyā</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">peyyamāʈʈāṅga</span>
 </div></td>
   </tr>
   
 
 </table>
+
+
 
 
 
@@ -322,22 +254,512 @@
   </tr>
   <tr>
     <th class="text-sm">Singular</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
+  <span lang="ta">peyyi</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">peyyādē</span>
+</div></td>
+  </tr>
+  <tr>
+    <th class="text-sm">Plural</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">peyyiṅga</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">peyyādīṅga</span>
+</div></td>
+  </tr>
+
+</table>
+
+
+
+
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+  
+  <caption class="font-bold text-lg my-4">pey (பெய்) &mdash; Non-finite verbs</caption>
+  <tr class="text-sm !border-l-0">
+    <th class="!bg-transparent">&nbsp;</th><th>Positive</th><th>Negative</th>
+  </tr>
+  <tr>
+    <th class="text-sm">Infinitive<br>("to do X")</th><td><div class="text-center p-1">
+  <span lang="ta">peyya</span>
+</div></td>
+    <td class="text-center">&mdash;</td>
+  </tr>
+  <tr>
+    <th class="text-sm">Adverb<br>("having done X")</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">peñju</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">peyyāma</span>
+</div></td>
+  </tr>
+  <tr>
+    <th class="text-sm">Potential<br>("might do X")</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">peyyalām</span>
+</div></td>
+    <td class="text-center">&mdash;</td>
+  </tr>
+  <tr>
+    <th class="text-sm">Permissive<br>("let do X")</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">peyyaʈʈum</span>
+</div></td>
+    <td class="text-center">&mdash;</td>
+  </tr>
+  <tr>
+    <th class="text-sm">Conditional<br>("if one does X")</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">peñjā</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">peyyāʈʈā</span>
+</div></td>
+  </tr>
+
+</table>
+
+
+
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+  
+  <caption class="font-bold text-lg my-4">pey (பெய்) &mdash; Verbal adjectives</caption>
+
+  <tr class="text-sm !border-l-0">
+    <th class="!bg-transparent">&nbsp;</th><th>Positive</th><th>Negative</th>
+  </tr>
+  <tr>
+    <th class="text-sm">Past</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">peñja</span>
+</div></td>
+    <td rowspan="3" class="border-l align-middle"><div class="text-center p-1">
+  <span lang="ta">peyyāda</span>
+</div></td>
+  </tr>
+  <tr>
+    <th class="text-sm">Present</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">peyra</span>
+</div></td>
+  </tr>
+  <tr>
+    <th class="text-sm">Future</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">peyyum</span>
+</div></td>
+  </tr>
+
+</table>
+
+
+
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+  
+  <caption class="font-bold text-lg my-4">pey (பெய்) &mdash; Verbal nouns</caption>
+  <tr class="text-sm !border-l-0">
+    <th class="!bg-transparent w-28">&nbsp;</th>
+    <th>Past</th>
+    <th>Present</th>
+    <th>Future</th>
+    <th>Negative</th>
+  </tr>
+
+  
+ <tr>
+    <th><div class="text-center p-1">
+  <span lang="ta">avan</span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">peñjavan</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">peyravan</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">peybavan</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">peyyādavan</span>
+</div></td>
+  </tr>
+  
+ <tr>
+    <th><div class="text-center p-1">
+  <span lang="ta">ava</span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">peñjava</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">peyrava</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">peybava</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">peyyādava</span>
+</div></td>
+  </tr>
+  
+ <tr>
+    <th><div class="text-center p-1">
+  <span lang="ta">avaru</span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">peñjavaru</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">peyravaru</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">peybavaru</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">peyyādavaru</span>
+</div></td>
+  </tr>
+  
+ <tr>
+    <th><div class="text-center p-1">
+  <span lang="ta">adu</span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">peñjadu</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">peyradu</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">peybadu</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">peyyādatu</span>
+</div></td>
+  </tr>
+  
+ <tr>
+    <th><div class="text-center p-1">
+  <span lang="ta">avaṅga</span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">peñjavaṅga</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">peyravaṅga</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">peybavaṅga</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">peyyādavaṅga</span>
+</div></td>
+  </tr>
+  
+
+</table>
+
+
+</div>
+
+
+
+<div x-show="activeTab === 1">
+
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+  
+  <caption class="font-bold text-lg my-4">pey (பெய்) &mdash; Statements</caption>
+  <tr class="text-sm !border-l-0">
+    <th class="!bg-transparent w-28">&nbsp;</th>
+    <th>Past</th>
+    <th>Present</th>
+    <th>Future</th>
+    <th>Negative non-future</th>
+    <th>Negative future</th>
+  </tr>
+
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">நான்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">nān</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">பெய்தேன்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">peydēn</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">பெய்கிறேன்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">peygirēn</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">பெய்வேன்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">peyvēn</span></span>
+</div></td>
+    
+      <td rowspan="10" class="text-center align-middle border-r border-l">
+        <div class="text-center p-1">
+  <span class="text-lg">பெய்யவில்லை</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">peyyavillai</span></span>
+</div>
+      </td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">பெய்யமாட்டேன்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">peyyamāʈʈēn</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">நீ</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">nī</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">பெய்தாய்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">peydāy</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">பெய்கிறாய்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">peygirāy</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">பெய்வாய்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">peyvāy</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">பெய்யமாட்டாய்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">peyyamāʈʈāy</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அவன்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">avan</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">பெய்தான்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">peydān</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">பெய்கிறான்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">peygirān</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">பெய்வான்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">peyvān</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">பெய்யமாட்டான்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">peyyamāʈʈān</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அவள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">avaɭ</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">பெய்தாள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">peydāɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">பெய்கிறாள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">peygirāɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">பெய்வாள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">peyvāɭ</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">பெய்யமாட்டாள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">peyyamāʈʈāɭ</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அவர்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">avar</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">பெய்தார்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">peydār</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">பெய்கிறார்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">peygirār</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">பெய்வார்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">peyvār</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">பெய்யமாட்டார்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">peyyamāʈʈār</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அது</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">adu</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">பெய்தது</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">peydadu</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">பெய்கிறது</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">peygiradu</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">பெய்யும்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">peyyum</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">பெய்யாது</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">peyyādu</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">நாங்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">nāṅgaɭ</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">பெய்தோம்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">peydōm</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">பெய்கிறோம்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">peygirōm</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">பெய்வோம்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">peyvōm</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">பெய்யமாட்டோம்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">peyyamāʈʈōm</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">நீங்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">nīṅgaɭ</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">பெய்தீர்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">peydīrgaɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">பெய்கிறீர்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">peygirīrgaɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">பெய்வீர்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">peyvīrgaɭ</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">பெய்யமாட்டீர்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">peyyamāʈʈīrgaɭ</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அவர்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">avargaɭ</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">பெய்தார்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">peydārgaɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">பெய்கிறார்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">peygirārgaɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">பெய்வார்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">peyvārgaɭ</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">பெய்யமாட்டார்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">peyyamāʈʈārgaɭ</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அவை</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">avai</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">பெயன</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">peyana</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">பெய்கிற்ன்றன</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">peygirnrana</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">பெயன</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">peyana</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">பெயா</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">peyā</span></span>
+</div></td>
+  </tr>
+  
+
+</table>
+
+
+
+
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+  
+  <caption class="font-bold text-lg my-4">pey (பெய்) &mdash; Commands</caption>
+  <tr class="text-sm !border-l-0">
+    <th class="!bg-transparent">&nbsp;</th><th>Positive</th><th>Negative</th>
+  </tr>
+  <tr>
+    <th class="text-sm">Singular</th>
+    <td><div class="text-center p-1">
   <span class="text-lg">பெய்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">pey</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பெய்யாதே</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">peyyādē</span></span>
 </div></td>
   </tr>
   <tr>
     <th class="text-sm">Plural</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பெயுங்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">peyuṅgaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பெய்யாதீர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">peyyādīrgaɭ</span></span>
 </div></td>
@@ -355,7 +777,7 @@
     <th class="!bg-transparent">&nbsp;</th><th>Positive</th><th>Negative</th>
   </tr>
   <tr>
-    <th class="text-sm">Infinitive<br>("to do X")</th><td><div class="text-center py-1">
+    <th class="text-sm">Infinitive<br>("to do X")</th><td><div class="text-center p-1">
   <span class="text-lg">பெய்ய</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">peyya</span></span>
 </div></td>
@@ -363,18 +785,18 @@
   </tr>
   <tr>
     <th class="text-sm">Adverb<br>("having done X")</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பெய்து</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">peydu</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பெய்யாமல்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">peyyāmal</span></span>
 </div></td>
   </tr>
   <tr>
     <th class="text-sm">Potential<br>("might do X")</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பெய்யலாம்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">peyyalām</span></span>
 </div></td>
@@ -382,7 +804,7 @@
   </tr>
   <tr>
     <th class="text-sm">Permissive<br>("let do X")</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பெய்யட்டும்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">peyyaʈʈum</span></span>
 </div></td>
@@ -390,11 +812,11 @@
   </tr>
   <tr>
     <th class="text-sm">Conditional<br>("if one does X")</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பெய்தால்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">peydāl</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பெய்யாவிட்டால்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">peyyāviʈʈāl</span></span>
 </div></td>
@@ -413,25 +835,25 @@
   </tr>
   <tr>
     <th class="text-sm">Past</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பெய்த</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">peyda</span></span>
 </div></td>
-    <td rowspan="3" class="border-l align-middle"><div class="text-center py-1">
+    <td rowspan="3" class="border-l align-middle"><div class="text-center p-1">
   <span class="text-lg">பெய்யாத</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">peyyāda</span></span>
 </div></td>
   </tr>
   <tr>
     <th class="text-sm">Present</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பெய்கிற</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">peygira</span></span>
 </div></td>
   </tr>
   <tr>
     <th class="text-sm">Future</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பெய்யும்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">peyyum</span></span>
 </div></td>
@@ -454,138 +876,138 @@
 
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அவன்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">avan</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பெய்தவன்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">peydavan</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பெய்கிறவன்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">peygiravan</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பெய்பவன்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">peybavan</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பெய்யாதவன்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">peyyādavan</span></span>
 </div></td>
   </tr>
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அவள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">avaɭ</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பெய்தவள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">peydavaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பெய்கிறவள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">peygiravaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பெய்பவள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">peybavaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பெய்யாதவள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">peyyādavaɭ</span></span>
 </div></td>
   </tr>
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அவர்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">avar</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பெய்தவர்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">peydavar</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பெய்கிறவர்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">peygiravar</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பெய்பவர்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">peybavar</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பெய்யாதவர்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">peyyādavar</span></span>
 </div></td>
   </tr>
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அது</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">adu</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பெய்தது</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">peydadu</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பெய்கிறது</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">peygiradu</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பெய்பது</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">peybadu</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பெய்யாதது</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">peyyādadu</span></span>
 </div></td>
   </tr>
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அவர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">avargaɭ</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பெய்தவர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">peydavargaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பெய்கிறவர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">peygiravargaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பெய்பவர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">peybavargaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பெய்யாதவர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">peyyādavargaɭ</span></span>
 </div></td>
   </tr>
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அவை</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">avai</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பெய்தவை</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">peydavai</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பெய்கிறவை</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">peygiravai</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பெய்பவை</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">peybavai</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பெய்யாதவை</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">peyyādavai</span></span>
 </div></td>

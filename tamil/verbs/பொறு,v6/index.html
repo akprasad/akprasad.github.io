@@ -30,7 +30,9 @@
 
       
 
+
 <article class="max-w-6xl mx-auto my-24 p-4">
+
 
 <header class="mb-8">
   <h1 class="mb-2 font-bold text-3xl">poru <span class="text-slate-400">பொறு</span></h1>
@@ -46,6 +48,22 @@
   </nav>
 </header>
 
+<div x-data="{ activeTab: 0 }">
+
+<ul class="flex my-4">
+  <li><a class="p-2 border-b-2 border-transparent"
+    :class="{'border-black': activeTab === 0}" @click.prevent="activeTab = 0" href="#">Informal</a></li>
+  <li><a class="p-2 border-b-2 border-transparent"
+    :class="{'border-black': activeTab === 1}" @click.prevent="activeTab = 1" href="#">Formal</a></li>
+</ul>
+
+
+
+<div x-show="activeTab === 0" class="my-8">
+  <aside class="text-slate-500 text-sm bg-slate-50 rounded p-2">
+    <p>(Auto-generated, use with caution! Based on the consensus dialect heard in the popular
+    media of Tamil Nadu.)</p>
+  </aside>
 
 
 
@@ -63,254 +81,168 @@
 
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">நான்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">nān</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">பொறுத்தேன்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">poruttēn</span></span>
+    <th class="text-slate-500"><span lang="ta">nān</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">poruttēn</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">பொறுக்கிறேன்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">porukkirēn</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">porukkirēn</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">பொறுப்பேன்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">poruppēn</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">poruppēn</span>
 </div></td>
     
       <td rowspan="10" class="text-center align-middle border-r border-l">
-        <div class="text-center py-1">
-  <span class="text-lg">பொறுக்கவில்லை</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">porukkavillai</span></span>
+        <div class="text-center p-1">
+  <span lang="ta">porukkale</span>
 </div>
       </td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">பொறுக்கமாட்டேன்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">porukkamāʈʈēn</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">porukkamāʈʈēn</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">நீ</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">nī</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">பொறுத்தாய்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">poruttāy</span></span>
+    <th class="text-slate-500"><span lang="ta">nī</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">porutte</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">பொறுக்கிறாய்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">porukkirāy</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">porukkire</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">பொறுப்பாய்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">poruppāy</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">poruppe</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">பொறுக்கமாட்டாய்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">porukkamāʈʈāy</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">porukkamāʈʈe</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அவன்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">avan</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">பொறுத்தான்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">poruttān</span></span>
+    <th class="text-slate-500"><span lang="ta">avan</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">poruttān</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">பொறுக்கிறான்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">porukkirān</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">porukkirān</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">பொறுப்பான்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">poruppān</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">poruppān</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">பொறுக்கமாட்டான்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">porukkamāʈʈān</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">porukkamāʈʈān</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அவள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">avaɭ</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">பொறுத்தாள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">poruttāɭ</span></span>
+    <th class="text-slate-500"><span lang="ta">ava</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">poruttā</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">பொறுக்கிறாள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">porukkirāɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">porukkirā</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">பொறுப்பாள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">poruppāɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">poruppā</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">பொறுக்கமாட்டாள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">porukkamāʈʈāɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">porukkamāʈʈā</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அவர்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">avar</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">பொறுத்தார்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">poruttār</span></span>
+    <th class="text-slate-500"><span lang="ta">avaru</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">poruttāru</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">பொறுக்கிறார்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">porukkirār</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">porukkirāru</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">பொறுப்பார்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">poruppār</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">poruppāru</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">பொறுக்கமாட்டார்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">porukkamāʈʈār</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">porukkamāʈʈāru</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அது</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">adu</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">பொறுத்தது</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">poruttadu</span></span>
+    <th class="text-slate-500"><span lang="ta">adu</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">poruttadu</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">பொறுக்கிறது</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">porukkiradu</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">porukkiradu</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">பொறுக்கும்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">porukkum</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">porukkum</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">பொறுக்காது</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">porukkādu</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">porukkādu</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">நாங்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">nāṅgaɭ</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">பொறுத்தோம்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">poruttōm</span></span>
+    <th class="text-slate-500"><span lang="ta">nāṅga</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">poruttōm</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">பொறுக்கிறோம்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">porukkirōm</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">porukkirōm</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">பொறுப்போம்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">poruppōm</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">poruppōm</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">பொறுக்கமாட்டோம்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">porukkamāʈʈōm</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">porukkamāʈʈōm</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">நீங்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">nīṅgaɭ</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">பொறுத்தீர்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">poruttīrgaɭ</span></span>
+    <th class="text-slate-500"><span lang="ta">nīṅga</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">poruttīṅga</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">பொறுக்கிறீர்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">porukkirīrgaɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">porukkirīṅga</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">பொறுப்பீர்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">poruppīrgaɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">poruppīṅga</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">பொறுக்கமாட்டீர்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">porukkamāʈʈīrgaɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">porukkamāʈʈīṅga</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அவர்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">avargaɭ</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">பொறுத்தார்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">poruttārgaɭ</span></span>
+    <th class="text-slate-500"><span lang="ta">avaṅga</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">poruttāṅga</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">பொறுக்கிறார்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">porukkirārgaɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">porukkirāṅga</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">பொறுப்பார்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">poruppārgaɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">poruppāṅga</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">பொறுக்கமாட்டார்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">porukkamāʈʈārgaɭ</span></span>
-</div></td>
-  </tr>
-  
-  <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அவை</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">avai</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">பொறுத்தன</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">poruttana</span></span>
-</div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">பொறுக்கின்றன</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">porukkinrana</span></span>
-</div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">பொறுப்பன</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">poruppana</span></span>
-</div></td>
-    
-    <td><div class="text-center py-1">
-  <span class="text-lg">பொறா</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">porā</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">porukkamāʈʈāṅga</span>
 </div></td>
   </tr>
   
 
 </table>
+
+
 
 
 
@@ -322,22 +254,512 @@
   </tr>
   <tr>
     <th class="text-sm">Singular</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
+  <span lang="ta">poru</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">porukkādē</span>
+</div></td>
+  </tr>
+  <tr>
+    <th class="text-sm">Plural</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">poruṅga</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">porukkādīṅga</span>
+</div></td>
+  </tr>
+
+</table>
+
+
+
+
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+  
+  <caption class="font-bold text-lg my-4">poru (பொறு) &mdash; Non-finite verbs</caption>
+  <tr class="text-sm !border-l-0">
+    <th class="!bg-transparent">&nbsp;</th><th>Positive</th><th>Negative</th>
+  </tr>
+  <tr>
+    <th class="text-sm">Infinitive<br>("to do X")</th><td><div class="text-center p-1">
+  <span lang="ta">porukka</span>
+</div></td>
+    <td class="text-center">&mdash;</td>
+  </tr>
+  <tr>
+    <th class="text-sm">Adverb<br>("having done X")</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">poruttu</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">porukkāma</span>
+</div></td>
+  </tr>
+  <tr>
+    <th class="text-sm">Potential<br>("might do X")</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">porukkalām</span>
+</div></td>
+    <td class="text-center">&mdash;</td>
+  </tr>
+  <tr>
+    <th class="text-sm">Permissive<br>("let do X")</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">porukkaʈʈum</span>
+</div></td>
+    <td class="text-center">&mdash;</td>
+  </tr>
+  <tr>
+    <th class="text-sm">Conditional<br>("if one does X")</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">poruttā</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">porukkāʈʈā</span>
+</div></td>
+  </tr>
+
+</table>
+
+
+
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+  
+  <caption class="font-bold text-lg my-4">poru (பொறு) &mdash; Verbal adjectives</caption>
+
+  <tr class="text-sm !border-l-0">
+    <th class="!bg-transparent">&nbsp;</th><th>Positive</th><th>Negative</th>
+  </tr>
+  <tr>
+    <th class="text-sm">Past</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">porutta</span>
+</div></td>
+    <td rowspan="3" class="border-l align-middle"><div class="text-center p-1">
+  <span lang="ta">porukkāda</span>
+</div></td>
+  </tr>
+  <tr>
+    <th class="text-sm">Present</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">porukkira</span>
+</div></td>
+  </tr>
+  <tr>
+    <th class="text-sm">Future</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">porukkum</span>
+</div></td>
+  </tr>
+
+</table>
+
+
+
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+  
+  <caption class="font-bold text-lg my-4">poru (பொறு) &mdash; Verbal nouns</caption>
+  <tr class="text-sm !border-l-0">
+    <th class="!bg-transparent w-28">&nbsp;</th>
+    <th>Past</th>
+    <th>Present</th>
+    <th>Future</th>
+    <th>Negative</th>
+  </tr>
+
+  
+ <tr>
+    <th><div class="text-center p-1">
+  <span lang="ta">avan</span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">poruttavan</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">porukkiravan</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">poruppavan</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">porukkādavan</span>
+</div></td>
+  </tr>
+  
+ <tr>
+    <th><div class="text-center p-1">
+  <span lang="ta">ava</span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">poruttava</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">porukkirava</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">poruppava</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">porukkādava</span>
+</div></td>
+  </tr>
+  
+ <tr>
+    <th><div class="text-center p-1">
+  <span lang="ta">avaru</span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">poruttavaru</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">porukkiravaru</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">poruppavaru</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">porukkādavaru</span>
+</div></td>
+  </tr>
+  
+ <tr>
+    <th><div class="text-center p-1">
+  <span lang="ta">adu</span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">poruttadu</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">porukkiradu</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">poruppadu</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">porukkādatu</span>
+</div></td>
+  </tr>
+  
+ <tr>
+    <th><div class="text-center p-1">
+  <span lang="ta">avaṅga</span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">poruttavaṅga</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">porukkiravaṅga</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">poruppavaṅga</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">porukkādavaṅga</span>
+</div></td>
+  </tr>
+  
+
+</table>
+
+
+</div>
+
+
+
+<div x-show="activeTab === 1">
+
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+  
+  <caption class="font-bold text-lg my-4">poru (பொறு) &mdash; Statements</caption>
+  <tr class="text-sm !border-l-0">
+    <th class="!bg-transparent w-28">&nbsp;</th>
+    <th>Past</th>
+    <th>Present</th>
+    <th>Future</th>
+    <th>Negative non-future</th>
+    <th>Negative future</th>
+  </tr>
+
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">நான்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">nān</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">பொறுத்தேன்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">poruttēn</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">பொறுக்கிறேன்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">porukkirēn</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">பொறுப்பேன்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">poruppēn</span></span>
+</div></td>
+    
+      <td rowspan="10" class="text-center align-middle border-r border-l">
+        <div class="text-center p-1">
+  <span class="text-lg">பொறுக்கவில்லை</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">porukkavillai</span></span>
+</div>
+      </td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">பொறுக்கமாட்டேன்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">porukkamāʈʈēn</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">நீ</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">nī</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">பொறுத்தாய்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">poruttāy</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">பொறுக்கிறாய்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">porukkirāy</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">பொறுப்பாய்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">poruppāy</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">பொறுக்கமாட்டாய்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">porukkamāʈʈāy</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அவன்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">avan</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">பொறுத்தான்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">poruttān</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">பொறுக்கிறான்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">porukkirān</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">பொறுப்பான்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">poruppān</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">பொறுக்கமாட்டான்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">porukkamāʈʈān</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அவள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">avaɭ</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">பொறுத்தாள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">poruttāɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">பொறுக்கிறாள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">porukkirāɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">பொறுப்பாள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">poruppāɭ</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">பொறுக்கமாட்டாள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">porukkamāʈʈāɭ</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அவர்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">avar</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">பொறுத்தார்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">poruttār</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">பொறுக்கிறார்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">porukkirār</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">பொறுப்பார்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">poruppār</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">பொறுக்கமாட்டார்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">porukkamāʈʈār</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அது</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">adu</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">பொறுத்தது</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">poruttadu</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">பொறுக்கிறது</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">porukkiradu</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">பொறுக்கும்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">porukkum</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">பொறுக்காது</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">porukkādu</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">நாங்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">nāṅgaɭ</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">பொறுத்தோம்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">poruttōm</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">பொறுக்கிறோம்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">porukkirōm</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">பொறுப்போம்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">poruppōm</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">பொறுக்கமாட்டோம்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">porukkamāʈʈōm</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">நீங்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">nīṅgaɭ</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">பொறுத்தீர்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">poruttīrgaɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">பொறுக்கிறீர்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">porukkirīrgaɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">பொறுப்பீர்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">poruppīrgaɭ</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">பொறுக்கமாட்டீர்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">porukkamāʈʈīrgaɭ</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அவர்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">avargaɭ</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">பொறுத்தார்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">poruttārgaɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">பொறுக்கிறார்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">porukkirārgaɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">பொறுப்பார்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">poruppārgaɭ</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">பொறுக்கமாட்டார்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">porukkamāʈʈārgaɭ</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அவை</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">avai</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">பொறன</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">porana</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">பொறுக்கிற்ன்றன</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">porukkirnrana</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">பொறன</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">porana</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">பொறா</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">porā</span></span>
+</div></td>
+  </tr>
+  
+
+</table>
+
+
+
+
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+  
+  <caption class="font-bold text-lg my-4">poru (பொறு) &mdash; Commands</caption>
+  <tr class="text-sm !border-l-0">
+    <th class="!bg-transparent">&nbsp;</th><th>Positive</th><th>Negative</th>
+  </tr>
+  <tr>
+    <th class="text-sm">Singular</th>
+    <td><div class="text-center p-1">
   <span class="text-lg">பொறு</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">poru</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பொறுக்காதே</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">porukkādē</span></span>
 </div></td>
   </tr>
   <tr>
     <th class="text-sm">Plural</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பொறுங்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">poruṅgaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பொறுக்காதீர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">porukkādīrgaɭ</span></span>
 </div></td>
@@ -355,7 +777,7 @@
     <th class="!bg-transparent">&nbsp;</th><th>Positive</th><th>Negative</th>
   </tr>
   <tr>
-    <th class="text-sm">Infinitive<br>("to do X")</th><td><div class="text-center py-1">
+    <th class="text-sm">Infinitive<br>("to do X")</th><td><div class="text-center p-1">
   <span class="text-lg">பொறுக்க</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">porukka</span></span>
 </div></td>
@@ -363,18 +785,18 @@
   </tr>
   <tr>
     <th class="text-sm">Adverb<br>("having done X")</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பொறுத்து</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">poruttu</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பொறுக்காமல்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">porukkāmal</span></span>
 </div></td>
   </tr>
   <tr>
     <th class="text-sm">Potential<br>("might do X")</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பொறுக்கலாம்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">porukkalām</span></span>
 </div></td>
@@ -382,7 +804,7 @@
   </tr>
   <tr>
     <th class="text-sm">Permissive<br>("let do X")</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பொறுக்கட்டும்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">porukkaʈʈum</span></span>
 </div></td>
@@ -390,11 +812,11 @@
   </tr>
   <tr>
     <th class="text-sm">Conditional<br>("if one does X")</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பொறுத்தால்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">poruttāl</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பொறுக்காவிட்டால்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">porukkāviʈʈāl</span></span>
 </div></td>
@@ -413,25 +835,25 @@
   </tr>
   <tr>
     <th class="text-sm">Past</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பொறுத்த</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">porutta</span></span>
 </div></td>
-    <td rowspan="3" class="border-l align-middle"><div class="text-center py-1">
+    <td rowspan="3" class="border-l align-middle"><div class="text-center p-1">
   <span class="text-lg">பொறுக்காத</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">porukkāda</span></span>
 </div></td>
   </tr>
   <tr>
     <th class="text-sm">Present</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பொறுக்கிற</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">porukkira</span></span>
 </div></td>
   </tr>
   <tr>
     <th class="text-sm">Future</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பொறுக்கும்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">porukkum</span></span>
 </div></td>
@@ -454,138 +876,138 @@
 
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அவன்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">avan</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பொறுத்தவன்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">poruttavan</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பொறுக்கிறவன்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">porukkiravan</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பொறுப்பவன்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">poruppavan</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பொறுக்காதவன்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">porukkādavan</span></span>
 </div></td>
   </tr>
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அவள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">avaɭ</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பொறுத்தவள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">poruttavaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பொறுக்கிறவள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">porukkiravaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பொறுப்பவள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">poruppavaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பொறுக்காதவள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">porukkādavaɭ</span></span>
 </div></td>
   </tr>
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அவர்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">avar</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பொறுத்தவர்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">poruttavar</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பொறுக்கிறவர்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">porukkiravar</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பொறுப்பவர்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">poruppavar</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பொறுக்காதவர்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">porukkādavar</span></span>
 </div></td>
   </tr>
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அது</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">adu</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பொறுத்தது</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">poruttadu</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பொறுக்கிறது</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">porukkiradu</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பொறுப்பது</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">poruppadu</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பொறுக்காதது</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">porukkādadu</span></span>
 </div></td>
   </tr>
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அவர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">avargaɭ</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பொறுத்தவர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">poruttavargaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பொறுக்கிறவர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">porukkiravargaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பொறுப்பவர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">poruppavargaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பொறுக்காதவர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">porukkādavargaɭ</span></span>
 </div></td>
   </tr>
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அவை</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">avai</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பொறுத்தவை</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">poruttavai</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பொறுக்கிறவை</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">porukkiravai</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பொறுப்பவை</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">poruppavai</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">பொறுக்காதவை</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">porukkādavai</span></span>
 </div></td>

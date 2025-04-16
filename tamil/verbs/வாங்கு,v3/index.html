@@ -30,7 +30,9 @@
 
       
 
+
 <article class="max-w-6xl mx-auto my-24 p-4">
+
 
 <header class="mb-8">
   <h1 class="mb-2 font-bold text-3xl">vāṅgu <span class="text-slate-400">வாங்கு</span></h1>
@@ -46,6 +48,22 @@
   </nav>
 </header>
 
+<div x-data="{ activeTab: 0 }">
+
+<ul class="flex my-4">
+  <li><a class="p-2 border-b-2 border-transparent"
+    :class="{'border-black': activeTab === 0}" @click.prevent="activeTab = 0" href="#">Informal</a></li>
+  <li><a class="p-2 border-b-2 border-transparent"
+    :class="{'border-black': activeTab === 1}" @click.prevent="activeTab = 1" href="#">Formal</a></li>
+</ul>
+
+
+
+<div x-show="activeTab === 0" class="my-8">
+  <aside class="text-slate-500 text-sm bg-slate-50 rounded p-2">
+    <p>(Auto-generated, use with caution! Based on the consensus dialect heard in the popular
+    media of Tamil Nadu.)</p>
+  </aside>
 
 
 
@@ -63,254 +81,168 @@
 
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">நான்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">nān</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">வாங்கினேன்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅginēn</span></span>
+    <th class="text-slate-500"><span lang="ta">nān</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅginēn</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">வாங்குகிறேன்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgugirēn</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅgurēn</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">வாங்குவேன்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅguvēn</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅguvēn</span>
 </div></td>
     
       <td rowspan="10" class="text-center align-middle border-r border-l">
-        <div class="text-center py-1">
-  <span class="text-lg">வாங்கவில்லை</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgavillai</span></span>
+        <div class="text-center p-1">
+  <span lang="ta">vāṅgale</span>
 </div>
       </td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">வாங்கமாட்டேன்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgamāʈʈēn</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅgamāʈʈēn</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">நீ</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">nī</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">வாங்கினாய்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgināy</span></span>
+    <th class="text-slate-500"><span lang="ta">nī</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅgine</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">வாங்குகிறாய்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgugirāy</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅgure</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">வாங்குவாய்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅguvāy</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅguve</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">வாங்கமாட்டாய்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgamāʈʈāy</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅgamāʈʈe</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அவன்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">avan</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">வாங்கினான்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅginān</span></span>
+    <th class="text-slate-500"><span lang="ta">avan</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅginān</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">வாங்குகிறான்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgugirān</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅgurān</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">வாங்குவான்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅguvān</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅguvān</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">வாங்கமாட்டான்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgamāʈʈān</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅgamāʈʈān</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அவள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">avaɭ</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">வாங்கினாள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgināɭ</span></span>
+    <th class="text-slate-500"><span lang="ta">ava</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅginā</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">வாங்குகிறாள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgugirāɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅgurā</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">வாங்குவாள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅguvāɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅguvā</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">வாங்கமாட்டாள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgamāʈʈāɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅgamāʈʈā</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அவர்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">avar</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">வாங்கினார்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅginār</span></span>
+    <th class="text-slate-500"><span lang="ta">avaru</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅgināru</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">வாங்குகிறார்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgugirār</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅgurāru</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">வாங்குவார்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅguvār</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅguvāru</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">வாங்கமாட்டார்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgamāʈʈār</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅgamāʈʈāru</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அது</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">adu</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">வாங்கினது</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅginadu</span></span>
+    <th class="text-slate-500"><span lang="ta">adu</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅginadu</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">வாங்குகிறது</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgugiradu</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅguradu</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">வாங்கும்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgum</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅgum</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">வாங்காது</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgādu</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅgādu</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">நாங்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">nāṅgaɭ</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">வாங்கினோம்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅginōm</span></span>
+    <th class="text-slate-500"><span lang="ta">nāṅga</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅginōm</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">வாங்குகிறோம்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgugirōm</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅgurōm</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">வாங்குவோம்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅguvōm</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅguvōm</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">வாங்கமாட்டோம்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgamāʈʈōm</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅgamāʈʈōm</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">நீங்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">nīṅgaɭ</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">வாங்கினீர்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅginīrgaɭ</span></span>
+    <th class="text-slate-500"><span lang="ta">nīṅga</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅginīṅga</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">வாங்குகிறீர்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgugirīrgaɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅgurīṅga</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">வாங்குவீர்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅguvīrgaɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅguvīṅga</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">வாங்கமாட்டீர்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgamāʈʈīrgaɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅgamāʈʈīṅga</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அவர்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">avargaɭ</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">வாங்கினார்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅginārgaɭ</span></span>
+    <th class="text-slate-500"><span lang="ta">avaṅga</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅgināṅga</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">வாங்குகிறார்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgugirārgaɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅgurāṅga</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">வாங்குவார்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅguvārgaɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅguvāṅga</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">வாங்கமாட்டார்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgamāʈʈārgaɭ</span></span>
-</div></td>
-  </tr>
-  
-  <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அவை</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">avai</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">வாங்கினன</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅginana</span></span>
-</div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">வாங்குகின்றன</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅguginrana</span></span>
-</div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">வாங்குவன</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅguvana</span></span>
-</div></td>
-    
-    <td><div class="text-center py-1">
-  <span class="text-lg">வாங்கா</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgā</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅgamāʈʈāṅga</span>
 </div></td>
   </tr>
   
 
 </table>
+
+
 
 
 
@@ -322,22 +254,512 @@
   </tr>
   <tr>
     <th class="text-sm">Singular</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅgu</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅgādē</span>
+</div></td>
+  </tr>
+  <tr>
+    <th class="text-sm">Plural</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅguṅga</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅgādīṅga</span>
+</div></td>
+  </tr>
+
+</table>
+
+
+
+
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+  
+  <caption class="font-bold text-lg my-4">vāṅgu (வாங்கு) &mdash; Non-finite verbs</caption>
+  <tr class="text-sm !border-l-0">
+    <th class="!bg-transparent">&nbsp;</th><th>Positive</th><th>Negative</th>
+  </tr>
+  <tr>
+    <th class="text-sm">Infinitive<br>("to do X")</th><td><div class="text-center p-1">
+  <span lang="ta">vāṅga</span>
+</div></td>
+    <td class="text-center">&mdash;</td>
+  </tr>
+  <tr>
+    <th class="text-sm">Adverb<br>("having done X")</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅgi</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅgāma</span>
+</div></td>
+  </tr>
+  <tr>
+    <th class="text-sm">Potential<br>("might do X")</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅgalām</span>
+</div></td>
+    <td class="text-center">&mdash;</td>
+  </tr>
+  <tr>
+    <th class="text-sm">Permissive<br>("let do X")</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅgaʈʈum</span>
+</div></td>
+    <td class="text-center">&mdash;</td>
+  </tr>
+  <tr>
+    <th class="text-sm">Conditional<br>("if one does X")</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅginā</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅgāʈʈā</span>
+</div></td>
+  </tr>
+
+</table>
+
+
+
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+  
+  <caption class="font-bold text-lg my-4">vāṅgu (வாங்கு) &mdash; Verbal adjectives</caption>
+
+  <tr class="text-sm !border-l-0">
+    <th class="!bg-transparent">&nbsp;</th><th>Positive</th><th>Negative</th>
+  </tr>
+  <tr>
+    <th class="text-sm">Past</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅgina</span>
+</div></td>
+    <td rowspan="3" class="border-l align-middle"><div class="text-center p-1">
+  <span lang="ta">vāṅgāda</span>
+</div></td>
+  </tr>
+  <tr>
+    <th class="text-sm">Present</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅgura</span>
+</div></td>
+  </tr>
+  <tr>
+    <th class="text-sm">Future</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅgum</span>
+</div></td>
+  </tr>
+
+</table>
+
+
+
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+  
+  <caption class="font-bold text-lg my-4">vāṅgu (வாங்கு) &mdash; Verbal nouns</caption>
+  <tr class="text-sm !border-l-0">
+    <th class="!bg-transparent w-28">&nbsp;</th>
+    <th>Past</th>
+    <th>Present</th>
+    <th>Future</th>
+    <th>Negative</th>
+  </tr>
+
+  
+ <tr>
+    <th><div class="text-center p-1">
+  <span lang="ta">avan</span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅginavan</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅguravan</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅgubavan</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅgādavan</span>
+</div></td>
+  </tr>
+  
+ <tr>
+    <th><div class="text-center p-1">
+  <span lang="ta">ava</span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅginava</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅgurava</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅgubava</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅgādava</span>
+</div></td>
+  </tr>
+  
+ <tr>
+    <th><div class="text-center p-1">
+  <span lang="ta">avaru</span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅginavaru</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅguravaru</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅgubavaru</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅgādavaru</span>
+</div></td>
+  </tr>
+  
+ <tr>
+    <th><div class="text-center p-1">
+  <span lang="ta">adu</span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅginadu</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅguradu</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅgubadu</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅgādatu</span>
+</div></td>
+  </tr>
+  
+ <tr>
+    <th><div class="text-center p-1">
+  <span lang="ta">avaṅga</span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅginavaṅga</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅguravaṅga</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅgubavaṅga</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">vāṅgādavaṅga</span>
+</div></td>
+  </tr>
+  
+
+</table>
+
+
+</div>
+
+
+
+<div x-show="activeTab === 1">
+
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+  
+  <caption class="font-bold text-lg my-4">vāṅgu (வாங்கு) &mdash; Statements</caption>
+  <tr class="text-sm !border-l-0">
+    <th class="!bg-transparent w-28">&nbsp;</th>
+    <th>Past</th>
+    <th>Present</th>
+    <th>Future</th>
+    <th>Negative non-future</th>
+    <th>Negative future</th>
+  </tr>
+
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">நான்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">nān</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">வாங்கினேன்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅginēn</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">வாங்குகிறேன்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgugirēn</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">வாங்குவேன்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅguvēn</span></span>
+</div></td>
+    
+      <td rowspan="10" class="text-center align-middle border-r border-l">
+        <div class="text-center p-1">
+  <span class="text-lg">வாங்கவில்லை</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgavillai</span></span>
+</div>
+      </td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">வாங்கமாட்டேன்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgamāʈʈēn</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">நீ</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">nī</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">வாங்கினாய்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgināy</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">வாங்குகிறாய்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgugirāy</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">வாங்குவாய்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅguvāy</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">வாங்கமாட்டாய்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgamāʈʈāy</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அவன்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">avan</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">வாங்கினான்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅginān</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">வாங்குகிறான்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgugirān</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">வாங்குவான்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅguvān</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">வாங்கமாட்டான்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgamāʈʈān</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அவள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">avaɭ</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">வாங்கினாள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgināɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">வாங்குகிறாள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgugirāɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">வாங்குவாள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅguvāɭ</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">வாங்கமாட்டாள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgamāʈʈāɭ</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அவர்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">avar</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">வாங்கினார்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅginār</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">வாங்குகிறார்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgugirār</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">வாங்குவார்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅguvār</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">வாங்கமாட்டார்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgamāʈʈār</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அது</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">adu</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">வாங்கினது</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅginadu</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">வாங்குகிறது</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgugiradu</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">வாங்கும்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgum</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">வாங்காது</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgādu</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">நாங்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">nāṅgaɭ</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">வாங்கினோம்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅginōm</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">வாங்குகிறோம்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgugirōm</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">வாங்குவோம்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅguvōm</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">வாங்கமாட்டோம்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgamāʈʈōm</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">நீங்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">nīṅgaɭ</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">வாங்கினீர்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅginīrgaɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">வாங்குகிறீர்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgugirīrgaɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">வாங்குவீர்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅguvīrgaɭ</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">வாங்கமாட்டீர்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgamāʈʈīrgaɭ</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அவர்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">avargaɭ</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">வாங்கினார்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅginārgaɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">வாங்குகிறார்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgugirārgaɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">வாங்குவார்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅguvārgaɭ</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">வாங்கமாட்டார்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgamāʈʈārgaɭ</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அவை</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">avai</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">வாங்கன</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgana</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">வாங்குகிற்ன்றன</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgugirnrana</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">வாங்கன</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgana</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">வாங்கா</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgā</span></span>
+</div></td>
+  </tr>
+  
+
+</table>
+
+
+
+
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+  
+  <caption class="font-bold text-lg my-4">vāṅgu (வாங்கு) &mdash; Commands</caption>
+  <tr class="text-sm !border-l-0">
+    <th class="!bg-transparent">&nbsp;</th><th>Positive</th><th>Negative</th>
+  </tr>
+  <tr>
+    <th class="text-sm">Singular</th>
+    <td><div class="text-center p-1">
   <span class="text-lg">வாங்கு</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgu</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">வாங்காதே</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgādē</span></span>
 </div></td>
   </tr>
   <tr>
     <th class="text-sm">Plural</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">வாங்குங்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">vāṅguṅgaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">வாங்காதீர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgādīrgaɭ</span></span>
 </div></td>
@@ -355,7 +777,7 @@
     <th class="!bg-transparent">&nbsp;</th><th>Positive</th><th>Negative</th>
   </tr>
   <tr>
-    <th class="text-sm">Infinitive<br>("to do X")</th><td><div class="text-center py-1">
+    <th class="text-sm">Infinitive<br>("to do X")</th><td><div class="text-center p-1">
   <span class="text-lg">வாங்க</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">vāṅga</span></span>
 </div></td>
@@ -363,18 +785,18 @@
   </tr>
   <tr>
     <th class="text-sm">Adverb<br>("having done X")</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">வாங்கி</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgi</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">வாங்காமல்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgāmal</span></span>
 </div></td>
   </tr>
   <tr>
     <th class="text-sm">Potential<br>("might do X")</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">வாங்கலாம்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgalām</span></span>
 </div></td>
@@ -382,7 +804,7 @@
   </tr>
   <tr>
     <th class="text-sm">Permissive<br>("let do X")</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">வாங்கட்டும்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgaʈʈum</span></span>
 </div></td>
@@ -390,11 +812,11 @@
   </tr>
   <tr>
     <th class="text-sm">Conditional<br>("if one does X")</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">வாங்கினால்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgināl</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">வாங்காவிட்டால்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgāviʈʈāl</span></span>
 </div></td>
@@ -413,25 +835,25 @@
   </tr>
   <tr>
     <th class="text-sm">Past</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">வாங்கின</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgina</span></span>
 </div></td>
-    <td rowspan="3" class="border-l align-middle"><div class="text-center py-1">
+    <td rowspan="3" class="border-l align-middle"><div class="text-center p-1">
   <span class="text-lg">வாங்காத</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgāda</span></span>
 </div></td>
   </tr>
   <tr>
     <th class="text-sm">Present</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">வாங்குகிற</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgugira</span></span>
 </div></td>
   </tr>
   <tr>
     <th class="text-sm">Future</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">வாங்கும்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgum</span></span>
 </div></td>
@@ -454,138 +876,138 @@
 
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அவன்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">avan</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">வாங்கினவன்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">vāṅginavan</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">வாங்குகிறவன்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgugiravan</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">வாங்குபவன்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgubavan</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">வாங்காதவன்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgādavan</span></span>
 </div></td>
   </tr>
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அவள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">avaɭ</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">வாங்கினவள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">vāṅginavaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">வாங்குகிறவள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgugiravaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">வாங்குபவள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgubavaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">வாங்காதவள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgādavaɭ</span></span>
 </div></td>
   </tr>
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அவர்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">avar</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">வாங்கினவர்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">vāṅginavar</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">வாங்குகிறவர்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgugiravar</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">வாங்குபவர்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgubavar</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">வாங்காதவர்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgādavar</span></span>
 </div></td>
   </tr>
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அது</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">adu</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">வாங்கினது</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">vāṅginadu</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">வாங்குகிறது</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgugiradu</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">வாங்குபது</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgubadu</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">வாங்காதது</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgādadu</span></span>
 </div></td>
   </tr>
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அவர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">avargaɭ</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">வாங்கினவர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">vāṅginavargaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">வாங்குகிறவர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgugiravargaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">வாங்குபவர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgubavargaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">வாங்காதவர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgādavargaɭ</span></span>
 </div></td>
   </tr>
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அவை</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">avai</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">வாங்கினவை</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">vāṅginavai</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">வாங்குகிறவை</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgugiravai</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">வாங்குபவை</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgubavai</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">வாங்காதவை</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">vāṅgādavai</span></span>
 </div></td>

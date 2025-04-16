@@ -30,7 +30,9 @@
 
       
 
+
 <article class="max-w-6xl mx-auto my-24 p-4">
+
 
 <header class="mb-8">
   <h1 class="mb-2 font-bold text-3xl">migu <span class="text-slate-400">மிகு</span></h1>
@@ -46,6 +48,22 @@
   </nav>
 </header>
 
+<div x-data="{ activeTab: 0 }">
+
+<ul class="flex my-4">
+  <li><a class="p-2 border-b-2 border-transparent"
+    :class="{'border-black': activeTab === 0}" @click.prevent="activeTab = 0" href="#">Informal</a></li>
+  <li><a class="p-2 border-b-2 border-transparent"
+    :class="{'border-black': activeTab === 1}" @click.prevent="activeTab = 1" href="#">Formal</a></li>
+</ul>
+
+
+
+<div x-show="activeTab === 0" class="my-8">
+  <aside class="text-slate-500 text-sm bg-slate-50 rounded p-2">
+    <p>(Auto-generated, use with caution! Based on the consensus dialect heard in the popular
+    media of Tamil Nadu.)</p>
+  </aside>
 
 
 
@@ -63,254 +81,168 @@
 
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">நான்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">nān</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மிகுந்தேன்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">migundēn</span></span>
+    <th class="text-slate-500"><span lang="ta">nān</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">migundēn</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மிகுகிறேன்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">migugirēn</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">migurēn</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மிகுவேன்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">miguvēn</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">miguvēn</span>
 </div></td>
     
       <td rowspan="10" class="text-center align-middle border-r border-l">
-        <div class="text-center py-1">
-  <span class="text-lg">மிகவில்லை</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">migavillai</span></span>
+        <div class="text-center p-1">
+  <span lang="ta">megale</span>
 </div>
       </td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">மிகமாட்டேன்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">migamāʈʈēn</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">megamāʈʈēn</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">நீ</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">nī</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மிகுந்தாய்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">migundāy</span></span>
+    <th class="text-slate-500"><span lang="ta">nī</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">migunde</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மிகுகிறாய்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">migugirāy</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">migure</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மிகுவாய்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">miguvāy</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">miguve</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">மிகமாட்டாய்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">migamāʈʈāy</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">megamāʈʈe</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அவன்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">avan</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மிகுந்தான்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">migundān</span></span>
+    <th class="text-slate-500"><span lang="ta">avan</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">migundān</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மிகுகிறான்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">migugirān</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">migurān</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மிகுவான்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">miguvān</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">miguvān</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">மிகமாட்டான்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">migamāʈʈān</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">megamāʈʈān</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அவள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">avaɭ</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மிகுந்தாள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">migundāɭ</span></span>
+    <th class="text-slate-500"><span lang="ta">ava</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">migundā</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மிகுகிறாள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">migugirāɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">migurā</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மிகுவாள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">miguvāɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">miguvā</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">மிகமாட்டாள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">migamāʈʈāɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">megamāʈʈā</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அவர்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">avar</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மிகுந்தார்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">migundār</span></span>
+    <th class="text-slate-500"><span lang="ta">avaru</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">migundāru</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மிகுகிறார்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">migugirār</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">migurāru</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மிகுவார்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">miguvār</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">miguvāru</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">மிகமாட்டார்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">migamāʈʈār</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">megamāʈʈāru</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அது</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">adu</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மிகுந்தது</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">migundadu</span></span>
+    <th class="text-slate-500"><span lang="ta">adu</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">migundatu</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மிகுகிறது</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">migugiradu</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">miguradu</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மிகும்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">migum</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">migum</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">மிகாது</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">migādu</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">migādu</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">நாங்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">nāṅgaɭ</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மிகுந்தோம்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">migundōm</span></span>
+    <th class="text-slate-500"><span lang="ta">nāṅga</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">migundōm</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மிகுகிறோம்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">migugirōm</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">migurōm</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மிகுவோம்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">miguvōm</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">miguvōm</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">மிகமாட்டோம்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">migamāʈʈōm</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">megamāʈʈōm</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">நீங்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">nīṅgaɭ</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மிகுந்தீர்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">migundīrgaɭ</span></span>
+    <th class="text-slate-500"><span lang="ta">nīṅga</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">migundīṅga</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மிகுகிறீர்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">migugirīrgaɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">migurīṅga</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மிகுவீர்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">miguvīrgaɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">miguvīṅga</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">மிகமாட்டீர்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">migamāʈʈīrgaɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">megamāʈʈīṅga</span>
 </div></td>
   </tr>
   
   <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அவர்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">avargaɭ</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மிகுந்தார்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">migundārgaɭ</span></span>
+    <th class="text-slate-500"><span lang="ta">avaṅga</span></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">migundāṅga</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மிகுகிறார்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">migugirārgaɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">migurāṅga</span>
 </div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மிகுவார்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">miguvārgaɭ</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">miguvāṅga</span>
 </div></td>
     
-    <td><div class="text-center py-1">
-  <span class="text-lg">மிகமாட்டார்கள்</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">migamāʈʈārgaɭ</span></span>
-</div></td>
-  </tr>
-  
-  <tr>
-    <th class="text-slate-500"><div class="text-center py-1">
-  <span class="text-lg">அவை</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">avai</span></span>
-</div></th>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மிகுந்தன</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">migundana</span></span>
-</div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மிகுகின்றன</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">miguginrana</span></span>
-</div></td>
-    <td><div class="text-center py-1">
-  <span class="text-lg">மிகுவன</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">miguvana</span></span>
-</div></td>
-    
-    <td><div class="text-center py-1">
-  <span class="text-lg">மிகா</span>
-  <br><span class="text-sm text-slate-500"><span lang="ta">migā</span></span>
+    <td><div class="text-center p-1">
+  <span lang="ta">megamāʈʈāṅga</span>
 </div></td>
   </tr>
   
 
 </table>
+
+
 
 
 
@@ -322,22 +254,512 @@
   </tr>
   <tr>
     <th class="text-sm">Singular</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
+  <span lang="ta">migu</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">migādē</span>
+</div></td>
+  </tr>
+  <tr>
+    <th class="text-sm">Plural</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">miguṅga</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">migādīṅga</span>
+</div></td>
+  </tr>
+
+</table>
+
+
+
+
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+  
+  <caption class="font-bold text-lg my-4">migu (மிகு) &mdash; Non-finite verbs</caption>
+  <tr class="text-sm !border-l-0">
+    <th class="!bg-transparent">&nbsp;</th><th>Positive</th><th>Negative</th>
+  </tr>
+  <tr>
+    <th class="text-sm">Infinitive<br>("to do X")</th><td><div class="text-center p-1">
+  <span lang="ta">mega</span>
+</div></td>
+    <td class="text-center">&mdash;</td>
+  </tr>
+  <tr>
+    <th class="text-sm">Adverb<br>("having done X")</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">migundu</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">migāma</span>
+</div></td>
+  </tr>
+  <tr>
+    <th class="text-sm">Potential<br>("might do X")</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">megalām</span>
+</div></td>
+    <td class="text-center">&mdash;</td>
+  </tr>
+  <tr>
+    <th class="text-sm">Permissive<br>("let do X")</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">megaʈʈum</span>
+</div></td>
+    <td class="text-center">&mdash;</td>
+  </tr>
+  <tr>
+    <th class="text-sm">Conditional<br>("if one does X")</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">migundā</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">migāʈʈā</span>
+</div></td>
+  </tr>
+
+</table>
+
+
+
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+  
+  <caption class="font-bold text-lg my-4">migu (மிகு) &mdash; Verbal adjectives</caption>
+
+  <tr class="text-sm !border-l-0">
+    <th class="!bg-transparent">&nbsp;</th><th>Positive</th><th>Negative</th>
+  </tr>
+  <tr>
+    <th class="text-sm">Past</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">migunda</span>
+</div></td>
+    <td rowspan="3" class="border-l align-middle"><div class="text-center p-1">
+  <span lang="ta">migāda</span>
+</div></td>
+  </tr>
+  <tr>
+    <th class="text-sm">Present</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">migura</span>
+</div></td>
+  </tr>
+  <tr>
+    <th class="text-sm">Future</th>
+    <td><div class="text-center p-1">
+  <span lang="ta">migum</span>
+</div></td>
+  </tr>
+
+</table>
+
+
+
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+  
+  <caption class="font-bold text-lg my-4">migu (மிகு) &mdash; Verbal nouns</caption>
+  <tr class="text-sm !border-l-0">
+    <th class="!bg-transparent w-28">&nbsp;</th>
+    <th>Past</th>
+    <th>Present</th>
+    <th>Future</th>
+    <th>Negative</th>
+  </tr>
+
+  
+ <tr>
+    <th><div class="text-center p-1">
+  <span lang="ta">avan</span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">migundavan</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">miguravan</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">migubavan</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">migādavan</span>
+</div></td>
+  </tr>
+  
+ <tr>
+    <th><div class="text-center p-1">
+  <span lang="ta">ava</span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">migundava</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">migurava</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">migubava</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">migādava</span>
+</div></td>
+  </tr>
+  
+ <tr>
+    <th><div class="text-center p-1">
+  <span lang="ta">avaru</span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">migundavaru</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">miguravaru</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">migubavaru</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">migādavaru</span>
+</div></td>
+  </tr>
+  
+ <tr>
+    <th><div class="text-center p-1">
+  <span lang="ta">adu</span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">migundatu</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">miguradu</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">migubadu</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">migādatu</span>
+</div></td>
+  </tr>
+  
+ <tr>
+    <th><div class="text-center p-1">
+  <span lang="ta">avaṅga</span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span lang="ta">migundavaṅga</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">miguravaṅga</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">migubavaṅga</span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span lang="ta">migādavaṅga</span>
+</div></td>
+  </tr>
+  
+
+</table>
+
+
+</div>
+
+
+
+<div x-show="activeTab === 1">
+
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+  
+  <caption class="font-bold text-lg my-4">migu (மிகு) &mdash; Statements</caption>
+  <tr class="text-sm !border-l-0">
+    <th class="!bg-transparent w-28">&nbsp;</th>
+    <th>Past</th>
+    <th>Present</th>
+    <th>Future</th>
+    <th>Negative non-future</th>
+    <th>Negative future</th>
+  </tr>
+
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">நான்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">nān</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மிகுந்தேன்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">migundēn</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மிகுகிறேன்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">migugirēn</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மிகுவேன்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">miguvēn</span></span>
+</div></td>
+    
+      <td rowspan="10" class="text-center align-middle border-r border-l">
+        <div class="text-center p-1">
+  <span class="text-lg">மிகவில்லை</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">migavillai</span></span>
+</div>
+      </td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">மிகமாட்டேன்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">migamāʈʈēn</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">நீ</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">nī</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மிகுந்தாய்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">migundāy</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மிகுகிறாய்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">migugirāy</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மிகுவாய்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">miguvāy</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">மிகமாட்டாய்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">migamāʈʈāy</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அவன்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">avan</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மிகுந்தான்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">migundān</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மிகுகிறான்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">migugirān</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மிகுவான்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">miguvān</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">மிகமாட்டான்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">migamāʈʈān</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அவள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">avaɭ</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மிகுந்தாள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">migundāɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மிகுகிறாள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">migugirāɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மிகுவாள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">miguvāɭ</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">மிகமாட்டாள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">migamāʈʈāɭ</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அவர்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">avar</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மிகுந்தார்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">migundār</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மிகுகிறார்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">migugirār</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மிகுவார்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">miguvār</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">மிகமாட்டார்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">migamāʈʈār</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அது</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">adu</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மிகுந்தது</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">migundadu</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மிகுகிறது</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">migugiradu</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மிகும்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">migum</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">மிகாது</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">migādu</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">நாங்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">nāṅgaɭ</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மிகுந்தோம்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">migundōm</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மிகுகிறோம்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">migugirōm</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மிகுவோம்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">miguvōm</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">மிகமாட்டோம்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">migamāʈʈōm</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">நீங்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">nīṅgaɭ</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மிகுந்தீர்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">migundīrgaɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மிகுகிறீர்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">migugirīrgaɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மிகுவீர்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">miguvīrgaɭ</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">மிகமாட்டீர்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">migamāʈʈīrgaɭ</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அவர்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">avargaɭ</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மிகுந்தார்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">migundārgaɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மிகுகிறார்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">migugirārgaɭ</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மிகுவார்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">miguvārgaɭ</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">மிகமாட்டார்கள்</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">migamāʈʈārgaɭ</span></span>
+</div></td>
+  </tr>
+  
+  <tr>
+    <th class="text-slate-500"><div class="text-center p-1">
+  <span class="text-lg">அவை</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">avai</span></span>
+</div></th>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மிகன</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">migana</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மிகுகிற்ன்றன</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">migugirnrana</span></span>
+</div></td>
+    <td><div class="text-center p-1">
+  <span class="text-lg">மிகன</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">migana</span></span>
+</div></td>
+    
+    <td><div class="text-center p-1">
+  <span class="text-lg">மிகா</span>
+  <br><span class="text-sm text-slate-500"><span lang="ta">migā</span></span>
+</div></td>
+  </tr>
+  
+
+</table>
+
+
+
+
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+  
+  <caption class="font-bold text-lg my-4">migu (மிகு) &mdash; Commands</caption>
+  <tr class="text-sm !border-l-0">
+    <th class="!bg-transparent">&nbsp;</th><th>Positive</th><th>Negative</th>
+  </tr>
+  <tr>
+    <th class="text-sm">Singular</th>
+    <td><div class="text-center p-1">
   <span class="text-lg">மிகு</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">migu</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மிகாதே</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">migādē</span></span>
 </div></td>
   </tr>
   <tr>
     <th class="text-sm">Plural</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மிகுங்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">miguṅgaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மிகாதீர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">migādīrgaɭ</span></span>
 </div></td>
@@ -355,7 +777,7 @@
     <th class="!bg-transparent">&nbsp;</th><th>Positive</th><th>Negative</th>
   </tr>
   <tr>
-    <th class="text-sm">Infinitive<br>("to do X")</th><td><div class="text-center py-1">
+    <th class="text-sm">Infinitive<br>("to do X")</th><td><div class="text-center p-1">
   <span class="text-lg">மிக</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">miga</span></span>
 </div></td>
@@ -363,18 +785,18 @@
   </tr>
   <tr>
     <th class="text-sm">Adverb<br>("having done X")</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மிகுந்து</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">migundu</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மிகாமல்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">migāmal</span></span>
 </div></td>
   </tr>
   <tr>
     <th class="text-sm">Potential<br>("might do X")</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மிகலாம்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">migalām</span></span>
 </div></td>
@@ -382,7 +804,7 @@
   </tr>
   <tr>
     <th class="text-sm">Permissive<br>("let do X")</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மிகட்டும்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">migaʈʈum</span></span>
 </div></td>
@@ -390,11 +812,11 @@
   </tr>
   <tr>
     <th class="text-sm">Conditional<br>("if one does X")</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மிகுந்தால்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">migundāl</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மிகாவிட்டால்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">migāviʈʈāl</span></span>
 </div></td>
@@ -413,25 +835,25 @@
   </tr>
   <tr>
     <th class="text-sm">Past</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மிகுந்த</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">migunda</span></span>
 </div></td>
-    <td rowspan="3" class="border-l align-middle"><div class="text-center py-1">
+    <td rowspan="3" class="border-l align-middle"><div class="text-center p-1">
   <span class="text-lg">மிகாத</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">migāda</span></span>
 </div></td>
   </tr>
   <tr>
     <th class="text-sm">Present</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மிகுகிற</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">migugira</span></span>
 </div></td>
   </tr>
   <tr>
     <th class="text-sm">Future</th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மிகும்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">migum</span></span>
 </div></td>
@@ -454,138 +876,138 @@
 
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அவன்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">avan</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மிகுந்தவன்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">migundavan</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மிகுகிறவன்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">migugiravan</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மிகுபவன்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">migubavan</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மிகாதவன்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">migādavan</span></span>
 </div></td>
   </tr>
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அவள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">avaɭ</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மிகுந்தவள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">migundavaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மிகுகிறவள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">migugiravaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மிகுபவள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">migubavaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மிகாதவள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">migādavaɭ</span></span>
 </div></td>
   </tr>
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அவர்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">avar</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மிகுந்தவர்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">migundavar</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மிகுகிறவர்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">migugiravar</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மிகுபவர்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">migubavar</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மிகாதவர்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">migādavar</span></span>
 </div></td>
   </tr>
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அது</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">adu</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மிகுந்தது</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">migundadu</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மிகுகிறது</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">migugiradu</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மிகுபது</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">migubadu</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மிகாதது</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">migādadu</span></span>
 </div></td>
   </tr>
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அவர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">avargaɭ</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மிகுந்தவர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">migundavargaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மிகுகிறவர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">migugiravargaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மிகுபவர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">migubavargaɭ</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மிகாதவர்கள்</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">migādavargaɭ</span></span>
 </div></td>
   </tr>
   
   <tr>
-    <th><div class="text-center py-1">
+    <th><div class="text-center p-1">
   <span class="text-lg">அவை</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">avai</span></span>
 </div></th>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மிகுந்தவை</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">migundavai</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மிகுகிறவை</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">migugiravai</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மிகுபவை</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">migubavai</span></span>
 </div></td>
-    <td><div class="text-center py-1">
+    <td><div class="text-center p-1">
   <span class="text-lg">மிகாதவை</span>
   <br><span class="text-sm text-slate-500"><span lang="ta">migādavai</span></span>
 </div></td>
