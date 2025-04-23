@@ -5,4 +5,4 @@ popd
 
 cp -r ~/projects/tamil/build/ tamil/
 rm -Rf tamil/admin/
-rm -Rf tamil/videos/
+rm -Rf tamil/portal/
