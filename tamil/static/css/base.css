@@ -1,0 +1,26 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+.video-btn {
+  @apply text-xs rounded bg-slate-600 text-slate-100 p-2 hover:bg-slate-500 transition cursor-pointer;
+}
+
+.video-ts {
+  @apply bg-slate-600 rounded text-xs p-0.5 w-12 text-center text-slate-200 mr-2 select-none cursor-pointer hover:bg-slate-500 hover:text-white
+}
+
+.video-ts.active {
+  @apply bg-amber-400 text-black;
+}
+
+/*
+ * Minimal styling; just underlining, etc. for consistency.
+ * Settings:
+ * - focus subtitle
+ * - full transcript
+ * - vocab list
+ * - examples
+ */
+.video-t {
+  @apply cursor-pointer hover:underline;
+}

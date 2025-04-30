@@ -8,8 +8,7 @@
     p [lang="ta"], .grammar td [lang="ta"] { font-weight: 700; font-family: arial; }
     p [lang="en"] { font-style: italic; }
     </style>
-    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="/static/gen/style.css" rel="stylesheet">
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     
   </head>
@@ -52,9 +51,9 @@
 
 <ul class="flex my-4">
   <li><a class="p-2 border-b-2 border-transparent"
-    :class="{'border-black': activeTab === 0}" @click.prevent="activeTab = 0" href="#">Informal</a></li>
+    :class="{'!border-black': activeTab === 0}" @click.prevent="activeTab = 0" href="#">Informal</a></li>
   <li><a class="p-2 border-b-2 border-transparent"
-    :class="{'border-black': activeTab === 1}" @click.prevent="activeTab = 1" href="#">Formal</a></li>
+    :class="{'!border-black': activeTab === 1}" @click.prevent="activeTab = 1" href="#">Formal</a></li>
 </ul>
 
 
