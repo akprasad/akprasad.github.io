@@ -8,12 +8,14 @@
     p [lang="ta"], .grammar td [lang="ta"] { font-weight: 700; font-family: arial; }
     p [lang="en"] { font-style: italic; }
     </style>
+    <link rel="icon" href="data:;base64,=">
     <link href="/tamil/static/gen/style.css" rel="stylesheet">
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="/tamil/static/main.js"></script>
     
   </head>
-  <body class="min-h-screen">
-    <header class="bg-gradient-to-r from-emerald-600 to-emerald-800 text-white shadow-lg">
+  <body class="min-h-screen dark:bg-gray-900 dark:text-white">
+    <header class="bg-linear-to-r from-emerald-600 to-emerald-800 text-white shadow-lg">
       <nav class="flex justify-between shadow-md">
         <a class="block p-4 hover:underline text-2xl font-bold" href="/tamil/">தமிழ்</a>
         <div class="flex items-center text-sm">
@@ -32,234 +34,65 @@
 
 <header class="my-4">
   <h1 class="font-bold text-3xl">
-    Tamil words <span class="font-medium text-slate-400">(film)</span>
+    <a href="/tamil/words/" class="hover:underline">Tamil words</a>
+    <span class="font-medium text-slate-400">&rarr; film</span>
   </h1>
   
 </header>
 
 <p class="text-sm my-2">Showing 8 entries.</p>
 
-<table class="w-full border [&_.definition_a]:text-blue-500 [&_.definition_a]:underline">
+<script type="text/javascript">
+const ENTRIES = [{"id": 1896, "key_formal": "\u0b85\u0bb0\u0b99\u0bcd\u0b95\u0bc7\u0bb1\u0bcd\u0bb1\u0bae\u0bcd", "informal_text": "ara\u1e45g\u0113tram", "meta_text": "", "meta_url": null, "frequency": 0, "definition": "debut (on stage), first public performance", "order": null, "tags": [{"name": "film", "url": "/tamil/tags/film/"}]}, {"id": 1895, "key_formal": "\u0b85\u0bb0\u0b99\u0bcd\u0b95\u0bc7\u0bb1\u0bcd\u0bb1\u0bc1", "informal_text": "ara\u1e45g\u0113ttu", "meta_text": "verb (ara\u1e45g\u0113tti, ara\u1e45g\u0113tta) (intrans.)", "meta_url": "/tamil/verbs/%E0%AE%85%E0%AE%B0%E0%AE%99%E0%AF%8D%E0%AE%95%E0%AF%87%E0%AE%B1%E0%AF%8D%E0%AE%B1%E0%AF%81,v3-i/", "frequency": 0, "definition": "perform, put on stage, present", "order": null, "tags": [{"name": "film", "url": "/tamil/tags/film/"}]}, {"id": 859, "key_formal": "\u0b87\u0baf\u0b95\u0bcd\u0b95\u0bc1\u0ba8\u0bb0\u0bcd", "informal_text": "eyakkunar", "meta_text": "", "meta_url": null, "frequency": 0, "definition": "director", "order": null, "tags": [{"name": "film", "url": "/tamil/tags/film/"}]}, {"id": 1897, "key_formal": "\u0b9a\u0bbf\u0ba9\u0bbf\u0bae\u0bbe", "informal_text": "sinim\u0101", "meta_text": "", "meta_url": null, "frequency": 22, "definition": "cinema, theater; (informally) movie, film", "order": null, "tags": [{"name": "film", "url": "/tamil/tags/film/"}]}, {"id": 1017, "key_formal": "\u0ba4\u0bbf\u0bb0\u0bc8\u0b95\u0bcd\u0b95\u0ba4\u0bc8", "informal_text": "teraikkade", "meta_text": "", "meta_url": null, "frequency": 0, "definition": "screenplay", "order": null, "tags": [{"name": "film", "url": "/tamil/tags/film/"}]}, {"id": 931, "key_formal": "\u0ba8\u0b9f\u0bbf\u0b95\u0ba9\u0bcd", "informal_text": "na\u0256igan", "meta_text": "noun (animate)", "meta_url": "/tamil/nouns/", "frequency": 0, "definition": "actor", "order": null, "tags": [{"name": "film", "url": "/tamil/tags/film/"}]}, {"id": 932, "key_formal": "\u0ba8\u0b9f\u0bbf\u0b95\u0bc8", "informal_text": "na\u0256ige", "meta_text": "", "meta_url": null, "frequency": 0, "definition": "actress", "order": null, "tags": [{"name": "film", "url": "/tamil/tags/film/"}]}, {"id": 272, "key_formal": "\u0ba8\u0b9f\u0bbf\u0baa\u0bcd\u0baa\u0bc1", "informal_text": "na\u0256ippu", "meta_text": "", "meta_url": null, "frequency": 4, "definition": "acting", "order": null, "tags": [{"name": "film", "url": "/tamil/tags/film/"}]}];
+</script>
+
+<table x-data="wordsTable" class="w-table">
   <thead>
-  <tr class="text-left bg-slate-100 uppercase text-slate-500 text-xs">
-    <th class="p-4 font-medium">Entry</th>
-    <th class="font-medium">Simple meaning</th>
-  </tr>
+    <tr class="text-left bg-slate-100 dark:bg-slate-800 uppercase text-slate-500 dark:text-white text-xs">
+      <th @click.prevent="sortBy('entry')" class="cursor-pointer p-4 font-medium">Entry</th>
+      <th @click.prevent="sortBy('definition')" class="cursor-pointer font-medium">Simple meaning</th>
+      <th @click.prevent="sortBy('frequency')" class="cursor-pointer font-medium text-right p-4">Frequency</th>
+    </tr>
   </thead>
 
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">araṅgētram</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/அரங்கேற்றம்">அரங்கேற்றம்</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">debut (on stage), first public performance</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/film/">film</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">araṅgēttu</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/அரங்கேற்று">அரங்கேற்று</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">perform, put on stage, present</p>
-
-      
-      <p>
-        
-          <span class="text-xs bg-green-100 p-0.5 px-2 rounded rounded-full text-green-800">
-            
-              <a href="/tamil/verbs/%E0%AE%85%E0%AE%B0%E0%AE%99%E0%AF%8D%E0%AE%95%E0%AF%87%E0%AE%B1%E0%AF%8D%E0%AE%B1%E0%AF%81,v3-i/">verb (araṅgētti, araṅgētta) (intrans.)</a>
-            
+  <tbody>
+    <template x-for="entry in sortedEntries" :key="entry.id">
+      <tr class="even:bg-slate-50 dark:even:bg-slate-800">
+        <td class="p-4">
+          <span>
+            <span class="w-entry" x-text="entry.informal_text"></span>
+            <a class="block text-blue-500 hover:underline"
+              :href="'https://ta.wiktionary.org/wiki/' + entry.key_formal"
+              x-text="entry.key_formal"></a>
           </span>
-        
+        </td>
+        <td class="py-2">
+          <p class="mb-2 definition" x-html="entry.definition"></p>
 
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/film/">film</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">eyakkunar</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/இயக்குநர்">இயக்குநர்</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">director</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/film/">film</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">sinimā</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/சினிமா">சினிமா</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">cinema, theater; (informally) movie, film</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/film/">film</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">teraikkade</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/திரைக்கதை">திரைக்கதை</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">screenplay</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/film/">film</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">naɖigan</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/நடிகன்">நடிகன்</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">actor</p>
-
-      
-      <p>
-        
-          <span class="text-xs bg-green-100 p-0.5 px-2 rounded rounded-full text-green-800">
-            
-              <a href="/tamil/nouns/">noun (animate)</a>
-            
-          </span>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/film/">film</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">naɖige</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/நடிகை">நடிகை</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">actress</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/film/">film</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">naɖippu</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/நடிப்பு">நடிப்பு</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">acting</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/film/">film</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
+          <template x-if="entry.meta || entry.tags">
+            <p>
+              <template x-if="entry.meta_text">
+                <span class="w-meta">
+                  <a :href="entry.meta_url" x-text="entry.meta_text"></a>
+                </span>
+              </template>
+              <template x-for="tag in entry.tags">
+                <a class="w-tag" :href="tag.url" x-text="tag.name"></a>
+              </template>
+            </p>
+          </template>
+        </td>
+        <td class="text-right pr-4 text-xs">
+          <template x-if="entry.frequency > 0">
+            <span x-text="entry.order"></span>
+          </template>
+          <template x-if="entry.frequency == 0">
+            <span>(?)</span>
+          </template>
+        </td>
+      </tr>
+    </template>
+  </tbody>
 </table>
 
 

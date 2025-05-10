@@ -8,12 +8,14 @@
     p [lang="ta"], .grammar td [lang="ta"] { font-weight: 700; font-family: arial; }
     p [lang="en"] { font-style: italic; }
     </style>
+    <link rel="icon" href="data:;base64,=">
     <link href="/tamil/static/gen/style.css" rel="stylesheet">
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="/tamil/static/main.js"></script>
     
   </head>
-  <body class="min-h-screen">
-    <header class="bg-gradient-to-r from-emerald-600 to-emerald-800 text-white shadow-lg">
+  <body class="min-h-screen dark:bg-gray-900 dark:text-white">
+    <header class="bg-linear-to-r from-emerald-600 to-emerald-800 text-white shadow-lg">
       <nav class="flex justify-between shadow-md">
         <a class="block p-4 hover:underline text-2xl font-bold" href="/tamil/">தமிழ்</a>
         <div class="flex items-center text-sm">
@@ -32,272 +34,65 @@
 
 <header class="my-4">
   <h1 class="font-bold text-3xl">
-    Tamil words <span class="font-medium text-slate-400">(materials)</span>
+    <a href="/tamil/words/" class="hover:underline">Tamil words</a>
+    <span class="font-medium text-slate-400">&rarr; materials</span>
   </h1>
   
 </header>
 
 <p class="text-sm my-2">Showing 10 entries.</p>
 
-<table class="w-full border [&_.definition_a]:text-blue-500 [&_.definition_a]:underline">
+<script type="text/javascript">
+const ENTRIES = [{"id": 1719, "key_formal": "\u0b87\u0bb0\u0bc1\u0bae\u0bcd\u0baa\u0bc1", "informal_text": "irumbu", "meta_text": "", "meta_url": null, "frequency": 9, "definition": "iron, ore", "order": null, "tags": [{"name": "materials", "url": "/tamil/tags/materials/"}]}, {"id": 1144, "key_formal": "\u0b95\u0bae\u0bcd\u0baa\u0bbf", "informal_text": "kambi", "meta_text": "", "meta_url": null, "frequency": 4, "definition": "metal, wire", "order": null, "tags": [{"name": "materials", "url": "/tamil/tags/materials/"}]}, {"id": 1114, "key_formal": "\u0b9a\u0bc6\u0bae\u0bcd\u0baa\u0bc1", "informal_text": "sembu", "meta_text": "", "meta_url": null, "frequency": 9, "definition": "copper, a water pot made of copper", "order": null, "tags": [{"name": "materials", "url": "/tamil/tags/materials/"}]}, {"id": 109, "key_formal": "\u0ba4\u0b99\u0bcd\u0b95\u0bae\u0bcd", "informal_text": "ta\u1e45gam", "meta_text": "", "meta_url": null, "frequency": 579, "definition": "gold", "order": null, "tags": [{"name": "materials", "url": "/tamil/tags/materials/"}]}, {"id": 1862, "key_formal": "\u0baa\u0bbf\u0ba4\u0bcd\u0ba4\u0bb3\u0bc8", "informal_text": "pitta\u026de", "meta_text": "", "meta_url": null, "frequency": 0, "definition": "brass", "order": null, "tags": [{"name": "materials", "url": "/tamil/tags/materials/"}]}, {"id": 942, "key_formal": "\u0bae\u0bb0\u0b95\u0ba4\u0bae\u0bcd", "informal_text": "maragadam", "meta_text": "", "meta_url": null, "frequency": 3, "definition": "emerald", "order": null, "tags": [{"name": "materials", "url": "/tamil/tags/materials/"}]}, {"id": 732, "key_formal": "\u0bae\u0bc1\u0ba4\u0bcd\u0ba4\u0bc1", "informal_text": "muttu", "meta_text": "", "meta_url": null, "frequency": 1, "definition": "pearl", "order": null, "tags": [{"name": "materials", "url": "/tamil/tags/materials/"}]}, {"id": 1664, "key_formal": "\u0bb5\u0bc8\u0b9f\u0bc2\u0bb0\u0bbf\u0baf\u0bae\u0bcd", "informal_text": "vai\u0256\u016briyam", "meta_text": "", "meta_url": null, "frequency": 10, "definition": "cat's eye gem", "order": null, "tags": [{"name": "materials", "url": "/tamil/tags/materials/"}]}, {"id": 1554, "key_formal": "\u0bb5\u0bc8\u0bb0\u0b95\u0bcd\u0b95\u0bb2\u0bcd", "informal_text": "vairakkal", "meta_text": "", "meta_url": null, "frequency": 9, "definition": "diamond", "order": null, "tags": [{"name": "materials", "url": "/tamil/tags/materials/"}]}, {"id": 941, "key_formal": "\u0bb5\u0bc8\u0bb0\u0bae\u0bcd", "informal_text": "vairam", "meta_text": "", "meta_url": null, "frequency": 211, "definition": "diamond", "order": null, "tags": [{"name": "materials", "url": "/tamil/tags/materials/"}]}];
+</script>
+
+<table x-data="wordsTable" class="w-table">
   <thead>
-  <tr class="text-left bg-slate-100 uppercase text-slate-500 text-xs">
-    <th class="p-4 font-medium">Entry</th>
-    <th class="font-medium">Simple meaning</th>
-  </tr>
+    <tr class="text-left bg-slate-100 dark:bg-slate-800 uppercase text-slate-500 dark:text-white text-xs">
+      <th @click.prevent="sortBy('entry')" class="cursor-pointer p-4 font-medium">Entry</th>
+      <th @click.prevent="sortBy('definition')" class="cursor-pointer font-medium">Simple meaning</th>
+      <th @click.prevent="sortBy('frequency')" class="cursor-pointer font-medium text-right p-4">Frequency</th>
+    </tr>
   </thead>
 
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">irumbu</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/இரும்பு">இரும்பு</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">iron, ore</p>
+  <tbody>
+    <template x-for="entry in sortedEntries" :key="entry.id">
+      <tr class="even:bg-slate-50 dark:even:bg-slate-800">
+        <td class="p-4">
+          <span>
+            <span class="w-entry" x-text="entry.informal_text"></span>
+            <a class="block text-blue-500 hover:underline"
+              :href="'https://ta.wiktionary.org/wiki/' + entry.key_formal"
+              x-text="entry.key_formal"></a>
+          </span>
+        </td>
+        <td class="py-2">
+          <p class="mb-2 definition" x-html="entry.definition"></p>
 
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/materials/">materials</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">kambi</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/கம்பி">கம்பி</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">metal, wire</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/materials/">materials</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">sembu</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/செம்பு">செம்பு</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">copper, a water pot made of copper</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/materials/">materials</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">taṅgam</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/தங்கம்">தங்கம்</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">gold</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/materials/">materials</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">pittaɭe</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/பித்தளை">பித்தளை</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">brass</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/materials/">materials</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">maragadam</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/மரகதம்">மரகதம்</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">emerald</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/materials/">materials</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">muttu</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/முத்து">முத்து</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">pearl</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/materials/">materials</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">vaiɖūriyam</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/வைடூரியம்">வைடூரியம்</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">cat's eye gem</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/materials/">materials</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">vairakkal</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/வைரக்கல்">வைரக்கல்</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">diamond</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/materials/">materials</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">vairam</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/வைரம்">வைரம்</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">diamond</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/materials/">materials</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
+          <template x-if="entry.meta || entry.tags">
+            <p>
+              <template x-if="entry.meta_text">
+                <span class="w-meta">
+                  <a :href="entry.meta_url" x-text="entry.meta_text"></a>
+                </span>
+              </template>
+              <template x-for="tag in entry.tags">
+                <a class="w-tag" :href="tag.url" x-text="tag.name"></a>
+              </template>
+            </p>
+          </template>
+        </td>
+        <td class="text-right pr-4 text-xs">
+          <template x-if="entry.frequency > 0">
+            <span x-text="entry.order"></span>
+          </template>
+          <template x-if="entry.frequency == 0">
+            <span>(?)</span>
+          </template>
+        </td>
+      </tr>
+    </template>
+  </tbody>
 </table>
 
 

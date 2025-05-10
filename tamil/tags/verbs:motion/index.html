@@ -8,12 +8,14 @@
     p [lang="ta"], .grammar td [lang="ta"] { font-weight: 700; font-family: arial; }
     p [lang="en"] { font-style: italic; }
     </style>
+    <link rel="icon" href="data:;base64,=">
     <link href="/tamil/static/gen/style.css" rel="stylesheet">
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="/tamil/static/main.js"></script>
     
   </head>
-  <body class="min-h-screen">
-    <header class="bg-gradient-to-r from-emerald-600 to-emerald-800 text-white shadow-lg">
+  <body class="min-h-screen dark:bg-gray-900 dark:text-white">
+    <header class="bg-linear-to-r from-emerald-600 to-emerald-800 text-white shadow-lg">
       <nav class="flex justify-between shadow-md">
         <a class="block p-4 hover:underline text-2xl font-bold" href="/tamil/">தமிழ்</a>
         <div class="flex items-center text-sm">
@@ -32,522 +34,65 @@
 
 <header class="my-4">
   <h1 class="font-bold text-3xl">
-    Tamil words <span class="font-medium text-slate-400">(verbs:motion)</span>
+    <a href="/tamil/words/" class="hover:underline">Tamil words</a>
+    <span class="font-medium text-slate-400">&rarr; verbs:motion</span>
   </h1>
   
 </header>
 
 <p class="text-sm my-2">Showing 16 entries.</p>
 
-<table class="w-full border [&_.definition_a]:text-blue-500 [&_.definition_a]:underline">
+<script type="text/javascript">
+const ENTRIES = [{"id": 257, "key_formal": "\u0b87\u0bb1\u0b99\u0bcd\u0b95\u0bc1", "informal_text": "erangu", "meta_text": "verb (era\u1e45gi, era\u1e45ga)", "meta_url": "/tamil/verbs/%E0%AE%87%E0%AE%B1%E0%AE%99%E0%AF%8D%E0%AE%95%E0%AF%81,v3/", "frequency": 76, "definition": "descend, climb down", "order": null, "tags": [{"name": "verbs:motion", "url": "/tamil/tags/verbs:motion/"}]}, {"id": 616, "key_formal": "\u0b87\u0bb4\u0bc1", "informal_text": "e\u0290hu", "meta_text": "verb (i\u0290uttu, i\u0290ukka)", "meta_url": "/tamil/verbs/%E0%AE%87%E0%AE%B4%E0%AF%81,v6/", "frequency": 53, "definition": "pull, drag", "order": null, "tags": [{"name": "verbs:motion", "url": "/tamil/tags/verbs:motion/"}]}, {"id": 268, "key_formal": "\u0b89\u0b9f\u0bcd\u0b95\u0bbe\u0bb0\u0bcd", "informal_text": "ukk\u0101ru", "meta_text": "verb (ukk\u0101ndu, ukk\u0101ra)", "meta_url": "/tamil/verbs/%E0%AE%89%E0%AE%9F%E0%AF%8D%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AF%8D,v2/", "frequency": 214, "definition": "sit", "order": null, "tags": [{"name": "verbs:motion", "url": "/tamil/tags/verbs:motion/"}]}, {"id": 512, "key_formal": "\u0b8e\u0b9f\u0bc1", "informal_text": "e\u0256u", "meta_text": "verb (e\u0256uttu, e\u0256ukka)", "meta_url": "/tamil/verbs/%E0%AE%8E%E0%AE%9F%E0%AF%81,v6/", "frequency": 1368, "definition": "take, pick up", "order": null, "tags": [{"name": "verbs:motion", "url": "/tamil/tags/verbs:motion/"}]}, {"id": 258, "key_formal": "\u0b8f\u0bb1\u0bc1", "informal_text": "\u0113ru", "meta_text": "verb (\u0113ri, \u0113ra)", "meta_url": "/tamil/verbs/%E0%AE%8F%E0%AE%B1%E0%AF%81,v3/", "frequency": 130, "definition": "climb up, ascend", "order": null, "tags": [{"name": "verbs:motion", "url": "/tamil/tags/verbs:motion/"}]}, {"id": 310, "key_formal": "\u0b93\u0b9f\u0bc1", "informal_text": "\u014d\u0256u", "meta_text": "verb (\u014d\u0256i, \u014d\u0256a) (intrans.)", "meta_url": "/tamil/verbs/%E0%AE%93%E0%AE%9F%E0%AF%81,v3-i/", "frequency": 178, "definition": "run", "order": null, "tags": [{"name": "verbs:motion", "url": "/tamil/tags/verbs:motion/"}]}, {"id": 1717, "key_formal": "\u0b93\u0b9f\u0bcd\u0b9f\u0bc1", "informal_text": "\u014d\u0288\u0288u", "meta_text": "verb (\u014d\u0288\u0288i, \u014d\u0288\u0288a)", "meta_url": "/tamil/verbs/%E0%AE%93%E0%AE%9F%E0%AF%8D%E0%AE%9F%E0%AF%81,v3/", "frequency": 52, "definition": "make run; drive, goad, incite", "order": null, "tags": [{"name": "verbs:motion", "url": "/tamil/tags/verbs:motion/"}]}, {"id": 1392, "key_formal": "\u0b95\u0bc1\u0ba9\u0bbf", "informal_text": "kuni", "meta_text": "verb (kuni\u00f1ju, kuniya)", "meta_url": "/tamil/verbs/%E0%AE%95%E0%AF%81%E0%AE%A9%E0%AE%BF,v2/", "frequency": 8, "definition": "bow, bend", "order": null, "tags": [{"name": "verbs:motion", "url": "/tamil/tags/verbs:motion/"}]}, {"id": 1395, "key_formal": "\u0b9a\u0bc1\u0bb1\u0bcd\u0bb1\u0bc1", "informal_text": "suttu", "meta_text": "verb (sutti, sutta)", "meta_url": "/tamil/verbs/%E0%AE%9A%E0%AF%81%E0%AE%B1%E0%AF%8D%E0%AE%B1%E0%AF%81,v3/", "frequency": 86, "definition": "go around; revolve", "order": null, "tags": [{"name": "verbs:motion", "url": "/tamil/tags/verbs:motion/"}]}, {"id": 1393, "key_formal": "\u0ba4\u0bb3\u0bcd\u0bb3\u0bc1", "informal_text": "ta\u026d\u026du", "meta_text": "verb (ta\u026d\u026di, ta\u026d\u026da)", "meta_url": "/tamil/verbs/%E0%AE%A4%E0%AE%B3%E0%AF%8D%E0%AE%B3%E0%AF%81,v3/", "frequency": 69, "definition": "push", "order": null, "tags": [{"name": "verbs:motion", "url": "/tamil/tags/verbs:motion/"}]}, {"id": 1394, "key_formal": "\u0ba4\u0bbe\u0ba3\u0bcd\u0b9f\u0bc1", "informal_text": "t\u0101\u0273\u0256u", "meta_text": "verb (t\u0101\u0273\u0256i, t\u0101\u0273\u0256a)", "meta_url": "/tamil/verbs/%E0%AE%A4%E0%AE%BE%E0%AE%A3%E0%AF%8D%E0%AE%9F%E0%AF%81,v3/", "frequency": 33, "definition": "cross, pass", "order": null, "tags": [{"name": "verbs:motion", "url": "/tamil/tags/verbs:motion/"}]}, {"id": 1391, "key_formal": "\u0ba8\u0b9f", "informal_text": "na\u0256a", "meta_text": "verb (na\u0256andu, na\u0256akka)", "meta_url": "/tamil/verbs/%E0%AE%A8%E0%AE%9F,v7/", "frequency": 879, "definition": "walk; happen", "order": null, "tags": [{"name": "verbs:motion", "url": "/tamil/tags/verbs:motion/"}]}, {"id": 364, "key_formal": "\u0ba8\u0bbf\u0bb2\u0bcd", "informal_text": "nillu", "meta_text": "verb (ninnu, nikka)", "meta_url": "/tamil/verbs/%E0%AE%A8%E0%AE%BF%E0%AE%B2%E0%AF%8D,v5/", "frequency": 383, "definition": "stop, stand", "order": null, "tags": [{"name": "verbs:motion", "url": "/tamil/tags/verbs:motion/"}]}, {"id": 669, "key_formal": "\u0ba8\u0bc0\u0ba8\u0bcd\u0ba4\u0bc1", "informal_text": "n\u012bndu", "meta_text": "verb (n\u012bndi, n\u012bnda)", "meta_url": "/tamil/verbs/%E0%AE%A8%E0%AF%80%E0%AE%A8%E0%AF%8D%E0%AE%A4%E0%AF%81,v3/", "frequency": 10, "definition": "swim", "order": null, "tags": [{"name": "verbs:motion", "url": "/tamil/tags/verbs:motion/"}]}, {"id": 385, "key_formal": "\u0baa\u0bcb", "informal_text": "p\u014d", "meta_text": "verb (p\u014dyi, p\u014dga)", "meta_url": "/tamil/verbs/%E0%AE%AA%E0%AF%8B,v3/", "frequency": 7954, "definition": "go", "order": null, "tags": [{"name": "verbs:motion", "url": "/tamil/tags/verbs:motion/"}, {"name": "irregular", "url": "/tamil/tags/irregular/"}]}, {"id": 384, "key_formal": "\u0bb5\u0bbe", "informal_text": "v\u0101", "meta_text": "verb (vandu, vara)", "meta_url": "/tamil/verbs/%E0%AE%B5%E0%AE%BE,v2/", "frequency": 6938, "definition": "come", "order": null, "tags": [{"name": "verbs:motion", "url": "/tamil/tags/verbs:motion/"}, {"name": "irregular", "url": "/tamil/tags/irregular/"}]}];
+</script>
+
+<table x-data="wordsTable" class="w-table">
   <thead>
-  <tr class="text-left bg-slate-100 uppercase text-slate-500 text-xs">
-    <th class="p-4 font-medium">Entry</th>
-    <th class="font-medium">Simple meaning</th>
-  </tr>
+    <tr class="text-left bg-slate-100 dark:bg-slate-800 uppercase text-slate-500 dark:text-white text-xs">
+      <th @click.prevent="sortBy('entry')" class="cursor-pointer p-4 font-medium">Entry</th>
+      <th @click.prevent="sortBy('definition')" class="cursor-pointer font-medium">Simple meaning</th>
+      <th @click.prevent="sortBy('frequency')" class="cursor-pointer font-medium text-right p-4">Frequency</th>
+    </tr>
   </thead>
 
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">erangu</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/இறங்கு">இறங்கு</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">descend, climb down</p>
-
-      
-      <p>
-        
-          <span class="text-xs bg-green-100 p-0.5 px-2 rounded rounded-full text-green-800">
-            
-              <a href="/tamil/verbs/%E0%AE%87%E0%AE%B1%E0%AE%99%E0%AF%8D%E0%AE%95%E0%AF%81,v3/">verb (eraṅgi, eraṅga)</a>
-            
+  <tbody>
+    <template x-for="entry in sortedEntries" :key="entry.id">
+      <tr class="even:bg-slate-50 dark:even:bg-slate-800">
+        <td class="p-4">
+          <span>
+            <span class="w-entry" x-text="entry.informal_text"></span>
+            <a class="block text-blue-500 hover:underline"
+              :href="'https://ta.wiktionary.org/wiki/' + entry.key_formal"
+              x-text="entry.key_formal"></a>
           </span>
-        
+        </td>
+        <td class="py-2">
+          <p class="mb-2 definition" x-html="entry.definition"></p>
 
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/verbs:motion/">verbs:motion</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">eʐhu</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/இழு">இழு</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">pull, drag</p>
-
-      
-      <p>
-        
-          <span class="text-xs bg-green-100 p-0.5 px-2 rounded rounded-full text-green-800">
-            
-              <a href="/tamil/verbs/%E0%AE%87%E0%AE%B4%E0%AF%81,v6/">verb (iʐuttu, iʐukka)</a>
-            
-          </span>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/verbs:motion/">verbs:motion</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">ukkāru</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/உட்கார்">உட்கார்</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">sit</p>
-
-      
-      <p>
-        
-          <span class="text-xs bg-green-100 p-0.5 px-2 rounded rounded-full text-green-800">
-            
-              <a href="/tamil/verbs/%E0%AE%89%E0%AE%9F%E0%AF%8D%E0%AE%95%E0%AE%BE%E0%AE%B0%E0%AF%8D,v2/">verb (ukkāndu, ukkāra)</a>
-            
-          </span>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/verbs:motion/">verbs:motion</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">eɖu</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/எடு">எடு</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">take, pick up</p>
-
-      
-      <p>
-        
-          <span class="text-xs bg-green-100 p-0.5 px-2 rounded rounded-full text-green-800">
-            
-              <a href="/tamil/verbs/%E0%AE%8E%E0%AE%9F%E0%AF%81,v6/">verb (eɖuttu, eɖukka)</a>
-            
-          </span>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/verbs:motion/">verbs:motion</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">ēru</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/ஏறு">ஏறு</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">climb up, ascend</p>
-
-      
-      <p>
-        
-          <span class="text-xs bg-green-100 p-0.5 px-2 rounded rounded-full text-green-800">
-            
-              <a href="/tamil/verbs/%E0%AE%8F%E0%AE%B1%E0%AF%81,v3/">verb (ēri, ēra)</a>
-            
-          </span>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/verbs:motion/">verbs:motion</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">ōɖu</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/ஓடு">ஓடு</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">run</p>
-
-      
-      <p>
-        
-          <span class="text-xs bg-green-100 p-0.5 px-2 rounded rounded-full text-green-800">
-            
-              <a href="/tamil/verbs/%E0%AE%93%E0%AE%9F%E0%AF%81,v3-i/">verb (ōɖi, ōɖa) (intrans.)</a>
-            
-          </span>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/verbs:motion/">verbs:motion</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">ōʈʈu</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/ஓட்டு">ஓட்டு</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">make run; drive, goad, incite</p>
-
-      
-      <p>
-        
-          <span class="text-xs bg-green-100 p-0.5 px-2 rounded rounded-full text-green-800">
-            
-              <a href="/tamil/verbs/%E0%AE%93%E0%AE%9F%E0%AF%8D%E0%AE%9F%E0%AF%81,v3/">verb (ōʈʈi, ōʈʈa)</a>
-            
-          </span>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/verbs:motion/">verbs:motion</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">kuni</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/குனி">குனி</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">bow, bend</p>
-
-      
-      <p>
-        
-          <span class="text-xs bg-green-100 p-0.5 px-2 rounded rounded-full text-green-800">
-            
-              <a href="/tamil/verbs/%E0%AE%95%E0%AF%81%E0%AE%A9%E0%AE%BF,v2/">verb (kuniñju, kuniya)</a>
-            
-          </span>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/verbs:motion/">verbs:motion</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">suttu</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/சுற்று">சுற்று</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">go around; revolve</p>
-
-      
-      <p>
-        
-          <span class="text-xs bg-green-100 p-0.5 px-2 rounded rounded-full text-green-800">
-            
-              <a href="/tamil/verbs/%E0%AE%9A%E0%AF%81%E0%AE%B1%E0%AF%8D%E0%AE%B1%E0%AF%81,v3/">verb (sutti, sutta)</a>
-            
-          </span>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/verbs:motion/">verbs:motion</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">taɭɭu</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/தள்ளு">தள்ளு</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">push</p>
-
-      
-      <p>
-        
-          <span class="text-xs bg-green-100 p-0.5 px-2 rounded rounded-full text-green-800">
-            
-              <a href="/tamil/verbs/%E0%AE%A4%E0%AE%B3%E0%AF%8D%E0%AE%B3%E0%AF%81,v3/">verb (taɭɭi, taɭɭa)</a>
-            
-          </span>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/verbs:motion/">verbs:motion</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">tāɳɖu</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/தாண்டு">தாண்டு</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">cross, pass</p>
-
-      
-      <p>
-        
-          <span class="text-xs bg-green-100 p-0.5 px-2 rounded rounded-full text-green-800">
-            
-              <a href="/tamil/verbs/%E0%AE%A4%E0%AE%BE%E0%AE%A3%E0%AF%8D%E0%AE%9F%E0%AF%81,v3/">verb (tāɳɖi, tāɳɖa)</a>
-            
-          </span>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/verbs:motion/">verbs:motion</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">naɖa</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/நட">நட</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">walk; happen</p>
-
-      
-      <p>
-        
-          <span class="text-xs bg-green-100 p-0.5 px-2 rounded rounded-full text-green-800">
-            
-              <a href="/tamil/verbs/%E0%AE%A8%E0%AE%9F,v7/">verb (naɖandu, naɖakka)</a>
-            
-          </span>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/verbs:motion/">verbs:motion</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">nillu</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/நில்">நில்</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">stop, stand</p>
-
-      
-      <p>
-        
-          <span class="text-xs bg-green-100 p-0.5 px-2 rounded rounded-full text-green-800">
-            
-              <a href="/tamil/verbs/%E0%AE%A8%E0%AE%BF%E0%AE%B2%E0%AF%8D,v5/">verb (ninnu, nikka)</a>
-            
-          </span>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/verbs:motion/">verbs:motion</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">nīndu</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/நீந்து">நீந்து</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">swim</p>
-
-      
-      <p>
-        
-          <span class="text-xs bg-green-100 p-0.5 px-2 rounded rounded-full text-green-800">
-            
-              <a href="/tamil/verbs/%E0%AE%A8%E0%AF%80%E0%AE%A8%E0%AF%8D%E0%AE%A4%E0%AF%81,v3/">verb (nīndi, nīnda)</a>
-            
-          </span>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/verbs:motion/">verbs:motion</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">pō</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/போ">போ</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">go</p>
-
-      
-      <p>
-        
-          <span class="text-xs bg-green-100 p-0.5 px-2 rounded rounded-full text-green-800">
-            
-              <a href="/tamil/verbs/%E0%AE%AA%E0%AF%8B,v3/">verb (pōyi, pōga)</a>
-            
-          </span>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/verbs:motion/">verbs:motion</a>
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/irregular/">irregular</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">vā</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/வா">வா</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">come</p>
-
-      
-      <p>
-        
-          <span class="text-xs bg-green-100 p-0.5 px-2 rounded rounded-full text-green-800">
-            
-              <a href="/tamil/verbs/%E0%AE%B5%E0%AE%BE,v2/">verb (vandu, vara)</a>
-            
-          </span>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/verbs:motion/">verbs:motion</a>
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/irregular/">irregular</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
+          <template x-if="entry.meta || entry.tags">
+            <p>
+              <template x-if="entry.meta_text">
+                <span class="w-meta">
+                  <a :href="entry.meta_url" x-text="entry.meta_text"></a>
+                </span>
+              </template>
+              <template x-for="tag in entry.tags">
+                <a class="w-tag" :href="tag.url" x-text="tag.name"></a>
+              </template>
+            </p>
+          </template>
+        </td>
+        <td class="text-right pr-4 text-xs">
+          <template x-if="entry.frequency > 0">
+            <span x-text="entry.order"></span>
+          </template>
+          <template x-if="entry.frequency == 0">
+            <span>(?)</span>
+          </template>
+        </td>
+      </tr>
+    </template>
+  </tbody>
 </table>
 
 

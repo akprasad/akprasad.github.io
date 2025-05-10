@@ -8,12 +8,14 @@
     p [lang="ta"], .grammar td [lang="ta"] { font-weight: 700; font-family: arial; }
     p [lang="en"] { font-style: italic; }
     </style>
+    <link rel="icon" href="data:;base64,=">
     <link href="/tamil/static/gen/style.css" rel="stylesheet">
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="/tamil/static/main.js"></script>
     
   </head>
-  <body class="min-h-screen">
-    <header class="bg-gradient-to-r from-emerald-600 to-emerald-800 text-white shadow-lg">
+  <body class="min-h-screen dark:bg-gray-900 dark:text-white">
+    <header class="bg-linear-to-r from-emerald-600 to-emerald-800 text-white shadow-lg">
       <nav class="flex justify-between shadow-md">
         <a class="block p-4 hover:underline text-2xl font-bold" href="/tamil/">தமிழ்</a>
         <div class="flex items-center text-sm">
@@ -32,397 +34,65 @@
 
 <header class="my-4">
   <h1 class="font-bold text-3xl">
-    Tamil words <span class="font-medium text-slate-400">(exclamations)</span>
+    <a href="/tamil/words/" class="hover:underline">Tamil words</a>
+    <span class="font-medium text-slate-400">&rarr; exclamations</span>
   </h1>
   
 </header>
 
 <p class="text-sm my-2">Showing 15 entries.</p>
 
-<table class="w-full border [&_.definition_a]:text-blue-500 [&_.definition_a]:underline">
+<script type="text/javascript">
+const ENTRIES = [{"id": 2015, "key_formal": "\u0b85\u0b9a\u0bcd\u0b9a\u0b9a\u0bcd\u0b9a\u0bcb", "informal_text": "accacc\u014d", "meta_text": "", "meta_url": null, "frequency": 1, "definition": "oh no, oh dear (a softer version of <i>ayyayo</i>)", "order": null, "tags": [{"name": "exclamations", "url": "/tamil/tags/exclamations/"}]}, {"id": 854, "key_formal": "\u0b85\u0b9f", "informal_text": "a\u0256a", "meta_text": "", "meta_url": null, "frequency": 58, "definition": "oh!", "order": null, "tags": [{"name": "exclamations", "url": "/tamil/tags/exclamations/"}]}, {"id": 1562, "key_formal": "\u0b85\u0b9f\u0baa\u0bcd\u0baa\u0bbe\u0bb5\u0bbf", "informal_text": "a\u0256app\u0101vi", "meta_text": "", "meta_url": null, "frequency": 5, "definition": "oh dear! poor thing!", "order": null, "tags": [{"name": "exclamations", "url": "/tamil/tags/exclamations/"}]}, {"id": 1020, "key_formal": "\u0b85\u0b9f\u0bbf\u0b99\u0bcd\u0b95\u0baa\u0bcd\u0baa\u0bbe", "informal_text": "a\u0256i\u1e45gapp\u0101", "meta_text": "", "meta_url": null, "frequency": 0, "definition": "oh my! oh wow!", "order": null, "tags": [{"name": "exclamations", "url": "/tamil/tags/exclamations/"}]}, {"id": 1725, "key_formal": "\u0b85\u0baa\u0bcd\u0baa\u0b9f\u0bbe", "informal_text": "appa\u0256\u0101", "meta_text": "", "meta_url": null, "frequency": 0, "definition": "oh my! really!", "order": null, "tags": [{"name": "exclamations", "url": "/tamil/tags/exclamations/"}]}, {"id": 1190, "key_formal": "\u0b85\u0baf\u0bcd\u0baf\u0baf\u0bcb", "informal_text": "ayyay\u014d", "meta_text": "", "meta_url": null, "frequency": 125, "definition": "oh no! oh my god!", "order": null, "tags": [{"name": "exclamations", "url": "/tamil/tags/exclamations/"}]}, {"id": 1697, "key_formal": "\u0b86\u0bb9\u0bbe", "informal_text": "\u0101h\u0101", "meta_text": "", "meta_url": null, "frequency": 187, "definition": "aha!", "order": null, "tags": [{"name": "exclamations", "url": "/tamil/tags/exclamations/"}]}, {"id": 1821, "key_formal": "\u0b87\u0ba4\u0bcb", "informal_text": "id\u014d", "meta_text": "", "meta_url": null, "frequency": 222, "definition": "(look) here! see!", "order": null, "tags": [{"name": "exclamations", "url": "/tamil/tags/exclamations/"}]}, {"id": 1820, "key_formal": "\u0b8f\u0baf\u0bcd", "informal_text": "\u0113y", "meta_text": "", "meta_url": null, "frequency": 179, "definition": "hey!", "order": null, "tags": [{"name": "exclamations", "url": "/tamil/tags/exclamations/"}]}, {"id": 1189, "key_formal": "\u0b90\u0baf\u0bcb", "informal_text": "aiy\u014d", "meta_text": "", "meta_url": null, "frequency": 330, "definition": "oh no! oh my god!", "order": null, "tags": [{"name": "exclamations", "url": "/tamil/tags/exclamations/"}]}, {"id": 1623, "key_formal": "\u0b93\u0bb9\u0bcb", "informal_text": "\u014dh\u014d", "meta_text": "", "meta_url": null, "frequency": 18, "definition": "oho! (an exclamation of surprise or amusement)", "order": null, "tags": [{"name": "exclamations", "url": "/tamil/tags/exclamations/"}]}, {"id": 1505, "key_formal": "\u0b9a\u0baa\u0bbe\u0bb7\u0bcd", "informal_text": "sab\u0101\u0282", "meta_text": "", "meta_url": null, "frequency": 38, "definition": "excellent! well done!", "order": null, "tags": [{"name": "exclamations", "url": "/tamil/tags/exclamations/"}]}, {"id": 1588, "key_formal": "\u0b9f\u0bc7\u0baf\u0bcd", "informal_text": "\u0256\u0113y", "meta_text": "", "meta_url": null, "frequency": 163, "definition": "hey! (used disrespectfully, or with close friends)", "order": null, "tags": [{"name": "exclamations", "url": "/tamil/tags/exclamations/"}]}, {"id": 369, "key_formal": "\u0baa\u0bbe\u0bb5\u0bae\u0bcd", "informal_text": "p\u0101vam", "meta_text": "", "meta_url": null, "frequency": 101, "definition": "alas! poor thing!", "order": null, "tags": [{"name": "exclamations", "url": "/tamil/tags/exclamations/"}]}, {"id": 2239, "key_formal": "\u0bae\u0bcd", "informal_text": "m", "meta_text": "", "meta_url": null, "frequency": 178, "definition": "mmm, hmm", "order": null, "tags": [{"name": "exclamations", "url": "/tamil/tags/exclamations/"}]}];
+</script>
+
+<table x-data="wordsTable" class="w-table">
   <thead>
-  <tr class="text-left bg-slate-100 uppercase text-slate-500 text-xs">
-    <th class="p-4 font-medium">Entry</th>
-    <th class="font-medium">Simple meaning</th>
-  </tr>
+    <tr class="text-left bg-slate-100 dark:bg-slate-800 uppercase text-slate-500 dark:text-white text-xs">
+      <th @click.prevent="sortBy('entry')" class="cursor-pointer p-4 font-medium">Entry</th>
+      <th @click.prevent="sortBy('definition')" class="cursor-pointer font-medium">Simple meaning</th>
+      <th @click.prevent="sortBy('frequency')" class="cursor-pointer font-medium text-right p-4">Frequency</th>
+    </tr>
   </thead>
 
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">accaccō</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/அச்சச்சோ">அச்சச்சோ</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">oh no, oh dear (a softer version of <i>ayyayo</i>)</p>
+  <tbody>
+    <template x-for="entry in sortedEntries" :key="entry.id">
+      <tr class="even:bg-slate-50 dark:even:bg-slate-800">
+        <td class="p-4">
+          <span>
+            <span class="w-entry" x-text="entry.informal_text"></span>
+            <a class="block text-blue-500 hover:underline"
+              :href="'https://ta.wiktionary.org/wiki/' + entry.key_formal"
+              x-text="entry.key_formal"></a>
+          </span>
+        </td>
+        <td class="py-2">
+          <p class="mb-2 definition" x-html="entry.definition"></p>
 
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/exclamations/">exclamations</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">aɖa</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/அட">அட</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">oh!</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/exclamations/">exclamations</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">aɖappāvi</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/அடப்பாவி">அடப்பாவி</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">oh dear! poor thing!</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/exclamations/">exclamations</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">aɖiṅgappā</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/அடிங்கப்பா">அடிங்கப்பா</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">oh my! oh wow!</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/exclamations/">exclamations</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">appaɖā</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/அப்படா">அப்படா</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">oh my! really!</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/exclamations/">exclamations</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">ayyayō</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/அய்யயோ">அய்யயோ</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">oh no! oh my god!</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/exclamations/">exclamations</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">āhā</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/ஆஹா">ஆஹா</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">aha!</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/exclamations/">exclamations</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">idō</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/இதோ">இதோ</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">(look) here! see!</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/exclamations/">exclamations</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">ēy</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/ஏய்">ஏய்</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">hey!</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/exclamations/">exclamations</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">aiyō</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/ஐயோ">ஐயோ</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">oh no! oh my god!</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/exclamations/">exclamations</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">ōhō</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/ஓஹோ">ஓஹோ</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">oho! (an exclamation of surprise or amusement)</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/exclamations/">exclamations</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">sabāʂ</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/சபாஷ்">சபாஷ்</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">excellent! well done!</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/exclamations/">exclamations</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">ɖēy</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/டேய்">டேய்</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">hey! (used disrespectfully, or with close friends)</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/exclamations/">exclamations</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">pāvam</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/பாவம்">பாவம்</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">alas! poor thing!</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/exclamations/">exclamations</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">m</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/ம்">ம்</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">mmm, hmm</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/exclamations/">exclamations</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
+          <template x-if="entry.meta || entry.tags">
+            <p>
+              <template x-if="entry.meta_text">
+                <span class="w-meta">
+                  <a :href="entry.meta_url" x-text="entry.meta_text"></a>
+                </span>
+              </template>
+              <template x-for="tag in entry.tags">
+                <a class="w-tag" :href="tag.url" x-text="tag.name"></a>
+              </template>
+            </p>
+          </template>
+        </td>
+        <td class="text-right pr-4 text-xs">
+          <template x-if="entry.frequency > 0">
+            <span x-text="entry.order"></span>
+          </template>
+          <template x-if="entry.frequency == 0">
+            <span>(?)</span>
+          </template>
+        </td>
+      </tr>
+    </template>
+  </tbody>
 </table>
 
 

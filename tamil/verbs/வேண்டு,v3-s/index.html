@@ -8,12 +8,14 @@
     p [lang="ta"], .grammar td [lang="ta"] { font-weight: 700; font-family: arial; }
     p [lang="en"] { font-style: italic; }
     </style>
+    <link rel="icon" href="data:;base64,=">
     <link href="/tamil/static/gen/style.css" rel="stylesheet">
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="/tamil/static/main.js"></script>
     
   </head>
-  <body class="min-h-screen">
-    <header class="bg-gradient-to-r from-emerald-600 to-emerald-800 text-white shadow-lg">
+  <body class="min-h-screen dark:bg-gray-900 dark:text-white">
+    <header class="bg-linear-to-r from-emerald-600 to-emerald-800 text-white shadow-lg">
       <nav class="flex justify-between shadow-md">
         <a class="block p-4 hover:underline text-2xl font-bold" href="/tamil/">தமிழ்</a>
         <div class="flex items-center text-sm">
@@ -38,7 +40,7 @@
   <p class="my-0 text-lg">be necessary or wanted</p>
 
   
-  <nav class="prose text-sm my-2">
+  <nav class="prose dark:prose-invert text-sm my-2">
     View on Wiktionary
     (<a href="https://ta.wiktionary.org/wiki/வேண்டு">Tamil</a> | 
     <a href="https://en.wiktionary.org/wiki/வேண்டு">English</a>),
@@ -51,9 +53,9 @@
 
 <ul class="flex my-4">
   <li><a class="p-2 border-b-2 border-transparent"
-    :class="{'!border-black': activeTab === 0}" @click.prevent="activeTab = 0" href="#">Informal</a></li>
+    :class="{'border-black!': activeTab === 0}" @click.prevent="activeTab = 0" href="#">Informal</a></li>
   <li><a class="p-2 border-b-2 border-transparent"
-    :class="{'!border-black': activeTab === 1}" @click.prevent="activeTab = 1" href="#">Formal</a></li>
+    :class="{'border-black!': activeTab === 1}" @click.prevent="activeTab = 1" href="#">Formal</a></li>
 </ul>
 
 
@@ -66,13 +68,16 @@
 
 
 
-<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2
+  [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l
+  [&_th]:dark:bg-slate-700 [&_th]:dark:text-white [&_tr]:dark:border-slate-700
+  ">
   
   <caption class="font-bold text-lg my-4">vēɳɖu (வேண்டு) &mdash; Statements</caption>
 
   
-    <tr class="text-sm !border-l-0">
-      <th class="!bg-transparent w-28">&nbsp;</th>
+    <tr class="text-sm border-l-0!">
+      <th class="bg-transparent! w-28">&nbsp;</th>
       <th>Future</th>
       <th>Negative future</th>
     </tr>
@@ -96,11 +101,14 @@
 
 
 
-<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2
+  [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l
+  [&_th]:dark:bg-slate-700 [&_th]:dark:text-white [&_tr]:dark:border-slate-700
+  ">
   
   <caption class="font-bold text-lg my-4">vēɳɖu (வேண்டு) &mdash; Commands</caption>
-  <tr class="text-sm !border-l-0">
-    <th class="!bg-transparent">&nbsp;</th><th>Positive</th><th>Negative</th>
+  <tr class="text-sm border-l-0!">
+    <th class="bg-transparent!">&nbsp;</th><th>Positive</th><th>Negative</th>
   </tr>
   <tr>
     <th class="text-sm">Singular</th>
@@ -123,11 +131,14 @@
 
 </table>
 
-<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2
+  [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l
+  [&_th]:dark:bg-slate-700 [&_th]:dark:text-white [&_tr]:dark:border-slate-700
+  ">
   
   <caption class="font-bold text-lg my-4">vēɳɖu (வேண்டு) &mdash; Non-finite verbs</caption>
-  <tr class="text-sm !border-l-0">
-    <th class="!bg-transparent">&nbsp;</th><th>Positive</th><th>Negative</th>
+  <tr class="text-sm border-l-0!">
+    <th class="bg-transparent!">&nbsp;</th><th>Positive</th><th>Negative</th>
   </tr>
   <tr>
     <th class="text-sm">to do X<br><span class="text-xs text-slate-400">(infinitive)</span></th>
@@ -182,12 +193,15 @@
 
 
 
-<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2
+  [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l
+  [&_th]:dark:bg-slate-700 [&_th]:dark:text-white [&_tr]:dark:border-slate-700
+  ">
   
   <caption class="font-bold text-lg my-4">vēɳɖu (வேண்டு) &mdash; Verbal adjectives</caption>
 
-  <tr class="text-sm !border-l-0">
-    <th class="!bg-transparent">&nbsp;</th><th>Positive</th><th>Negative</th>
+  <tr class="text-sm border-l-0!">
+    <th class="bg-transparent!">&nbsp;</th><th>Positive</th><th>Negative</th>
   </tr>
   <tr>
     <th class="text-sm">Past</th>
@@ -215,12 +229,15 @@
 
 
 
-<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2
+  [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l
+  [&_th]:dark:bg-slate-700 [&_th]:dark:text-white [&_tr]:dark:border-slate-700
+  ">
   
   <caption class="font-bold text-lg my-4">vēɳɖu (வேண்டு) &mdash; Gerunds</caption>
 
-  <tr class="text-sm !border-l-0">
-    <th class="!bg-transparent">&nbsp;</th><th>Positive</th><th>Negative</th>
+  <tr class="text-sm border-l-0!">
+    <th class="bg-transparent!">&nbsp;</th><th>Positive</th><th>Negative</th>
   </tr>
   <tr>
     <th class="text-sm">Past</th>
@@ -248,11 +265,14 @@
 
 
 
-<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2
+  [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l
+  [&_th]:dark:bg-slate-700 [&_th]:dark:text-white [&_tr]:dark:border-slate-700
+  ">
   
   <caption class="font-bold text-lg my-4">vēɳɖu (வேண்டு) &mdash; Verbal nouns</caption>
-  <tr class="text-sm !border-l-0">
-    <th class="!bg-transparent w-28">&nbsp;</th>
+  <tr class="text-sm border-l-0!">
+    <th class="bg-transparent! w-28">&nbsp;</th>
     <th>Past</th>
     <th>Present</th>
     <th>Future</th>
@@ -360,11 +380,14 @@
 
 <div x-show="activeTab === 1">
 
-<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2
+  [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l
+  [&_th]:dark:bg-slate-700 [&_th]:dark:text-white [&_tr]:dark:border-slate-700
+  ">
   
   <caption class="font-bold text-lg my-4">vēɳɖu (வேண்டு) &mdash; Statements</caption>
-  <tr class="text-sm !border-l-0">
-    <th class="!bg-transparent w-28">&nbsp;</th>
+  <tr class="text-sm border-l-0!">
+    <th class="bg-transparent! w-28">&nbsp;</th>
     <th>Past</th>
     <th>Present</th>
     <th>Future</th>
@@ -625,11 +648,14 @@
 
 
 
-<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2
+  [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l
+  [&_th]:dark:bg-slate-700 [&_th]:dark:text-white [&_tr]:dark:border-slate-700
+  ">
   
   <caption class="font-bold text-lg my-4">vēɳɖu (வேண்டு) &mdash; Commands</caption>
-  <tr class="text-sm !border-l-0">
-    <th class="!bg-transparent">&nbsp;</th><th>Positive</th><th>Negative</th>
+  <tr class="text-sm border-l-0!">
+    <th class="bg-transparent!">&nbsp;</th><th>Positive</th><th>Negative</th>
   </tr>
   <tr>
     <th class="text-sm">Singular</th>
@@ -659,11 +685,14 @@
 
 
 
-<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2
+  [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l
+  [&_th]:dark:bg-slate-700 [&_th]:dark:text-white [&_tr]:dark:border-slate-700
+  ">
   
   <caption class="font-bold text-lg my-4">vēɳɖu (வேண்டு) &mdash; Non-finite verbs</caption>
-  <tr class="text-sm !border-l-0">
-    <th class="!bg-transparent">&nbsp;</th><th>Positive</th><th>Negative</th>
+  <tr class="text-sm border-l-0!">
+    <th class="bg-transparent!">&nbsp;</th><th>Positive</th><th>Negative</th>
   </tr>
   <tr>
     <th class="text-sm">to do X<br><span class="text-xs text-slate-400">(infinitive)</span></th>
@@ -727,12 +756,15 @@
 
 
 
-<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2
+  [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l
+  [&_th]:dark:bg-slate-700 [&_th]:dark:text-white [&_tr]:dark:border-slate-700
+  ">
   
   <caption class="font-bold text-lg my-4">vēɳɖu (வேண்டு) &mdash; Verbal adjectives</caption>
 
-  <tr class="text-sm !border-l-0">
-    <th class="!bg-transparent">&nbsp;</th><th>Positive</th><th>Negative</th>
+  <tr class="text-sm border-l-0!">
+    <th class="bg-transparent!">&nbsp;</th><th>Positive</th><th>Negative</th>
   </tr>
   <tr>
     <th class="text-sm">Past</th>
@@ -764,11 +796,14 @@
 
 
 
-<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2
+  [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l
+  [&_th]:dark:bg-slate-700 [&_th]:dark:text-white [&_tr]:dark:border-slate-700
+  ">
   
   <caption class="font-bold text-lg my-4">vēɳɖu (வேண்டு) &mdash; Verbal nouns</caption>
-  <tr class="text-sm !border-l-0">
-    <th class="!bg-transparent w-28">&nbsp;</th>
+  <tr class="text-sm border-l-0!">
+    <th class="bg-transparent! w-28">&nbsp;</th>
     <th>Past</th>
     <th>Present</th>
     <th>Future</th>
@@ -919,11 +954,14 @@
 
 
 
-<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2 [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l">
+<table class="w-full my-8 overflow-scroll [&_th]:text-center [&_th]:p-2
+  [&_th]:bg-slate-100 [&_th]:text-slate-500 [&_tr]:border-b border-r [&_tr]:border-l
+  [&_th]:dark:bg-slate-700 [&_th]:dark:text-white [&_tr]:dark:border-slate-700
+  ">
   
   <caption class="font-bold text-lg my-4">vēɳɖu (வேண்டு) &mdash; Statements (2)</caption>
-  <tr class="text-sm !border-l-0">
-    <th class="!bg-transparent w-28">&nbsp;</th>
+  <tr class="text-sm border-l-0!">
+    <th class="bg-transparent! w-28">&nbsp;</th>
     <th>Classical negative</th>
   </tr>
 

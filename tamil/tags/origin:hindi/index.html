@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tamil words (tag: origin:hindi)</title>
+    <style type="text/css">
+    p [lang="ta"], .grammar td [lang="ta"] { font-weight: 700; font-family: arial; }
+    p [lang="en"] { font-style: italic; }
+    </style>
+    <link rel="icon" href="data:;base64,=">
+    <link href="/tamil/static/gen/style.css" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="/tamil/static/main.js"></script>
+    
+  </head>
+  <body class="min-h-screen dark:bg-gray-900 dark:text-white">
+    <header class="bg-linear-to-r from-emerald-600 to-emerald-800 text-white shadow-lg">
+      <nav class="flex justify-between shadow-md">
+        <a class="block p-4 hover:underline text-2xl font-bold" href="/tamil/">தமிழ்</a>
+        <div class="flex items-center text-sm">
+          
+          <a class="block p-2 hover:underline" href="/tamil/sounds/">Sounds</a>
+          <a class="block p-2 hover:underline" href="/tamil/grammar/">Grammar</a>
+          <a class="block p-2 hover:underline" href="/tamil/words/">Words</a>
+          
+          
+        </div>
+      </nav>
+    </header>
+
+      
+<article class="px-4 mt-24 mx-auto max-w-6xl">
+
+<header class="my-4">
+  <h1 class="font-bold text-3xl">
+    <a href="/tamil/words/" class="hover:underline">Tamil words</a>
+    <span class="font-medium text-slate-400">&rarr; origin:hindi</span>
+  </h1>
+  
+</header>
+
+<p class="text-sm my-2">Showing 3 entries.</p>
+
+<script type="text/javascript">
+const ENTRIES = [{"id": 2184, "key_formal": "\u0ba4\u0baf\u0bbe\u0bb0\u0bbf", "informal_text": "tay\u0101ri", "meta_text": "verb (tay\u0101riccu, tay\u0101rikka) (trans.)", "meta_url": "/tamil/verbs/%E0%AE%A4%E0%AE%AF%E0%AE%BE%E0%AE%B0%E0%AE%BF,v6-t/", "frequency": 29, "definition": "prepare, get ready", "order": null, "tags": [{"name": "origin:hindi", "url": "/tamil/tags/origin:hindi/"}]}, {"id": 285, "key_formal": "\u0ba4\u0baf\u0bbe\u0bb0\u0bcd", "informal_text": "tay\u0101r", "meta_text": "", "meta_url": null, "frequency": 269, "definition": "ready", "order": null, "tags": [{"name": "origin:hindi", "url": "/tamil/tags/origin:hindi/"}]}, {"id": 2119, "key_formal": "\u0ba4\u0bb0\u0bcd\u0baa\u0bbe\u0bb0\u0bcd", "informal_text": "darb\u0101r", "meta_text": "", "meta_url": null, "frequency": 37, "definition": "royal court (<a href=\"https://en.wikipedia.org/wiki/Durbar_(court)\">durbar</a>)", "order": null, "tags": [{"name": "politics", "url": "/tamil/tags/politics/"}, {"name": "origin:hindi", "url": "/tamil/tags/origin:hindi/"}]}];
+</script>
+
+<table x-data="wordsTable" class="w-table">
+  <thead>
+    <tr class="text-left bg-slate-100 dark:bg-slate-800 uppercase text-slate-500 dark:text-white text-xs">
+      <th @click.prevent="sortBy('entry')" class="cursor-pointer p-4 font-medium">Entry</th>
+      <th @click.prevent="sortBy('definition')" class="cursor-pointer font-medium">Simple meaning</th>
+      <th @click.prevent="sortBy('frequency')" class="cursor-pointer font-medium text-right p-4">Frequency</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <template x-for="entry in sortedEntries" :key="entry.id">
+      <tr class="even:bg-slate-50 dark:even:bg-slate-800">
+        <td class="p-4">
+          <span>
+            <span class="w-entry" x-text="entry.informal_text"></span>
+            <a class="block text-blue-500 hover:underline"
+              :href="'https://ta.wiktionary.org/wiki/' + entry.key_formal"
+              x-text="entry.key_formal"></a>
+          </span>
+        </td>
+        <td class="py-2">
+          <p class="mb-2 definition" x-html="entry.definition"></p>
+
+          <template x-if="entry.meta || entry.tags">
+            <p>
+              <template x-if="entry.meta_text">
+                <span class="w-meta">
+                  <a :href="entry.meta_url" x-text="entry.meta_text"></a>
+                </span>
+              </template>
+              <template x-for="tag in entry.tags">
+                <a class="w-tag" :href="tag.url" x-text="tag.name"></a>
+              </template>
+            </p>
+          </template>
+        </td>
+        <td class="text-right pr-4 text-xs">
+          <template x-if="entry.frequency > 0">
+            <span x-text="entry.order"></span>
+          </template>
+          <template x-if="entry.frequency == 0">
+            <span>(?)</span>
+          </template>
+        </td>
+      </tr>
+    </template>
+  </tbody>
+</table>
+
+
+</article>
+
+
+    <footer class="sticky top-[100vh] bg-slate-700 text-white p-4 mt-24">
+      &copy; 2025
+    </footer>
+  </body>
+</html>

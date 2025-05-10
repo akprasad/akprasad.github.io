@@ -1,6 +1,17 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
+/* Preserve Tailwind v3 border behavior. */
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
+
 .video-btn {
   @apply text-xs rounded bg-slate-600 text-slate-100 p-2 hover:bg-slate-500 transition cursor-pointer;
 }
@@ -23,4 +34,19 @@
  */
 .video-t {
   @apply cursor-pointer hover:underline;
+}
+
+.w-table {
+  @apply w-full border dark:border-slate-700 [&_.definition_a]:text-blue-500 [&_.definition_a]:underline;
+}
+
+.w-entry {
+  @apply text-slate-700 dark:text-white;
+}
+
+.w-meta {
+  @apply text-xs bg-green-100 dark:bg-green-800 p-0.5 px-2 rounded rounded-full text-green-800 dark:text-white;
+}
+.w-tag {
+  @apply text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200 dark:bg-sky-900 dark:text-white dark:border-sky-800;
 }

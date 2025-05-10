@@ -8,12 +8,14 @@
     p [lang="ta"], .grammar td [lang="ta"] { font-weight: 700; font-family: arial; }
     p [lang="en"] { font-style: italic; }
     </style>
+    <link rel="icon" href="data:;base64,=">
     <link href="/tamil/static/gen/style.css" rel="stylesheet">
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="/tamil/static/main.js"></script>
     
   </head>
-  <body class="min-h-screen">
-    <header class="bg-gradient-to-r from-emerald-600 to-emerald-800 text-white shadow-lg">
+  <body class="min-h-screen dark:bg-gray-900 dark:text-white">
+    <header class="bg-linear-to-r from-emerald-600 to-emerald-800 text-white shadow-lg">
       <nav class="flex justify-between shadow-md">
         <a class="block p-4 hover:underline text-2xl font-bold" href="/tamil/">தமிழ்</a>
         <div class="flex items-center text-sm">
@@ -32,497 +34,67 @@
 
 <header class="my-4">
   <h1 class="font-bold text-3xl">
-    Tamil words <span class="font-medium text-slate-400">(context:formal)</span>
+    <a href="/tamil/words/" class="hover:underline">Tamil words</a>
+    <span class="font-medium text-slate-400">&rarr; context:formal</span>
   </h1>
   
   <p class="mt-2 text-slate-600">Words generally found only in formal Tamil.</p>
   
 </header>
 
-<p class="text-sm my-2">Showing 17 entries.</p>
+<p class="text-sm my-2">Showing 18 entries.</p>
 
-<table class="w-full border [&_.definition_a]:text-blue-500 [&_.definition_a]:underline">
+<script type="text/javascript">
+const ENTRIES = [{"id": 1331, "key_formal": "\u0b85\u0b9a\u0bcd\u0b9a\u0bae\u0bcd", "informal_text": "accam", "meta_text": "", "meta_url": null, "frequency": 0, "definition": "fear", "order": null, "tags": [{"name": "context:formal", "url": "/tamil/tags/context:formal/"}]}, {"id": 1089, "key_formal": "\u0b85\u0b9f\u0bc1\u0b95\u0bcd\u0b95\u0bb3\u0bc8", "informal_text": "a\u0256ukka\u026de", "meta_text": "", "meta_url": null, "frequency": 0, "definition": "kitchen", "order": null, "tags": [{"name": "house", "url": "/tamil/tags/house/"}, {"name": "context:formal", "url": "/tamil/tags/context:formal/"}]}, {"id": 1145, "key_formal": "\u0b85\u0bae\u0bb0\u0bcd", "informal_text": "amar", "meta_text": "verb (amandu, amara)", "meta_url": "/tamil/verbs/%E0%AE%85%E0%AE%AE%E0%AE%B0%E0%AF%8D,v2/", "frequency": 2, "definition": "settle or sit down; be calm, still, quiet", "order": null, "tags": [{"name": "context:formal", "url": "/tamil/tags/context:formal/"}]}, {"id": 1461, "key_formal": "\u0b87\u0bb4\u0bc1\u0baa\u0bcd\u0baa\u0bb1\u0bc8", "informal_text": "i\u0290uppare", "meta_text": "", "meta_url": null, "frequency": 0, "definition": "drawer", "order": null, "tags": [{"name": "context:formal", "url": "/tamil/tags/context:formal/"}]}, {"id": 1375, "key_formal": "\u0b89\u0ba3\u0bb5\u0b95\u0bae\u0bcd", "informal_text": "o\u0273avagam", "meta_text": "", "meta_url": null, "frequency": 0, "definition": "restaurant", "order": null, "tags": [{"name": "town", "url": "/tamil/tags/town/"}, {"name": "context:formal", "url": "/tamil/tags/context:formal/"}]}, {"id": 903, "key_formal": "\u0b89\u0ba3\u0bb5\u0bc1", "informal_text": "o\u0273avu", "meta_text": "", "meta_url": null, "frequency": 119, "definition": "food", "order": null, "tags": [{"name": "food", "url": "/tamil/tags/food/"}, {"name": "context:formal", "url": "/tamil/tags/context:formal/"}]}, {"id": 1398, "key_formal": "\u0b89\u0bb0\u0bc8\u0baf\u0bbe\u0b9f\u0bc1", "informal_text": "oraiy\u0101\u0256u", "meta_text": "verb (orey\u0101\u0256i, orey\u0101\u0256a)", "meta_url": "/tamil/verbs/%E0%AE%89%E0%AE%B0%E0%AF%88%E0%AE%AF%E0%AE%BE%E0%AE%9F%E0%AF%81,v3/", "frequency": 0, "definition": "converse (formal)", "order": null, "tags": [{"name": "context:formal", "url": "/tamil/tags/context:formal/"}, {"name": "verbs:communication", "url": "/tamil/tags/verbs:communication/"}]}, {"id": 1333, "key_formal": "\u0b89\u0bb1\u0b95\u0bcd\u0b95\u0bae\u0bcd", "informal_text": "orakkam", "meta_text": "", "meta_url": null, "frequency": 0, "definition": "sleep, slumber", "order": null, "tags": [{"name": "context:formal", "url": "/tamil/tags/context:formal/"}]}, {"id": 1334, "key_formal": "\u0b89\u0bb1\u0b99\u0bcd\u0b95\u0bc1", "informal_text": "ora\u1e45gu", "meta_text": "verb (ora\u1e45gi, ora\u1e45ga)", "meta_url": "/tamil/verbs/%E0%AE%89%E0%AE%B1%E0%AE%99%E0%AF%8D%E0%AE%95%E0%AF%81,v3/", "frequency": 0, "definition": "sleep", "order": null, "tags": [{"name": "context:formal", "url": "/tamil/tags/context:formal/"}]}, {"id": 1473, "key_formal": "\u0b95\u0bbe", "informal_text": "k\u0101", "meta_text": "verb (k\u0101ttu, k\u0101kka)", "meta_url": "/tamil/verbs/%E0%AE%95%E0%AE%BE,v6/", "frequency": 288, "definition": "protect", "order": null, "tags": [{"name": "context:formal", "url": "/tamil/tags/context:formal/"}]}, {"id": 2102, "key_formal": "\u0b95\u0bbe\u0ba3\u0bcd", "informal_text": "k\u0101\u0273", "meta_text": "verb (ka\u0273\u0256u, k\u0101\u0273a) (trans.)", "meta_url": "/tamil/verbs/%E0%AE%95%E0%AE%BE%E0%AE%A3%E0%AF%8D,v5-t/", "frequency": 175, "definition": "see", "order": null, "tags": [{"name": "context:formal", "url": "/tamil/tags/context:formal/"}]}, {"id": 1389, "key_formal": "\u0b95\u0bbe\u0bb2\u0bcd\u0baa\u0ba8\u0bcd\u0ba4\u0bc1", "informal_text": "k\u0101lbandu", "meta_text": "", "meta_url": null, "frequency": 0, "definition": "football (soccer)", "order": null, "tags": [{"name": "context:formal", "url": "/tamil/tags/context:formal/"}, {"name": "games", "url": "/tamil/tags/games/"}]}, {"id": 1390, "key_formal": "\u0b95\u0bc8\u0baa\u0bcd\u0baa\u0ba8\u0bcd\u0ba4\u0bc1", "informal_text": "kaippandu", "meta_text": "", "meta_url": null, "frequency": 0, "definition": "handball", "order": null, "tags": [{"name": "context:formal", "url": "/tamil/tags/context:formal/"}, {"name": "games", "url": "/tamil/tags/games/"}]}, {"id": 1060, "key_formal": "\u0b9c\u0bb2\u0bae\u0bcd", "informal_text": "jalam", "meta_text": "", "meta_url": null, "frequency": 0, "definition": "water", "order": null, "tags": [{"name": "nature", "url": "/tamil/tags/nature/"}, {"name": "origin:sanskrit", "url": "/tamil/tags/origin:sanskrit/"}, {"name": "context:formal", "url": "/tamil/tags/context:formal/"}]}, {"id": 1359, "key_formal": "\u0ba4\u0b9a\u0bbe\u0baa\u0bcd\u0ba4\u0bae\u0bcd", "informal_text": "das\u0101bdam", "meta_text": "", "meta_url": null, "frequency": 0, "definition": "decade", "order": null, "tags": [{"name": "time", "url": "/tamil/tags/time/"}, {"name": "origin:sanskrit", "url": "/tamil/tags/origin:sanskrit/"}, {"name": "context:formal", "url": "/tamil/tags/context:formal/"}]}, {"id": 1400, "key_formal": "\u0ba8\u0bc0\u0bb0\u0bcd", "informal_text": "n\u012br", "meta_text": "", "meta_url": null, "frequency": 22, "definition": "water", "order": null, "tags": [{"name": "context:formal", "url": "/tamil/tags/context:formal/"}]}, {"id": 1387, "key_formal": "\u0baa\u0bc2\u0baa\u0bcd\u0baa\u0ba8\u0bcd\u0ba4\u0bc1", "informal_text": "p\u016bppandu", "meta_text": "", "meta_url": null, "frequency": 0, "definition": "badminton", "order": null, "tags": [{"name": "context:formal", "url": "/tamil/tags/context:formal/"}, {"name": "games", "url": "/tamil/tags/games/"}]}, {"id": 1388, "key_formal": "\u0bae\u0b9f\u0bcd\u0b9f\u0bc8\u0baa\u0bcd\u0baa\u0ba8\u0bcd\u0ba4\u0bc1", "informal_text": "ma\u0288\u0288aippandu", "meta_text": "", "meta_url": null, "frequency": 0, "definition": "cricket", "order": null, "tags": [{"name": "context:formal", "url": "/tamil/tags/context:formal/"}, {"name": "games", "url": "/tamil/tags/games/"}]}];
+</script>
+
+<table x-data="wordsTable" class="w-table">
   <thead>
-  <tr class="text-left bg-slate-100 uppercase text-slate-500 text-xs">
-    <th class="p-4 font-medium">Entry</th>
-    <th class="font-medium">Simple meaning</th>
-  </tr>
+    <tr class="text-left bg-slate-100 dark:bg-slate-800 uppercase text-slate-500 dark:text-white text-xs">
+      <th @click.prevent="sortBy('entry')" class="cursor-pointer p-4 font-medium">Entry</th>
+      <th @click.prevent="sortBy('definition')" class="cursor-pointer font-medium">Simple meaning</th>
+      <th @click.prevent="sortBy('frequency')" class="cursor-pointer font-medium text-right p-4">Frequency</th>
+    </tr>
   </thead>
 
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">accam</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/அச்சம்">அச்சம்</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">fear</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/context:formal/">context:formal</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">aɖukkaɭe</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/அடுக்களை">அடுக்களை</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">kitchen</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/house/">house</a>
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/context:formal/">context:formal</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">amar</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/அமர்">அமர்</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">settle or sit down; be calm, still, quiet</p>
-
-      
-      <p>
-        
-          <span class="text-xs bg-green-100 p-0.5 px-2 rounded rounded-full text-green-800">
-            
-              <a href="/tamil/verbs/%E0%AE%85%E0%AE%AE%E0%AE%B0%E0%AF%8D,v2/">verb (amandu, amara)</a>
-            
+  <tbody>
+    <template x-for="entry in sortedEntries" :key="entry.id">
+      <tr class="even:bg-slate-50 dark:even:bg-slate-800">
+        <td class="p-4">
+          <span>
+            <span class="w-entry" x-text="entry.informal_text"></span>
+            <a class="block text-blue-500 hover:underline"
+              :href="'https://ta.wiktionary.org/wiki/' + entry.key_formal"
+              x-text="entry.key_formal"></a>
           </span>
-        
+        </td>
+        <td class="py-2">
+          <p class="mb-2 definition" x-html="entry.definition"></p>
 
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/context:formal/">context:formal</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">iʐuppare</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/இழுப்பறை">இழுப்பறை</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">drawer</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/context:formal/">context:formal</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">oɳavagam</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/உணவகம்">உணவகம்</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">restaurant</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/town/">town</a>
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/context:formal/">context:formal</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">oɳavu</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/உணவு">உணவு</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">food</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/food/">food</a>
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/context:formal/">context:formal</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">oraiyāɖu</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/உரையாடு">உரையாடு</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">converse (formal)</p>
-
-      
-      <p>
-        
-          <span class="text-xs bg-green-100 p-0.5 px-2 rounded rounded-full text-green-800">
-            
-              <a href="/tamil/verbs/%E0%AE%89%E0%AE%B0%E0%AF%88%E0%AE%AF%E0%AE%BE%E0%AE%9F%E0%AF%81,v3/">verb (oreyāɖi, oreyāɖa)</a>
-            
-          </span>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/context:formal/">context:formal</a>
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/verbs:communication/">verbs:communication</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">orakkam</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/உறக்கம்">உறக்கம்</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">sleep, slumber</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/context:formal/">context:formal</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">oraṅgu</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/உறங்கு">உறங்கு</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">sleep</p>
-
-      
-      <p>
-        
-          <span class="text-xs bg-green-100 p-0.5 px-2 rounded rounded-full text-green-800">
-            
-              <a href="/tamil/verbs/%E0%AE%89%E0%AE%B1%E0%AE%99%E0%AF%8D%E0%AE%95%E0%AF%81,v3/">verb (oraṅgi, oraṅga)</a>
-            
-          </span>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/context:formal/">context:formal</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">kā</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/கா">கா</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">protect</p>
-
-      
-      <p>
-        
-          <span class="text-xs bg-green-100 p-0.5 px-2 rounded rounded-full text-green-800">
-            
-              <a href="/tamil/verbs/%E0%AE%95%E0%AE%BE,v6/">verb (kāttu, kākka)</a>
-            
-          </span>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/context:formal/">context:formal</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">kālbandu</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/கால்பந்து">கால்பந்து</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">football (soccer)</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/context:formal/">context:formal</a>
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/games/">games</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">kaippandu</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/கைப்பந்து">கைப்பந்து</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">handball</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/context:formal/">context:formal</a>
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/games/">games</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">jalam</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/ஜலம்">ஜலம்</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">water</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/nature/">nature</a>
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/origin:sanskrit/">origin:sanskrit</a>
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/context:formal/">context:formal</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">dasābdam</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/தசாப்தம்">தசாப்தம்</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">decade</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/time/">time</a>
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/origin:sanskrit/">origin:sanskrit</a>
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/context:formal/">context:formal</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">nīr</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/நீர்">நீர்</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">water</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/context:formal/">context:formal</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">pūppandu</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/பூப்பந்து">பூப்பந்து</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">badminton</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/context:formal/">context:formal</a>
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/games/">games</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">maʈʈaippandu</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/மட்டைப்பந்து">மட்டைப்பந்து</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">cricket</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/context:formal/">context:formal</a>
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/games/">games</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
+          <template x-if="entry.meta || entry.tags">
+            <p>
+              <template x-if="entry.meta_text">
+                <span class="w-meta">
+                  <a :href="entry.meta_url" x-text="entry.meta_text"></a>
+                </span>
+              </template>
+              <template x-for="tag in entry.tags">
+                <a class="w-tag" :href="tag.url" x-text="tag.name"></a>
+              </template>
+            </p>
+          </template>
+        </td>
+        <td class="text-right pr-4 text-xs">
+          <template x-if="entry.frequency > 0">
+            <span x-text="entry.order"></span>
+          </template>
+          <template x-if="entry.frequency == 0">
+            <span>(?)</span>
+          </template>
+        </td>
+      </tr>
+    </template>
+  </tbody>
 </table>
 
 

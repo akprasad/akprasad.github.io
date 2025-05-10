@@ -8,12 +8,14 @@
     p [lang="ta"], .grammar td [lang="ta"] { font-weight: 700; font-family: arial; }
     p [lang="en"] { font-style: italic; }
     </style>
+    <link rel="icon" href="data:;base64,=">
     <link href="/tamil/static/gen/style.css" rel="stylesheet">
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="/tamil/static/main.js"></script>
     
   </head>
-  <body class="min-h-screen">
-    <header class="bg-gradient-to-r from-emerald-600 to-emerald-800 text-white shadow-lg">
+  <body class="min-h-screen dark:bg-gray-900 dark:text-white">
+    <header class="bg-linear-to-r from-emerald-600 to-emerald-800 text-white shadow-lg">
       <nav class="flex justify-between shadow-md">
         <a class="block p-4 hover:underline text-2xl font-bold" href="/tamil/">தமிழ்</a>
         <div class="flex items-center text-sm">
@@ -32,440 +34,65 @@
 
 <header class="my-4">
   <h1 class="font-bold text-3xl">
-    Tamil words <span class="font-medium text-slate-400">(school)</span>
+    <a href="/tamil/words/" class="hover:underline">Tamil words</a>
+    <span class="font-medium text-slate-400">&rarr; school</span>
   </h1>
   
 </header>
 
 <p class="text-sm my-2">Showing 16 entries.</p>
 
-<table class="w-full border [&_.definition_a]:text-blue-500 [&_.definition_a]:underline">
+<script type="text/javascript">
+const ENTRIES = [{"id": 145, "key_formal": "\u0b85\u0b95\u0bb0\u0bbe\u0ba4\u0bbf", "informal_text": "agar\u0101di", "meta_text": "", "meta_url": null, "frequency": 0, "definition": "dictionary", "order": null, "tags": [{"name": "school", "url": "/tamil/tags/school/"}, {"name": "origin:sanskrit", "url": "/tamil/tags/origin:sanskrit/"}]}, {"id": 1724, "key_formal": "\u0b85\u0bb0\u0bc8\u0baa\u0bcd \u0baa\u0bb0\u0bc0\u0b9f\u0bcd\u0b9a\u0bc8", "informal_text": "are par\u012b\u0288ce", "meta_text": "", "meta_url": null, "frequency": 0, "definition": "midterm exam", "order": null, "tags": [{"name": "school", "url": "/tamil/tags/school/"}]}, {"id": 427, "key_formal": "\u0b85\u0bb1\u0bbf\u0b9e\u0bb0\u0bcd", "informal_text": "ari\u00f1ar", "meta_text": "", "meta_url": null, "frequency": 5, "definition": "scholar", "order": null, "tags": [{"name": "school", "url": "/tamil/tags/school/"}]}, {"id": 37, "key_formal": "\u0b86\u0b9a\u0bbf\u0bb0\u0bbf\u0baf\u0bb0\u0bcd", "informal_text": "\u0101siriyar", "meta_text": "", "meta_url": null, "frequency": 0, "definition": "teacher", "order": null, "tags": [{"name": "school", "url": "/tamil/tags/school/"}]}, {"id": 134, "key_formal": "\u0b8e\u0bb4\u0bc1\u0ba4\u0bcd\u0ba4\u0bc1", "informal_text": "e\u0290uttu", "meta_text": "", "meta_url": null, "frequency": 3, "definition": "letter (alphabet)", "order": null, "tags": [{"name": "school", "url": "/tamil/tags/school/"}, {"name": "writing", "url": "/tamil/tags/writing/"}]}, {"id": 1619, "key_formal": "\u0b95\u0bb2\u0bcd\u0bb5\u0bbf", "informal_text": "kalvi", "meta_text": "", "meta_url": null, "frequency": 52, "definition": "education", "order": null, "tags": [{"name": "school", "url": "/tamil/tags/school/"}]}, {"id": 600, "key_formal": "\u0b95\u0bc1\u0bb0\u0bc1", "informal_text": "guru", "meta_text": "", "meta_url": null, "frequency": 199, "definition": "guru, teacher", "order": null, "tags": [{"name": "school", "url": "/tamil/tags/school/"}]}, {"id": 1616, "key_formal": "\u0b95\u0bc1\u0bb0\u0bc1\u0b95\u0bc1\u0bb2\u0bae\u0bcd", "informal_text": "gurukulam", "meta_text": "", "meta_url": null, "frequency": 19, "definition": "<a href=\"https://en.wikipedia.org/wiki/Gurukula\">gurukula</a> (an ancient Indian education system where students would live with a guru)", "order": null, "tags": [{"name": "school", "url": "/tamil/tags/school/"}, {"name": "origin:sanskrit", "url": "/tamil/tags/origin:sanskrit/"}]}, {"id": 683, "key_formal": "\u0baa\u0b9f\u0bbf\u0baa\u0bcd\u0baa\u0bbe\u0bb3\u0bbf", "informal_text": "pa\u0256ipp\u0101\u026di", "meta_text": "", "meta_url": null, "frequency": 0, "definition": "student", "order": null, "tags": [{"name": "school", "url": "/tamil/tags/school/"}]}, {"id": 601, "key_formal": "\u0baa\u0b9f\u0bbf\u0baa\u0bcd\u0baa\u0bc1", "informal_text": "pa\u0256ippu", "meta_text": "", "meta_url": null, "frequency": 99, "definition": "study, studies", "order": null, "tags": [{"name": "school", "url": "/tamil/tags/school/"}]}, {"id": 803, "key_formal": "\u0baa\u0bb3\u0bcd\u0bb3\u0bbf\u0b95\u0bcd\u0b95\u0bc2\u0b9f\u0bae\u0bcd", "informal_text": "pa\u026d\u026dikk\u016b\u0256am", "meta_text": "", "meta_url": null, "frequency": 19, "definition": "school", "order": null, "tags": [{"name": "school", "url": "/tamil/tags/school/"}]}, {"id": 248, "key_formal": "\u0baa\u0bbe\u0b9f\u0bae\u0bcd", "informal_text": "p\u0101\u0256am", "meta_text": "", "meta_url": null, "frequency": 10, "definition": "lesson", "order": null, "tags": [{"name": "school", "url": "/tamil/tags/school/"}]}, {"id": 180, "key_formal": "\u0baa\u0bc1\u0ba4\u0bcd\u0ba4\u0b95\u0bae\u0bcd", "informal_text": "pustakam", "meta_text": "", "meta_url": null, "frequency": 12, "definition": "book", "order": null, "tags": [{"name": "school", "url": "/tamil/tags/school/"}, {"name": "writing", "url": "/tamil/tags/writing/"}]}, {"id": 440, "key_formal": "\u0bae\u0bbe\u0ba3\u0bb5\u0ba9\u0bcd", "informal_text": "m\u0101\u0273avan", "meta_text": "noun (animate)", "meta_url": "/tamil/nouns/", "frequency": 3, "definition": "student", "order": null, "tags": [{"name": "school", "url": "/tamil/tags/school/"}]}, {"id": 136, "key_formal": "\u0bb5\u0bbe\u0b95\u0bcd\u0b95\u0bbf\u0baf\u0bae\u0bcd", "informal_text": "v\u0101kkiyam", "meta_text": "", "meta_url": null, "frequency": 0, "definition": "sentence", "order": null, "tags": [{"name": "school", "url": "/tamil/tags/school/"}, {"name": "writing", "url": "/tamil/tags/writing/"}]}, {"id": 135, "key_formal": "\u0bb5\u0bbe\u0bb0\u0bcd\u0ba4\u0bcd\u0ba4\u0bc8", "informal_text": "v\u0101rtte", "meta_text": "", "meta_url": null, "frequency": 47, "definition": "word", "order": null, "tags": [{"name": "school", "url": "/tamil/tags/school/"}, {"name": "writing", "url": "/tamil/tags/writing/"}]}];
+</script>
+
+<table x-data="wordsTable" class="w-table">
   <thead>
-  <tr class="text-left bg-slate-100 uppercase text-slate-500 text-xs">
-    <th class="p-4 font-medium">Entry</th>
-    <th class="font-medium">Simple meaning</th>
-  </tr>
+    <tr class="text-left bg-slate-100 dark:bg-slate-800 uppercase text-slate-500 dark:text-white text-xs">
+      <th @click.prevent="sortBy('entry')" class="cursor-pointer p-4 font-medium">Entry</th>
+      <th @click.prevent="sortBy('definition')" class="cursor-pointer font-medium">Simple meaning</th>
+      <th @click.prevent="sortBy('frequency')" class="cursor-pointer font-medium text-right p-4">Frequency</th>
+    </tr>
   </thead>
 
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">agarādi</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/அகராதி">அகராதி</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">dictionary</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/school/">school</a>
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/origin:sanskrit/">origin:sanskrit</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">are parīʈce</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/அரைப் பரீட்சை">அரைப் பரீட்சை</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">midterm exam</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/school/">school</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">ariñar</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/அறிஞர்">அறிஞர்</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">scholar</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/school/">school</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">āsiriyar</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/ஆசிரியர்">ஆசிரியர்</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">teacher</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/school/">school</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">eʐuttu</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/எழுத்து">எழுத்து</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">letter (alphabet)</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/school/">school</a>
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/writing/">writing</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">kalvi</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/கல்வி">கல்வி</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">education</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/school/">school</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">guru</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/குரு">குரு</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">guru, teacher</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/school/">school</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">gurukulam</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/குருகுலம்">குருகுலம்</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition"><a href="https://en.wikipedia.org/wiki/Gurukula">gurukula</a> (an ancient Indian education system where students would live with a guru)</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/school/">school</a>
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/origin:sanskrit/">origin:sanskrit</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">paɖippāɭi</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/படிப்பாளி">படிப்பாளி</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">student</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/school/">school</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">paɖippu</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/படிப்பு">படிப்பு</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">study, studies</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/school/">school</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">paɭɭikkūɖam</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/பள்ளிக்கூடம்">பள்ளிக்கூடம்</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">school</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/school/">school</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">pāɖam</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/பாடம்">பாடம்</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">lesson</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/school/">school</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">pustakam</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/புத்தகம்">புத்தகம்</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">book</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/school/">school</a>
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/writing/">writing</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">māɳavan</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/மாணவன்">மாணவன்</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">student</p>
-
-      
-      <p>
-        
-          <span class="text-xs bg-green-100 p-0.5 px-2 rounded rounded-full text-green-800">
-            
-              <a href="/tamil/nouns/">noun (animate)</a>
-            
+  <tbody>
+    <template x-for="entry in sortedEntries" :key="entry.id">
+      <tr class="even:bg-slate-50 dark:even:bg-slate-800">
+        <td class="p-4">
+          <span>
+            <span class="w-entry" x-text="entry.informal_text"></span>
+            <a class="block text-blue-500 hover:underline"
+              :href="'https://ta.wiktionary.org/wiki/' + entry.key_formal"
+              x-text="entry.key_formal"></a>
           </span>
-        
+        </td>
+        <td class="py-2">
+          <p class="mb-2 definition" x-html="entry.definition"></p>
 
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/school/">school</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">vākkiyam</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/வாக்கியம்">வாக்கியம்</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">sentence</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/school/">school</a>
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/writing/">writing</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">vārtte</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/வார்த்தை">வார்த்தை</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">word</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/school/">school</a>
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/writing/">writing</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
+          <template x-if="entry.meta || entry.tags">
+            <p>
+              <template x-if="entry.meta_text">
+                <span class="w-meta">
+                  <a :href="entry.meta_url" x-text="entry.meta_text"></a>
+                </span>
+              </template>
+              <template x-for="tag in entry.tags">
+                <a class="w-tag" :href="tag.url" x-text="tag.name"></a>
+              </template>
+            </p>
+          </template>
+        </td>
+        <td class="text-right pr-4 text-xs">
+          <template x-if="entry.frequency > 0">
+            <span x-text="entry.order"></span>
+          </template>
+          <template x-if="entry.frequency == 0">
+            <span>(?)</span>
+          </template>
+        </td>
+      </tr>
+    </template>
+  </tbody>
 </table>
 
 

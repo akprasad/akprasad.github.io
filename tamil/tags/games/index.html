@@ -8,12 +8,14 @@
     p [lang="ta"], .grammar td [lang="ta"] { font-weight: 700; font-family: arial; }
     p [lang="en"] { font-style: italic; }
     </style>
+    <link rel="icon" href="data:;base64,=">
     <link href="/tamil/static/gen/style.css" rel="stylesheet">
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="/tamil/static/main.js"></script>
     
   </head>
-  <body class="min-h-screen">
-    <header class="bg-gradient-to-r from-emerald-600 to-emerald-800 text-white shadow-lg">
+  <body class="min-h-screen dark:bg-gray-900 dark:text-white">
+    <header class="bg-linear-to-r from-emerald-600 to-emerald-800 text-white shadow-lg">
       <nav class="flex justify-between shadow-md">
         <a class="block p-4 hover:underline text-2xl font-bold" href="/tamil/">தமிழ்</a>
         <div class="flex items-center text-sm">
@@ -32,282 +34,65 @@
 
 <header class="my-4">
   <h1 class="font-bold text-3xl">
-    Tamil words <span class="font-medium text-slate-400">(games)</span>
+    <a href="/tamil/words/" class="hover:underline">Tamil words</a>
+    <span class="font-medium text-slate-400">&rarr; games</span>
   </h1>
   
 </header>
 
 <p class="text-sm my-2">Showing 10 entries.</p>
 
-<table class="w-full border [&_.definition_a]:text-blue-500 [&_.definition_a]:underline">
+<script type="text/javascript">
+const ENTRIES = [{"id": 139, "key_formal": "\u0b95\u0ba3\u0bcd\u0ba3\u0bbe\u0bae\u0bc2\u0b9a\u0bcd\u0b9a\u0bbf", "informal_text": "ka\u0273\u0273\u0101m\u016bcci", "meta_text": "", "meta_url": null, "frequency": 0, "definition": "hide-and-seek", "order": null, "tags": [{"name": "games", "url": "/tamil/tags/games/"}]}, {"id": 1389, "key_formal": "\u0b95\u0bbe\u0bb2\u0bcd\u0baa\u0ba8\u0bcd\u0ba4\u0bc1", "informal_text": "k\u0101lbandu", "meta_text": "", "meta_url": null, "frequency": 0, "definition": "football (soccer)", "order": null, "tags": [{"name": "context:formal", "url": "/tamil/tags/context:formal/"}, {"name": "games", "url": "/tamil/tags/games/"}]}, {"id": 1390, "key_formal": "\u0b95\u0bc8\u0baa\u0bcd\u0baa\u0ba8\u0bcd\u0ba4\u0bc1", "informal_text": "kaippandu", "meta_text": "", "meta_url": null, "frequency": 0, "definition": "handball", "order": null, "tags": [{"name": "context:formal", "url": "/tamil/tags/context:formal/"}, {"name": "games", "url": "/tamil/tags/games/"}]}, {"id": 1384, "key_formal": "\u0b9a\u0ba4\u0bc1\u0bb0\u0b99\u0bcd\u0b95\u0bae\u0bcd", "informal_text": "sadura\u1e45gam", "meta_text": "", "meta_url": null, "frequency": 8, "definition": "chess", "order": null, "tags": [{"name": "origin:sanskrit", "url": "/tamil/tags/origin:sanskrit/"}, {"name": "games", "url": "/tamil/tags/games/"}]}, {"id": 1660, "key_formal": "\u0baa\u0ba8\u0bcd\u0ba4\u0baf\u0bae\u0bcd", "informal_text": "pandayam", "meta_text": "", "meta_url": null, "frequency": 1, "definition": "race", "order": null, "tags": [{"name": "games", "url": "/tamil/tags/games/"}]}, {"id": 1386, "key_formal": "\u0baa\u0ba8\u0bcd\u0ba4\u0bc1", "informal_text": "pandu", "meta_text": "", "meta_url": null, "frequency": 25, "definition": "ball", "order": null, "tags": [{"name": "games", "url": "/tamil/tags/games/"}]}, {"id": 1387, "key_formal": "\u0baa\u0bc2\u0baa\u0bcd\u0baa\u0ba8\u0bcd\u0ba4\u0bc1", "informal_text": "p\u016bppandu", "meta_text": "", "meta_url": null, "frequency": 0, "definition": "badminton", "order": null, "tags": [{"name": "context:formal", "url": "/tamil/tags/context:formal/"}, {"name": "games", "url": "/tamil/tags/games/"}]}, {"id": 1645, "key_formal": "\u0baa\u0bcb\u0b9f\u0bcd\u0b9f\u0bbf", "informal_text": "p\u014d\u0288\u0288i", "meta_text": "", "meta_url": null, "frequency": 126, "definition": "competition, contest", "order": null, "tags": [{"name": "games", "url": "/tamil/tags/games/"}]}, {"id": 1388, "key_formal": "\u0bae\u0b9f\u0bcd\u0b9f\u0bc8\u0baa\u0bcd\u0baa\u0ba8\u0bcd\u0ba4\u0bc1", "informal_text": "ma\u0288\u0288aippandu", "meta_text": "", "meta_url": null, "frequency": 0, "definition": "cricket", "order": null, "tags": [{"name": "context:formal", "url": "/tamil/tags/context:formal/"}, {"name": "games", "url": "/tamil/tags/games/"}]}, {"id": 1481, "key_formal": "\u0bb5\u0bbf\u0bb2\u0bcd\u0bb5\u0bbf\u0ba4\u0bcd\u0ba4\u0bc8", "informal_text": "vilvitte", "meta_text": "", "meta_url": null, "frequency": 13, "definition": "archery", "order": null, "tags": [{"name": "games", "url": "/tamil/tags/games/"}]}];
+</script>
+
+<table x-data="wordsTable" class="w-table">
   <thead>
-  <tr class="text-left bg-slate-100 uppercase text-slate-500 text-xs">
-    <th class="p-4 font-medium">Entry</th>
-    <th class="font-medium">Simple meaning</th>
-  </tr>
+    <tr class="text-left bg-slate-100 dark:bg-slate-800 uppercase text-slate-500 dark:text-white text-xs">
+      <th @click.prevent="sortBy('entry')" class="cursor-pointer p-4 font-medium">Entry</th>
+      <th @click.prevent="sortBy('definition')" class="cursor-pointer font-medium">Simple meaning</th>
+      <th @click.prevent="sortBy('frequency')" class="cursor-pointer font-medium text-right p-4">Frequency</th>
+    </tr>
   </thead>
 
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">kaɳɳāmūcci</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/கண்ணாமூச்சி">கண்ணாமூச்சி</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">hide-and-seek</p>
+  <tbody>
+    <template x-for="entry in sortedEntries" :key="entry.id">
+      <tr class="even:bg-slate-50 dark:even:bg-slate-800">
+        <td class="p-4">
+          <span>
+            <span class="w-entry" x-text="entry.informal_text"></span>
+            <a class="block text-blue-500 hover:underline"
+              :href="'https://ta.wiktionary.org/wiki/' + entry.key_formal"
+              x-text="entry.key_formal"></a>
+          </span>
+        </td>
+        <td class="py-2">
+          <p class="mb-2 definition" x-html="entry.definition"></p>
 
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/games/">games</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">kālbandu</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/கால்பந்து">கால்பந்து</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">football (soccer)</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/context:formal/">context:formal</a>
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/games/">games</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">kaippandu</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/கைப்பந்து">கைப்பந்து</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">handball</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/context:formal/">context:formal</a>
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/games/">games</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">saduraṅgam</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/சதுரங்கம்">சதுரங்கம்</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">chess</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/origin:sanskrit/">origin:sanskrit</a>
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/games/">games</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">pandayam</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/பந்தயம்">பந்தயம்</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">race</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/games/">games</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">pandu</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/பந்து">பந்து</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">ball</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/games/">games</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">pūppandu</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/பூப்பந்து">பூப்பந்து</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">badminton</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/context:formal/">context:formal</a>
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/games/">games</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">pōʈʈi</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/போட்டி">போட்டி</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">competition, contest</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/games/">games</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">maʈʈaippandu</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/மட்டைப்பந்து">மட்டைப்பந்து</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">cricket</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/context:formal/">context:formal</a>
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/games/">games</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">vilvitte</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/வில்வித்தை">வில்வித்தை</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">archery</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/games/">games</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
+          <template x-if="entry.meta || entry.tags">
+            <p>
+              <template x-if="entry.meta_text">
+                <span class="w-meta">
+                  <a :href="entry.meta_url" x-text="entry.meta_text"></a>
+                </span>
+              </template>
+              <template x-for="tag in entry.tags">
+                <a class="w-tag" :href="tag.url" x-text="tag.name"></a>
+              </template>
+            </p>
+          </template>
+        </td>
+        <td class="text-right pr-4 text-xs">
+          <template x-if="entry.frequency > 0">
+            <span x-text="entry.order"></span>
+          </template>
+          <template x-if="entry.frequency == 0">
+            <span>(?)</span>
+          </template>
+        </td>
+      </tr>
+    </template>
+  </tbody>
 </table>
 
 

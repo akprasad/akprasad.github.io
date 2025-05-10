@@ -8,12 +8,14 @@
     p [lang="ta"], .grammar td [lang="ta"] { font-weight: 700; font-family: arial; }
     p [lang="en"] { font-style: italic; }
     </style>
+    <link rel="icon" href="data:;base64,=">
     <link href="/tamil/static/gen/style.css" rel="stylesheet">
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="/tamil/static/main.js"></script>
     
   </head>
-  <body class="min-h-screen">
-    <header class="bg-gradient-to-r from-emerald-600 to-emerald-800 text-white shadow-lg">
+  <body class="min-h-screen dark:bg-gray-900 dark:text-white">
+    <header class="bg-linear-to-r from-emerald-600 to-emerald-800 text-white shadow-lg">
       <nav class="flex justify-between shadow-md">
         <a class="block p-4 hover:underline text-2xl font-bold" href="/tamil/">தமிழ்</a>
         <div class="flex items-center text-sm">
@@ -32,342 +34,65 @@
 
 <header class="my-4">
   <h1 class="font-bold text-3xl">
-    Tamil words <span class="font-medium text-slate-400">(wedding)</span>
+    <a href="/tamil/words/" class="hover:underline">Tamil words</a>
+    <span class="font-medium text-slate-400">&rarr; wedding</span>
   </h1>
   
 </header>
 
 <p class="text-sm my-2">Showing 12 entries.</p>
 
-<table class="w-full border [&_.definition_a]:text-blue-500 [&_.definition_a]:underline">
+<script type="text/javascript">
+const ENTRIES = [{"id": 194, "key_formal": "\u0b95\u0bb2\u0bcd\u0baf\u0bbe\u0ba3\u0bae\u0bcd", "informal_text": "kaly\u0101\u0273am", "meta_text": "", "meta_url": null, "frequency": 517, "definition": "marriage", "order": null, "tags": [{"name": "origin:sanskrit", "url": "/tamil/tags/origin:sanskrit/"}, {"name": "wedding", "url": "/tamil/tags/wedding/"}]}, {"id": 1324, "key_formal": "\u0b9c\u0bbe\u0ba4\u0b95\u0bae\u0bcd", "informal_text": "j\u0101dagam", "meta_text": "", "meta_url": null, "frequency": 34, "definition": "horoscope", "order": null, "tags": [{"name": "origin:sanskrit", "url": "/tamil/tags/origin:sanskrit/"}, {"name": "wedding", "url": "/tamil/tags/wedding/"}]}, {"id": 1193, "key_formal": "\u0ba4\u0bbf\u0bb0\u0bc1\u0bae\u0ba3\u0bae\u0bcd", "informal_text": "tiruma\u0273am", "meta_text": "", "meta_url": null, "frequency": 271, "definition": "wedding, marriage", "order": null, "tags": [{"name": "wedding", "url": "/tamil/tags/wedding/"}]}, {"id": 1250, "key_formal": "\u0ba8\u0bbf\u0b9a\u0bcd\u0b9a\u0baf\u0ba4\u0bbe\u0bb0\u0bcd\u0ba4\u0bcd\u0ba4\u0bae\u0bcd", "informal_text": "niccayad\u0101rttam", "meta_text": "", "meta_url": null, "frequency": 9, "definition": "engagement", "order": null, "tags": [{"name": "wedding", "url": "/tamil/tags/wedding/"}]}, {"id": 1800, "key_formal": "\u0baa\u0bca\u0bb0\u0bc1\u0ba4\u0bcd\u0ba4\u0bae\u0bcd", "informal_text": "poruttam", "meta_text": "", "meta_url": null, "frequency": 6, "definition": "match, suitability", "order": null, "tags": [{"name": "wedding", "url": "/tamil/tags/wedding/"}]}, {"id": 1192, "key_formal": "\u0bae\u0b99\u0bcd\u0b95\u0bb3\u0b9a\u0bc2\u0ba4\u0bcd\u0ba4\u0bbf\u0bb0\u0bae\u0bcd", "informal_text": "ma\u1e45ga\u026das\u016bttiram", "meta_text": "", "meta_url": null, "frequency": 0, "definition": "mangala sutra", "order": null, "tags": [{"name": "origin:sanskrit", "url": "/tamil/tags/origin:sanskrit/"}, {"name": "wedding", "url": "/tamil/tags/wedding/"}]}, {"id": 1252, "key_formal": "\u0bae\u0ba3\u0bae\u0b95\u0ba9\u0bcd", "informal_text": "ma\u0273amagan", "meta_text": "noun (animate)", "meta_url": "/tamil/nouns/", "frequency": 1, "definition": "groom", "order": null, "tags": [{"name": "wedding", "url": "/tamil/tags/wedding/"}]}, {"id": 1251, "key_formal": "\u0bae\u0ba3\u0bae\u0b95\u0bb3\u0bcd", "informal_text": "ma\u0273amaga\u026d", "meta_text": "", "meta_url": null, "frequency": 0, "definition": "bride", "order": null, "tags": [{"name": "wedding", "url": "/tamil/tags/wedding/"}]}, {"id": 939, "key_formal": "\u0bae\u0ba3\u0bcd\u0b9f\u0baa\u0bae\u0bcd", "informal_text": "ma\u0273\u0256abam", "meta_text": "", "meta_url": null, "frequency": 10, "definition": "pavilion", "order": null, "tags": [{"name": "origin:sanskrit", "url": "/tamil/tags/origin:sanskrit/"}, {"name": "wedding", "url": "/tamil/tags/wedding/"}]}, {"id": 382, "key_formal": "\u0bae\u0ba9\u0bc8\u0bb5\u0bbf", "informal_text": "manevi", "meta_text": "", "meta_url": null, "frequency": 210, "definition": "wife", "order": null, "tags": [{"name": "family", "url": "/tamil/tags/family/"}, {"name": "wedding", "url": "/tamil/tags/wedding/"}]}, {"id": 638, "key_formal": "\u0bae\u0bbe\u0baa\u0bcd\u0baa\u0bbf\u0bb3\u0bcd\u0bb3\u0bc8", "informal_text": "m\u0101ppi\u026d\u026de", "meta_text": "", "meta_url": null, "frequency": 50, "definition": "groom, son-in-law", "order": null, "tags": [{"name": "family", "url": "/tamil/tags/family/"}, {"name": "wedding", "url": "/tamil/tags/wedding/"}]}, {"id": 938, "key_formal": "\u0bb5\u0bb0\u0ba4\u0b9f\u0bcd\u0b9a\u0ba3\u0bc8", "informal_text": "varada\u0288ca\u0273e", "meta_text": "", "meta_url": null, "frequency": 13, "definition": "dowry", "order": null, "tags": [{"name": "origin:sanskrit", "url": "/tamil/tags/origin:sanskrit/"}, {"name": "wedding", "url": "/tamil/tags/wedding/"}]}];
+</script>
+
+<table x-data="wordsTable" class="w-table">
   <thead>
-  <tr class="text-left bg-slate-100 uppercase text-slate-500 text-xs">
-    <th class="p-4 font-medium">Entry</th>
-    <th class="font-medium">Simple meaning</th>
-  </tr>
+    <tr class="text-left bg-slate-100 dark:bg-slate-800 uppercase text-slate-500 dark:text-white text-xs">
+      <th @click.prevent="sortBy('entry')" class="cursor-pointer p-4 font-medium">Entry</th>
+      <th @click.prevent="sortBy('definition')" class="cursor-pointer font-medium">Simple meaning</th>
+      <th @click.prevent="sortBy('frequency')" class="cursor-pointer font-medium text-right p-4">Frequency</th>
+    </tr>
   </thead>
 
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">kalyāɳam</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/கல்யாணம்">கல்யாணம்</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">marriage</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/origin:sanskrit/">origin:sanskrit</a>
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/wedding/">wedding</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">jādagam</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/ஜாதகம்">ஜாதகம்</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">horoscope</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/origin:sanskrit/">origin:sanskrit</a>
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/wedding/">wedding</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">tirumaɳam</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/திருமணம்">திருமணம்</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">wedding, marriage</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/wedding/">wedding</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">niccayadārttam</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/நிச்சயதார்த்தம்">நிச்சயதார்த்தம்</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">engagement</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/wedding/">wedding</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">poruttam</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/பொருத்தம்">பொருத்தம்</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">match, suitability</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/wedding/">wedding</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">maṅgaɭasūttiram</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/மங்களசூத்திரம்">மங்களசூத்திரம்</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">mangala sutra</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/origin:sanskrit/">origin:sanskrit</a>
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/wedding/">wedding</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">maɳamagan</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/மணமகன்">மணமகன்</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">groom</p>
-
-      
-      <p>
-        
-          <span class="text-xs bg-green-100 p-0.5 px-2 rounded rounded-full text-green-800">
-            
-              <a href="/tamil/nouns/">noun (animate)</a>
-            
+  <tbody>
+    <template x-for="entry in sortedEntries" :key="entry.id">
+      <tr class="even:bg-slate-50 dark:even:bg-slate-800">
+        <td class="p-4">
+          <span>
+            <span class="w-entry" x-text="entry.informal_text"></span>
+            <a class="block text-blue-500 hover:underline"
+              :href="'https://ta.wiktionary.org/wiki/' + entry.key_formal"
+              x-text="entry.key_formal"></a>
           </span>
-        
+        </td>
+        <td class="py-2">
+          <p class="mb-2 definition" x-html="entry.definition"></p>
 
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/wedding/">wedding</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">maɳamagaɭ</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/மணமகள்">மணமகள்</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">bride</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/wedding/">wedding</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">maɳɖabam</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/மண்டபம்">மண்டபம்</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">pavilion</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/origin:sanskrit/">origin:sanskrit</a>
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/wedding/">wedding</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">manevi</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/மனைவி">மனைவி</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">wife</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/family/">family</a>
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/wedding/">wedding</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">māppiɭɭe</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/மாப்பிள்ளை">மாப்பிள்ளை</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">groom, son-in-law</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/family/">family</a>
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/wedding/">wedding</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">varadaʈcaɳe</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/வரதட்சணை">வரதட்சணை</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">dowry</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/origin:sanskrit/">origin:sanskrit</a>
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/wedding/">wedding</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
+          <template x-if="entry.meta || entry.tags">
+            <p>
+              <template x-if="entry.meta_text">
+                <span class="w-meta">
+                  <a :href="entry.meta_url" x-text="entry.meta_text"></a>
+                </span>
+              </template>
+              <template x-for="tag in entry.tags">
+                <a class="w-tag" :href="tag.url" x-text="tag.name"></a>
+              </template>
+            </p>
+          </template>
+        </td>
+        <td class="text-right pr-4 text-xs">
+          <template x-if="entry.frequency > 0">
+            <span x-text="entry.order"></span>
+          </template>
+          <template x-if="entry.frequency == 0">
+            <span>(?)</span>
+          </template>
+        </td>
+      </tr>
+    </template>
+  </tbody>
 </table>
 
 

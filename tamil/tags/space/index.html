@@ -8,12 +8,14 @@
     p [lang="ta"], .grammar td [lang="ta"] { font-weight: 700; font-family: arial; }
     p [lang="en"] { font-style: italic; }
     </style>
+    <link rel="icon" href="data:;base64,=">
     <link href="/tamil/static/gen/style.css" rel="stylesheet">
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="/tamil/static/main.js"></script>
     
   </head>
-  <body class="min-h-screen">
-    <header class="bg-gradient-to-r from-emerald-600 to-emerald-800 text-white shadow-lg">
+  <body class="min-h-screen dark:bg-gray-900 dark:text-white">
+    <header class="bg-linear-to-r from-emerald-600 to-emerald-800 text-white shadow-lg">
       <nav class="flex justify-between shadow-md">
         <a class="block p-4 hover:underline text-2xl font-bold" href="/tamil/">தமிழ்</a>
         <div class="flex items-center text-sm">
@@ -32,299 +34,65 @@
 
 <header class="my-4">
   <h1 class="font-bold text-3xl">
-    Tamil words <span class="font-medium text-slate-400">(space)</span>
+    <a href="/tamil/words/" class="hover:underline">Tamil words</a>
+    <span class="font-medium text-slate-400">&rarr; space</span>
   </h1>
   
 </header>
 
 <p class="text-sm my-2">Showing 11 entries.</p>
 
-<table class="w-full border [&_.definition_a]:text-blue-500 [&_.definition_a]:underline">
+<script type="text/javascript">
+const ENTRIES = [{"id": 156, "key_formal": "\u0b85\u0b9f\u0bc1\u0ba4\u0bcd\u0ba4", "informal_text": "a\u0256utta", "meta_text": "", "meta_url": null, "frequency": 288, "definition": "next", "order": null, "tags": [{"name": "space", "url": "/tamil/tags/space/"}]}, {"id": 305, "key_formal": "\u0b87\u0b9f\u0ba4\u0bc1", "informal_text": "e\u0256adu", "meta_text": "", "meta_url": null, "frequency": 7, "definition": "left", "order": null, "tags": [{"name": "space", "url": "/tamil/tags/space/"}]}, {"id": 230, "key_formal": "\u0b87\u0b9f\u0bae\u0bcd", "informal_text": "e\u0256am", "meta_text": "", "meta_url": null, "frequency": 413, "definition": "space, place", "order": null, "tags": [{"name": "space", "url": "/tamil/tags/space/"}]}, {"id": 1378, "key_formal": "\u0b95\u0bbf\u0bb4\u0b95\u0bcd\u0b95\u0bc1", "informal_text": "ke\u0290akku", "meta_text": "", "meta_url": null, "frequency": 8, "definition": "east", "order": null, "tags": [{"name": "space", "url": "/tamil/tags/space/"}]}, {"id": 375, "key_formal": "\u0ba4\u0bc2\u0bb0\u0bae\u0bcd", "informal_text": "d\u016bram", "meta_text": "", "meta_url": null, "frequency": 438, "definition": "distance", "order": null, "tags": [{"name": "space", "url": "/tamil/tags/space/"}, {"name": "origin:sanskrit", "url": "/tamil/tags/origin:sanskrit/"}]}, {"id": 1377, "key_formal": "\u0ba4\u0bc6\u0bb1\u0bcd\u0b95\u0bc1", "informal_text": "terkku", "meta_text": "", "meta_url": null, "frequency": 38, "definition": "south", "order": null, "tags": [{"name": "space", "url": "/tamil/tags/space/"}]}, {"id": 1049, "key_formal": "\u0baa\u0bc2\u0bb0\u0bcd\u0bb5", "informal_text": "p\u016brva", "meta_text": "", "meta_url": null, "frequency": 2, "definition": "previous", "order": null, "tags": [{"name": "space", "url": "/tamil/tags/space/"}]}, {"id": 1379, "key_formal": "\u0bae\u0bc7\u0bb1\u0bcd\u0b95\u0bc1", "informal_text": "m\u0113rgu", "meta_text": "", "meta_url": null, "frequency": 0, "definition": "west", "order": null, "tags": [{"name": "space", "url": "/tamil/tags/space/"}]}, {"id": 1071, "key_formal": "\u0bb5\u0b9f", "informal_text": "va\u0256a", "meta_text": "", "meta_url": null, "frequency": 0, "definition": "north", "order": null, "tags": [{"name": "space", "url": "/tamil/tags/space/"}]}, {"id": 1376, "key_formal": "\u0bb5\u0b9f\u0b95\u0bcd\u0b95\u0bc1", "informal_text": "va\u0256akku", "meta_text": "", "meta_url": null, "frequency": 19, "definition": "north", "order": null, "tags": [{"name": "space", "url": "/tamil/tags/space/"}]}, {"id": 307, "key_formal": "\u0bb5\u0bb2\u0ba4\u0bc1", "informal_text": "valadu", "meta_text": "", "meta_url": null, "frequency": 11, "definition": "right (side)", "order": null, "tags": [{"name": "space", "url": "/tamil/tags/space/"}]}];
+</script>
+
+<table x-data="wordsTable" class="w-table">
   <thead>
-  <tr class="text-left bg-slate-100 uppercase text-slate-500 text-xs">
-    <th class="p-4 font-medium">Entry</th>
-    <th class="font-medium">Simple meaning</th>
-  </tr>
+    <tr class="text-left bg-slate-100 dark:bg-slate-800 uppercase text-slate-500 dark:text-white text-xs">
+      <th @click.prevent="sortBy('entry')" class="cursor-pointer p-4 font-medium">Entry</th>
+      <th @click.prevent="sortBy('definition')" class="cursor-pointer font-medium">Simple meaning</th>
+      <th @click.prevent="sortBy('frequency')" class="cursor-pointer font-medium text-right p-4">Frequency</th>
+    </tr>
   </thead>
 
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">aɖutta</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/அடுத்த">அடுத்த</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">next</p>
+  <tbody>
+    <template x-for="entry in sortedEntries" :key="entry.id">
+      <tr class="even:bg-slate-50 dark:even:bg-slate-800">
+        <td class="p-4">
+          <span>
+            <span class="w-entry" x-text="entry.informal_text"></span>
+            <a class="block text-blue-500 hover:underline"
+              :href="'https://ta.wiktionary.org/wiki/' + entry.key_formal"
+              x-text="entry.key_formal"></a>
+          </span>
+        </td>
+        <td class="py-2">
+          <p class="mb-2 definition" x-html="entry.definition"></p>
 
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/space/">space</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">eɖadu</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/இடது">இடது</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">left</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/space/">space</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">eɖam</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/இடம்">இடம்</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">space, place</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/space/">space</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">keʐakku</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/கிழக்கு">கிழக்கு</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">east</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/space/">space</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">dūram</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/தூரம்">தூரம்</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">distance</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/space/">space</a>
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/origin:sanskrit/">origin:sanskrit</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">terkku</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/தெற்கு">தெற்கு</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">south</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/space/">space</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">pūrva</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/பூர்வ">பூர்வ</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">previous</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/space/">space</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">mērgu</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/மேற்கு">மேற்கு</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">west</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/space/">space</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">vaɖa</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/வட">வட</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">north</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/space/">space</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">vaɖakku</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/வடக்கு">வடக்கு</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">north</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/space/">space</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">valadu</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/வலது">வலது</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">right (side)</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/space/">space</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
+          <template x-if="entry.meta || entry.tags">
+            <p>
+              <template x-if="entry.meta_text">
+                <span class="w-meta">
+                  <a :href="entry.meta_url" x-text="entry.meta_text"></a>
+                </span>
+              </template>
+              <template x-for="tag in entry.tags">
+                <a class="w-tag" :href="tag.url" x-text="tag.name"></a>
+              </template>
+            </p>
+          </template>
+        </td>
+        <td class="text-right pr-4 text-xs">
+          <template x-if="entry.frequency > 0">
+            <span x-text="entry.order"></span>
+          </template>
+          <template x-if="entry.frequency == 0">
+            <span>(?)</span>
+          </template>
+        </td>
+      </tr>
+    </template>
+  </tbody>
 </table>
 
 

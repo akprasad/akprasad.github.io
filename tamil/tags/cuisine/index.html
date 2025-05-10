@@ -8,12 +8,14 @@
     p [lang="ta"], .grammar td [lang="ta"] { font-weight: 700; font-family: arial; }
     p [lang="en"] { font-style: italic; }
     </style>
+    <link rel="icon" href="data:;base64,=">
     <link href="/tamil/static/gen/style.css" rel="stylesheet">
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="/tamil/static/main.js"></script>
     
   </head>
-  <body class="min-h-screen">
-    <header class="bg-gradient-to-r from-emerald-600 to-emerald-800 text-white shadow-lg">
+  <body class="min-h-screen dark:bg-gray-900 dark:text-white">
+    <header class="bg-linear-to-r from-emerald-600 to-emerald-800 text-white shadow-lg">
       <nav class="flex justify-between shadow-md">
         <a class="block p-4 hover:underline text-2xl font-bold" href="/tamil/">தமிழ்</a>
         <div class="flex items-center text-sm">
@@ -32,348 +34,65 @@
 
 <header class="my-4">
   <h1 class="font-bold text-3xl">
-    Tamil words <span class="font-medium text-slate-400">(cuisine)</span>
+    <a href="/tamil/words/" class="hover:underline">Tamil words</a>
+    <span class="font-medium text-slate-400">&rarr; cuisine</span>
   </h1>
   
 </header>
 
 <p class="text-sm my-2">Showing 12 entries.</p>
 
-<table class="w-full border [&_.definition_a]:text-blue-500 [&_.definition_a]:underline">
+<script type="text/javascript">
+const ENTRIES = [{"id": 920, "key_formal": "\u0b85\u0bb5\u0bbf\u0baf\u0bb2\u0bcd", "informal_text": "aviyal", "meta_text": "", "meta_url": null, "frequency": 0, "definition": "<a href=\"https://en.wikipedia.org/wiki/Avial\">avial</a>", "order": null, "tags": [{"name": "food", "url": "/tamil/tags/food/"}, {"name": "cuisine", "url": "/tamil/tags/cuisine/"}]}, {"id": 922, "key_formal": "\u0b8a\u0ba4\u0bcd\u0ba4\u0baa\u0bcd\u0baa\u0bae\u0bcd", "informal_text": "\u016bttappam", "meta_text": "", "meta_url": null, "frequency": 0, "definition": "<a href=\"https://en.wikipedia.org/wiki/Uttapam\">utthappam</a>", "order": null, "tags": [{"name": "food", "url": "/tamil/tags/food/"}, {"name": "cuisine", "url": "/tamil/tags/cuisine/"}]}, {"id": 1203, "key_formal": "\u0b95\u0bb1\u0bbf", "informal_text": "kari", "meta_text": "", "meta_url": null, "frequency": 9, "definition": "curry, or any meat/vegetable dish with sauce", "order": null, "tags": [{"name": "food", "url": "/tamil/tags/food/"}, {"name": "cuisine", "url": "/tamil/tags/cuisine/"}]}, {"id": 1205, "key_formal": "\u0b95\u0bb1\u0bbf\u0baf\u0bae\u0bc1\u0ba4\u0bc1", "informal_text": "karamudu", "meta_text": "", "meta_url": null, "frequency": 0, "definition": "curry", "order": null, "tags": [{"name": "food", "url": "/tamil/tags/food/"}, {"name": "dialect:brahmin", "url": "/tamil/tags/dialect:brahmin/"}, {"name": "cuisine", "url": "/tamil/tags/cuisine/"}]}, {"id": 100, "key_formal": "\u0b95\u0bc1\u0bb4\u0bae\u0bcd\u0baa\u0bc1", "informal_text": "ko\u0290ambu", "meta_text": "", "meta_url": null, "frequency": 56, "definition": "<a href=\"https://en.wikipedia.org/wiki/Kuzhambu\">kozhambu</a>", "order": null, "tags": [{"name": "food", "url": "/tamil/tags/food/"}, {"name": "cuisine", "url": "/tamil/tags/cuisine/"}]}, {"id": 98, "key_formal": "\u0b9a\u0baa\u0bcd\u0baa\u0bbe\u0ba4\u0bcd\u0ba4\u0bbf", "informal_text": "capp\u0101tti", "meta_text": "", "meta_url": null, "frequency": 1, "definition": "<a href=\"https://en.wikipedia.org/wiki/Chapati\">chapathi</a>", "order": null, "tags": [{"name": "food", "url": "/tamil/tags/food/"}, {"name": "cuisine", "url": "/tamil/tags/cuisine/"}]}, {"id": 101, "key_formal": "\u0b9a\u0bbe\u0bae\u0bcd\u0baa\u0bbe\u0bb0\u0bcd", "informal_text": "s\u0101mb\u0101r", "meta_text": "", "meta_url": null, "frequency": 12, "definition": "<a href=\"https://en.wikipedia.org/wiki/Sambar_(dish)\">sambar</a>", "order": null, "tags": [{"name": "food", "url": "/tamil/tags/food/"}, {"name": "cuisine", "url": "/tamil/tags/cuisine/"}]}, {"id": 921, "key_formal": "\u0b9a\u0bc1\u0ba3\u0bcd\u0b9f\u0bb2\u0bcd", "informal_text": "su\u0273\u0256al", "meta_text": "", "meta_url": null, "frequency": 0, "definition": "sundal (a type of dish made with lentils, legumes, etc.)", "order": null, "tags": [{"name": "food", "url": "/tamil/tags/food/"}, {"name": "cuisine", "url": "/tamil/tags/cuisine/"}]}, {"id": 97, "key_formal": "\u0ba4\u0bcb\u0b9a\u0bc8", "informal_text": "d\u014dse", "meta_text": "", "meta_url": null, "frequency": 4, "definition": "<a href=\"https://en.wikipedia.org/wiki/Dosa_(food)\">dosa</a>", "order": null, "tags": [{"name": "food", "url": "/tamil/tags/food/"}, {"name": "cuisine", "url": "/tamil/tags/cuisine/"}]}, {"id": 483, "key_formal": "\u0baa\u0bca\u0b99\u0bcd\u0b95\u0bb2\u0bcd", "informal_text": "po\u1e45gal", "meta_text": "", "meta_url": null, "frequency": 2, "definition": "<a href=\"https://en.wikipedia.org/wiki/Pongal_(dish)\">pongal</a>", "order": null, "tags": [{"name": "food", "url": "/tamil/tags/food/"}, {"name": "cuisine", "url": "/tamil/tags/cuisine/"}]}, {"id": 919, "key_formal": "\u0bae\u0b9a\u0bbf\u0baf\u0bb2\u0bcd", "informal_text": "masiyal", "meta_text": "", "meta_url": null, "frequency": 0, "definition": "masiyal (mash)", "order": null, "tags": [{"name": "food", "url": "/tamil/tags/food/"}, {"name": "cuisine", "url": "/tamil/tags/cuisine/"}]}, {"id": 102, "key_formal": "\u0bb0\u0b9a\u0bae\u0bcd", "informal_text": "rasam", "meta_text": "", "meta_url": null, "frequency": 1, "definition": "<a href=\"https://en.wikipedia.org/wiki/Rasam_(dish)\">rasam</a>", "order": null, "tags": [{"name": "food", "url": "/tamil/tags/food/"}, {"name": "cuisine", "url": "/tamil/tags/cuisine/"}]}];
+</script>
+
+<table x-data="wordsTable" class="w-table">
   <thead>
-  <tr class="text-left bg-slate-100 uppercase text-slate-500 text-xs">
-    <th class="p-4 font-medium">Entry</th>
-    <th class="font-medium">Simple meaning</th>
-  </tr>
+    <tr class="text-left bg-slate-100 dark:bg-slate-800 uppercase text-slate-500 dark:text-white text-xs">
+      <th @click.prevent="sortBy('entry')" class="cursor-pointer p-4 font-medium">Entry</th>
+      <th @click.prevent="sortBy('definition')" class="cursor-pointer font-medium">Simple meaning</th>
+      <th @click.prevent="sortBy('frequency')" class="cursor-pointer font-medium text-right p-4">Frequency</th>
+    </tr>
   </thead>
 
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">aviyal</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/அவியல்">அவியல்</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition"><a href="https://en.wikipedia.org/wiki/Avial">avial</a></p>
+  <tbody>
+    <template x-for="entry in sortedEntries" :key="entry.id">
+      <tr class="even:bg-slate-50 dark:even:bg-slate-800">
+        <td class="p-4">
+          <span>
+            <span class="w-entry" x-text="entry.informal_text"></span>
+            <a class="block text-blue-500 hover:underline"
+              :href="'https://ta.wiktionary.org/wiki/' + entry.key_formal"
+              x-text="entry.key_formal"></a>
+          </span>
+        </td>
+        <td class="py-2">
+          <p class="mb-2 definition" x-html="entry.definition"></p>
 
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/food/">food</a>
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/cuisine/">cuisine</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">ūttappam</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/ஊத்தப்பம்">ஊத்தப்பம்</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition"><a href="https://en.wikipedia.org/wiki/Uttapam">utthappam</a></p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/food/">food</a>
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/cuisine/">cuisine</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">kari</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/கறி">கறி</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">curry, or any meat/vegetable dish with sauce</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/food/">food</a>
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/cuisine/">cuisine</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">karamudu</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/கறியமுது">கறியமுது</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">curry</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/food/">food</a>
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/dialect:brahmin/">dialect:brahmin</a>
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/cuisine/">cuisine</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">koʐambu</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/குழம்பு">குழம்பு</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition"><a href="https://en.wikipedia.org/wiki/Kuzhambu">kozhambu</a></p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/food/">food</a>
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/cuisine/">cuisine</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">cappātti</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/சப்பாத்தி">சப்பாத்தி</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition"><a href="https://en.wikipedia.org/wiki/Chapati">chapathi</a></p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/food/">food</a>
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/cuisine/">cuisine</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">sāmbār</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/சாம்பார்">சாம்பார்</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition"><a href="https://en.wikipedia.org/wiki/Sambar_(dish)">sambar</a></p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/food/">food</a>
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/cuisine/">cuisine</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">suɳɖal</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/சுண்டல்">சுண்டல்</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">sundal (a type of dish made with lentils, legumes, etc.)</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/food/">food</a>
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/cuisine/">cuisine</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">dōse</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/தோசை">தோசை</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition"><a href="https://en.wikipedia.org/wiki/Dosa_(food)">dosa</a></p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/food/">food</a>
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/cuisine/">cuisine</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">poṅgal</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/பொங்கல்">பொங்கல்</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition"><a href="https://en.wikipedia.org/wiki/Pongal_(dish)">pongal</a></p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/food/">food</a>
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/cuisine/">cuisine</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">masiyal</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/மசியல்">மசியல்</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">masiyal (mash)</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/food/">food</a>
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/cuisine/">cuisine</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">rasam</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/ரசம்">ரசம்</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition"><a href="https://en.wikipedia.org/wiki/Rasam_(dish)">rasam</a></p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/food/">food</a>
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/cuisine/">cuisine</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
+          <template x-if="entry.meta || entry.tags">
+            <p>
+              <template x-if="entry.meta_text">
+                <span class="w-meta">
+                  <a :href="entry.meta_url" x-text="entry.meta_text"></a>
+                </span>
+              </template>
+              <template x-for="tag in entry.tags">
+                <a class="w-tag" :href="tag.url" x-text="tag.name"></a>
+              </template>
+            </p>
+          </template>
+        </td>
+        <td class="text-right pr-4 text-xs">
+          <template x-if="entry.frequency > 0">
+            <span x-text="entry.order"></span>
+          </template>
+          <template x-if="entry.frequency == 0">
+            <span>(?)</span>
+          </template>
+        </td>
+      </tr>
+    </template>
+  </tbody>
 </table>
 
 

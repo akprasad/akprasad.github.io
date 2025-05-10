@@ -8,12 +8,14 @@
     p [lang="ta"], .grammar td [lang="ta"] { font-weight: 700; font-family: arial; }
     p [lang="en"] { font-style: italic; }
     </style>
+    <link rel="icon" href="data:;base64,=">
     <link href="/tamil/static/gen/style.css" rel="stylesheet">
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="/tamil/static/main.js"></script>
     
   </head>
-  <body class="min-h-screen">
-    <header class="bg-gradient-to-r from-emerald-600 to-emerald-800 text-white shadow-lg">
+  <body class="min-h-screen dark:bg-gray-900 dark:text-white">
+    <header class="bg-linear-to-r from-emerald-600 to-emerald-800 text-white shadow-lg">
       <nav class="flex justify-between shadow-md">
         <a class="block p-4 hover:underline text-2xl font-bold" href="/tamil/">தமிழ்</a>
         <div class="flex items-center text-sm">
@@ -32,153 +34,65 @@
 
 <header class="my-4">
   <h1 class="font-bold text-3xl">
-    Tamil words <span class="font-medium text-slate-400">(farming)</span>
+    <a href="/tamil/words/" class="hover:underline">Tamil words</a>
+    <span class="font-medium text-slate-400">&rarr; farming</span>
   </h1>
   
 </header>
 
-<p class="text-sm my-2">Showing 5 entries.</p>
+<p class="text-sm my-2">Showing 6 entries.</p>
 
-<table class="w-full border [&_.definition_a]:text-blue-500 [&_.definition_a]:underline">
+<script type="text/javascript">
+const ENTRIES = [{"id": 1780, "key_formal": "\u0b85\u0bb1\u0bc1\u0bb5\u0b9f\u0bc8", "informal_text": "aruva\u0256e", "meta_text": "", "meta_url": null, "frequency": 8, "definition": "harvest", "order": null, "tags": [{"name": "farming", "url": "/tamil/tags/farming/"}]}, {"id": 1849, "key_formal": "\u0b95\u0ba4\u0bbf\u0bb0\u0b9f\u0bbf", "informal_text": "kadira\u0256i", "meta_text": "verb (kadira\u0256iccu, kadira\u0256ikka)", "meta_url": "/tamil/verbs/%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%B0%E0%AE%9F%E0%AE%BF,v6/", "frequency": 3, "definition": "beat grain, thresh", "order": null, "tags": [{"name": "farming", "url": "/tamil/tags/farming/"}]}, {"id": 1843, "key_formal": "\u0b95\u0bbf\u0b9f\u0b99\u0bcd\u0b95\u0bc1", "informal_text": "ke\u0256a\u1e45gu", "meta_text": "", "meta_url": null, "frequency": 4, "definition": "depot, storehouse, godown", "order": null, "tags": [{"name": "farming", "url": "/tamil/tags/farming/"}]}, {"id": 1850, "key_formal": "\u0b9a\u0bbe\u0b95\u0bc1\u0baa\u0b9f\u0bbf", "informal_text": "s\u0101guba\u0256i", "meta_text": "", "meta_url": null, "frequency": 8, "definition": "sowing", "order": null, "tags": [{"name": "farming", "url": "/tamil/tags/farming/"}]}, {"id": 1845, "key_formal": "\u0b9c\u0bae\u0bc0\u0ba9\u0bcd\u0ba4\u0bbe\u0bb0\u0bcd", "informal_text": "jam\u012bnd\u0101r", "meta_text": "", "meta_url": null, "frequency": 92, "definition": "landowner, feudal lord", "order": null, "tags": [{"name": "farming", "url": "/tamil/tags/farming/"}]}, {"id": 2186, "key_formal": "\u0baa\u0baf\u0bbf\u0bb0\u0bcd", "informal_text": "payir", "meta_text": "", "meta_url": null, "frequency": 14, "definition": "crop", "order": null, "tags": [{"name": "farming", "url": "/tamil/tags/farming/"}]}];
+</script>
+
+<table x-data="wordsTable" class="w-table">
   <thead>
-  <tr class="text-left bg-slate-100 uppercase text-slate-500 text-xs">
-    <th class="p-4 font-medium">Entry</th>
-    <th class="font-medium">Simple meaning</th>
-  </tr>
+    <tr class="text-left bg-slate-100 dark:bg-slate-800 uppercase text-slate-500 dark:text-white text-xs">
+      <th @click.prevent="sortBy('entry')" class="cursor-pointer p-4 font-medium">Entry</th>
+      <th @click.prevent="sortBy('definition')" class="cursor-pointer font-medium">Simple meaning</th>
+      <th @click.prevent="sortBy('frequency')" class="cursor-pointer font-medium text-right p-4">Frequency</th>
+    </tr>
   </thead>
 
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">aruvaɖe</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/அறுவடை">அறுவடை</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">harvest</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/farming/">farming</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">kadiraɖi</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/கதிரடி">கதிரடி</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">beat grain, thresh</p>
-
-      
-      <p>
-        
-          <span class="text-xs bg-green-100 p-0.5 px-2 rounded rounded-full text-green-800">
-            
-              <a href="/tamil/verbs/%E0%AE%95%E0%AE%A4%E0%AE%BF%E0%AE%B0%E0%AE%9F%E0%AE%BF,v6/">verb (kadiraɖiccu, kadiraɖikka)</a>
-            
+  <tbody>
+    <template x-for="entry in sortedEntries" :key="entry.id">
+      <tr class="even:bg-slate-50 dark:even:bg-slate-800">
+        <td class="p-4">
+          <span>
+            <span class="w-entry" x-text="entry.informal_text"></span>
+            <a class="block text-blue-500 hover:underline"
+              :href="'https://ta.wiktionary.org/wiki/' + entry.key_formal"
+              x-text="entry.key_formal"></a>
           </span>
-        
+        </td>
+        <td class="py-2">
+          <p class="mb-2 definition" x-html="entry.definition"></p>
 
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/farming/">farming</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">keɖaṅgu</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/கிடங்கு">கிடங்கு</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">depot, storehouse, godown</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/farming/">farming</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">sāgubaɖi</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/சாகுபடி">சாகுபடி</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">sowing</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/farming/">farming</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">jamīndār</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/ஜமீன்தார்">ஜமீன்தார்</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">landowner, feudal lord</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/farming/">farming</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
+          <template x-if="entry.meta || entry.tags">
+            <p>
+              <template x-if="entry.meta_text">
+                <span class="w-meta">
+                  <a :href="entry.meta_url" x-text="entry.meta_text"></a>
+                </span>
+              </template>
+              <template x-for="tag in entry.tags">
+                <a class="w-tag" :href="tag.url" x-text="tag.name"></a>
+              </template>
+            </p>
+          </template>
+        </td>
+        <td class="text-right pr-4 text-xs">
+          <template x-if="entry.frequency > 0">
+            <span x-text="entry.order"></span>
+          </template>
+          <template x-if="entry.frequency == 0">
+            <span>(?)</span>
+          </template>
+        </td>
+      </tr>
+    </template>
+  </tbody>
 </table>
 
 

@@ -8,12 +8,14 @@
     p [lang="ta"], .grammar td [lang="ta"] { font-weight: 700; font-family: arial; }
     p [lang="en"] { font-style: italic; }
     </style>
+    <link rel="icon" href="data:;base64,=">
     <link href="/tamil/static/gen/style.css" rel="stylesheet">
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="/tamil/static/main.js"></script>
     
   </head>
-  <body class="min-h-screen">
-    <header class="bg-gradient-to-r from-emerald-600 to-emerald-800 text-white shadow-lg">
+  <body class="min-h-screen dark:bg-gray-900 dark:text-white">
+    <header class="bg-linear-to-r from-emerald-600 to-emerald-800 text-white shadow-lg">
       <nav class="flex justify-between shadow-md">
         <a class="block p-4 hover:underline text-2xl font-bold" href="/tamil/">தமிழ்</a>
         <div class="flex items-center text-sm">
@@ -32,622 +34,65 @@
 
 <header class="my-4">
   <h1 class="font-bold text-3xl">
-    Tamil words <span class="font-medium text-slate-400">(plants)</span>
+    <a href="/tamil/words/" class="hover:underline">Tamil words</a>
+    <span class="font-medium text-slate-400">&rarr; plants</span>
   </h1>
   
 </header>
 
-<p class="text-sm my-2">Showing 22 entries.</p>
+<p class="text-sm my-2">Showing 24 entries.</p>
 
-<table class="w-full border [&_.definition_a]:text-blue-500 [&_.definition_a]:underline">
+<script type="text/javascript">
+const ENTRIES = [{"id": 1972, "key_formal": "\u0b86\u0bb2\u0bae\u0bb0\u0bae\u0bcd", "informal_text": "\u0101lamaram", "meta_text": "", "meta_url": null, "frequency": 5, "definition": "banyan tree", "order": null, "tags": [{"name": "nature", "url": "/tamil/tags/nature/"}, {"name": "plants", "url": "/tamil/tags/plants/"}]}, {"id": 87, "key_formal": "\u0b87\u0bb2\u0bc8", "informal_text": "ele", "meta_text": "", "meta_url": null, "frequency": 19, "definition": "leaf", "order": null, "tags": [{"name": "nature", "url": "/tamil/tags/nature/"}, {"name": "plants", "url": "/tamil/tags/plants/"}]}, {"id": 1264, "key_formal": "\u0b95\u0bbf\u0bb3\u0bc8", "informal_text": "ke\u026de", "meta_text": "", "meta_url": null, "frequency": 15, "definition": "branch", "order": null, "tags": [{"name": "nature", "url": "/tamil/tags/nature/"}, {"name": "plants", "url": "/tamil/tags/plants/"}]}, {"id": 1278, "key_formal": "\u0b9a\u0bc2\u0bb0\u0bbf\u0baf\u0b95\u0bbe\u0ba8\u0bcd\u0ba4\u0bbf", "informal_text": "s\u016briyag\u0101ndi", "meta_text": "", "meta_url": null, "frequency": 0, "definition": "sunflower", "order": null, "tags": [{"name": "nature", "url": "/tamil/tags/nature/"}, {"name": "plants", "url": "/tamil/tags/plants/"}]}, {"id": 1267, "key_formal": "\u0ba4\u0ba3\u0bcd\u0b9f\u0bc1", "informal_text": "ta\u0273\u0256u", "meta_text": "", "meta_url": null, "frequency": 2, "definition": "shoot (of plant)", "order": null, "tags": [{"name": "nature", "url": "/tamil/tags/nature/"}, {"name": "plants", "url": "/tamil/tags/plants/"}]}, {"id": 316, "key_formal": "\u0ba4\u0bbe\u0bae\u0bb0\u0bc8", "informal_text": "t\u0101mare", "meta_text": "", "meta_url": null, "frequency": 0, "definition": "lotus", "order": null, "tags": [{"name": "nature", "url": "/tamil/tags/nature/"}, {"name": "plants", "url": "/tamil/tags/plants/"}]}, {"id": 799, "key_formal": "\u0ba4\u0bbe\u0bb5\u0bb0\u0bae\u0bcd", "informal_text": "t\u0101varam", "meta_text": "", "meta_url": null, "frequency": 0, "definition": "plant", "order": null, "tags": [{"name": "nature", "url": "/tamil/tags/nature/"}, {"name": "plants", "url": "/tamil/tags/plants/"}]}, {"id": 1570, "key_formal": "\u0ba4\u0bc6\u0ba9\u0bcd\u0ba9\u0bc8", "informal_text": "tenne", "meta_text": "", "meta_url": null, "frequency": 2, "definition": "coconut tree", "order": null, "tags": [{"name": "nature", "url": "/tamil/tags/nature/"}, {"name": "plants", "url": "/tamil/tags/plants/"}]}, {"id": 1587, "key_formal": "\u0ba8\u0bc6\u0bb2\u0bcd", "informal_text": "nellu", "meta_text": "", "meta_url": null, "frequency": 39, "definition": "rice plant", "order": null, "tags": [{"name": "nature", "url": "/tamil/tags/nature/"}, {"name": "plants", "url": "/tamil/tags/plants/"}]}, {"id": 1265, "key_formal": "\u0baa\u0b9f\u0bcd\u0b9f\u0bc8", "informal_text": "pa\u0288\u0288e", "meta_text": "", "meta_url": null, "frequency": 0, "definition": "bark (of plant)", "order": null, "tags": [{"name": "nature", "url": "/tamil/tags/nature/"}, {"name": "plants", "url": "/tamil/tags/plants/"}]}, {"id": 1404, "key_formal": "\u0baa\u0bc1\u0bb2\u0bcd", "informal_text": "pullu", "meta_text": "", "meta_url": null, "frequency": 30, "definition": "grass", "order": null, "tags": [{"name": "nature", "url": "/tamil/tags/nature/"}, {"name": "plants", "url": "/tamil/tags/plants/"}]}, {"id": 113, "key_formal": "\u0baa\u0bc2", "informal_text": "p\u016b", "meta_text": "", "meta_url": null, "frequency": 33, "definition": "flower", "order": null, "tags": [{"name": "nature", "url": "/tamil/tags/nature/"}, {"name": "plants", "url": "/tamil/tags/plants/"}]}, {"id": 86, "key_formal": "\u0bae\u0bb0\u0bae\u0bcd", "informal_text": "maram", "meta_text": "", "meta_url": null, "frequency": 353, "definition": "tree", "order": null, "tags": [{"name": "nature", "url": "/tamil/tags/nature/"}, {"name": "plants", "url": "/tamil/tags/plants/"}]}, {"id": 1005, "key_formal": "\u0bae\u0bb2\u0bb0\u0bcd", "informal_text": "malar", "meta_text": "", "meta_url": null, "frequency": 1, "definition": "flower", "order": null, "tags": [{"name": "nature", "url": "/tamil/tags/nature/"}, {"name": "plants", "url": "/tamil/tags/plants/"}]}, {"id": 1006, "key_formal": "\u0bae\u0bb2\u0bb0\u0bcd", "informal_text": "malar", "meta_text": "verb (malandu, malara) (intrans.)", "meta_url": "/tamil/verbs/%E0%AE%AE%E0%AE%B2%E0%AE%B0%E0%AF%8D,v2-i/", "frequency": 1, "definition": "flower", "order": null, "tags": [{"name": "nature", "url": "/tamil/tags/nature/"}, {"name": "plants", "url": "/tamil/tags/plants/"}]}, {"id": 315, "key_formal": "\u0bae\u0bb2\u0bcd\u0bb2\u0bbf\u0b95\u0bc8", "informal_text": "mallige", "meta_text": "", "meta_url": null, "frequency": 2, "definition": "jasmine", "order": null, "tags": [{"name": "nature", "url": "/tamil/tags/nature/"}, {"name": "plants", "url": "/tamil/tags/plants/"}]}, {"id": 2238, "key_formal": "\u0bae\u0bbe\u0bae\u0bb0\u0bae\u0bcd", "informal_text": "m\u0101maram", "meta_text": "", "meta_url": null, "frequency": 4, "definition": "mango tree", "order": null, "tags": [{"name": "nature", "url": "/tamil/tags/nature/"}, {"name": "plants", "url": "/tamil/tags/plants/"}]}, {"id": 586, "key_formal": "\u0bae\u0bc1\u0bb3\u0bcd", "informal_text": "mu\u026d\u026du", "meta_text": "", "meta_url": null, "frequency": 18, "definition": "thorn", "order": null, "tags": [{"name": "nature", "url": "/tamil/tags/nature/"}, {"name": "plants", "url": "/tamil/tags/plants/"}]}, {"id": 1636, "key_formal": "\u0bae\u0bc1\u0bb3\u0bcd\u0bb3\u0bc8", "informal_text": "mu\u026d\u026de", "meta_text": "", "meta_url": null, "frequency": 0, "definition": "thorn", "order": null, "tags": [{"name": "nature", "url": "/tamil/tags/nature/"}, {"name": "plants", "url": "/tamil/tags/plants/"}]}, {"id": 717, "key_formal": "\u0bae\u0bc2\u0b99\u0bcd\u0b95\u0bbf\u0bb2\u0bcd", "informal_text": "m\u016b\u1e45gil", "meta_text": "", "meta_url": null, "frequency": 2, "definition": "bamboo", "order": null, "tags": [{"name": "nature", "url": "/tamil/tags/nature/"}, {"name": "plants", "url": "/tamil/tags/plants/"}]}, {"id": 1266, "key_formal": "\u0bae\u0bca\u0b9f\u0bcd\u0b9f\u0bc1", "informal_text": "mo\u0288\u0288u", "meta_text": "", "meta_url": null, "frequency": 0, "definition": "bud", "order": null, "tags": [{"name": "nature", "url": "/tamil/tags/nature/"}, {"name": "plants", "url": "/tamil/tags/plants/"}]}, {"id": 213, "key_formal": "\u0bb0\u0bcb\u0b9c\u0bbe", "informal_text": "r\u014dj\u0101", "meta_text": "", "meta_url": null, "frequency": 0, "definition": "rose", "order": null, "tags": [{"name": "nature", "url": "/tamil/tags/nature/"}, {"name": "plants", "url": "/tamil/tags/plants/"}]}, {"id": 834, "key_formal": "\u0bb5\u0bbf\u0ba4\u0bc8", "informal_text": "vede", "meta_text": "", "meta_url": null, "frequency": 41, "definition": "seed", "order": null, "tags": [{"name": "nature", "url": "/tamil/tags/nature/"}, {"name": "plants", "url": "/tamil/tags/plants/"}]}, {"id": 1263, "key_formal": "\u0bb5\u0bc7\u0bb0\u0bcd", "informal_text": "v\u0113r", "meta_text": "", "meta_url": null, "frequency": 2, "definition": "root (of plant)", "order": null, "tags": [{"name": "nature", "url": "/tamil/tags/nature/"}, {"name": "plants", "url": "/tamil/tags/plants/"}]}];
+</script>
+
+<table x-data="wordsTable" class="w-table">
   <thead>
-  <tr class="text-left bg-slate-100 uppercase text-slate-500 text-xs">
-    <th class="p-4 font-medium">Entry</th>
-    <th class="font-medium">Simple meaning</th>
-  </tr>
+    <tr class="text-left bg-slate-100 dark:bg-slate-800 uppercase text-slate-500 dark:text-white text-xs">
+      <th @click.prevent="sortBy('entry')" class="cursor-pointer p-4 font-medium">Entry</th>
+      <th @click.prevent="sortBy('definition')" class="cursor-pointer font-medium">Simple meaning</th>
+      <th @click.prevent="sortBy('frequency')" class="cursor-pointer font-medium text-right p-4">Frequency</th>
+    </tr>
   </thead>
 
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">ele</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/இலை">இலை</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">leaf</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/nature/">nature</a>
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/plants/">plants</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">keɭe</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/கிளை">கிளை</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">branch</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/nature/">nature</a>
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/plants/">plants</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">sūriyagāndi</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/சூரியகாந்தி">சூரியகாந்தி</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">sunflower</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/nature/">nature</a>
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/plants/">plants</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">taɳɖu</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/தண்டு">தண்டு</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">shoot (of plant)</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/nature/">nature</a>
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/plants/">plants</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">tāmare</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/தாமரை">தாமரை</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">lotus</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/nature/">nature</a>
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/plants/">plants</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">tāvaram</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/தாவரம்">தாவரம்</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">plant</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/nature/">nature</a>
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/plants/">plants</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">tenne</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/தென்னை">தென்னை</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">coconut tree</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/nature/">nature</a>
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/plants/">plants</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">nellu</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/நெல்">நெல்</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">rice plant</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/nature/">nature</a>
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/plants/">plants</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">paʈʈe</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/பட்டை">பட்டை</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">bark (of plant)</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/nature/">nature</a>
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/plants/">plants</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">pullu</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/புல்">புல்</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">grass</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/nature/">nature</a>
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/plants/">plants</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">pū</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/பூ">பூ</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">flower</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/nature/">nature</a>
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/plants/">plants</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">maram</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/மரம்">மரம்</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">tree</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/nature/">nature</a>
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/plants/">plants</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">malar</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/மலர்">மலர்</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">flower</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/nature/">nature</a>
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/plants/">plants</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">malar</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/மலர்">மலர்</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">flower</p>
-
-      
-      <p>
-        
-          <span class="text-xs bg-green-100 p-0.5 px-2 rounded rounded-full text-green-800">
-            
-              <a href="/tamil/verbs/%E0%AE%AE%E0%AE%B2%E0%AE%B0%E0%AF%8D,v2-i/">verb (malandu, malara) (intrans.)</a>
-            
+  <tbody>
+    <template x-for="entry in sortedEntries" :key="entry.id">
+      <tr class="even:bg-slate-50 dark:even:bg-slate-800">
+        <td class="p-4">
+          <span>
+            <span class="w-entry" x-text="entry.informal_text"></span>
+            <a class="block text-blue-500 hover:underline"
+              :href="'https://ta.wiktionary.org/wiki/' + entry.key_formal"
+              x-text="entry.key_formal"></a>
           </span>
-        
+        </td>
+        <td class="py-2">
+          <p class="mb-2 definition" x-html="entry.definition"></p>
 
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/nature/">nature</a>
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/plants/">plants</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">mallige</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/மல்லிகை">மல்லிகை</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">jasmine</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/nature/">nature</a>
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/plants/">plants</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">muɭɭu</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/முள்">முள்</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">thorn</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/nature/">nature</a>
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/plants/">plants</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">muɭɭe</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/முள்ளை">முள்ளை</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">thorn</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/nature/">nature</a>
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/plants/">plants</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">mūṅgil</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/மூங்கில்">மூங்கில்</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">bamboo</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/nature/">nature</a>
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/plants/">plants</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">moʈʈu</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/மொட்டு">மொட்டு</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">bud</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/nature/">nature</a>
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/plants/">plants</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">rōjā</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/ரோஜா">ரோஜா</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">rose</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/nature/">nature</a>
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/plants/">plants</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">vede</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/விதை">விதை</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">seed</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/nature/">nature</a>
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/plants/">plants</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
-  <tr class="even:bg-slate-50">
-    <td class="p-4">
-      
-      <span>
-        <span class="text-slate-700">vēr</span>
-        
-        <a class="block text-blue-500 hover:underline"
-          href="https://ta.wiktionary.org/wiki/வேர்">வேர்</a>
-      </span>
-    </td>
-    <td class="py-2">
-      <p class="mb-2 definition">root (of plant)</p>
-
-      
-      <p>
-        
-
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/nature/">nature</a>
-        
-          <a class="text-xs p-0.5 px-2 rounded rounded-full bg-sky-100 text-sky-700 border-sky-200" href="/tamil/tags/plants/">plants</a>
-        
-      </p>
-      
-    </td>
-  </tr>
-  
+          <template x-if="entry.meta || entry.tags">
+            <p>
+              <template x-if="entry.meta_text">
+                <span class="w-meta">
+                  <a :href="entry.meta_url" x-text="entry.meta_text"></a>
+                </span>
+              </template>
+              <template x-for="tag in entry.tags">
+                <a class="w-tag" :href="tag.url" x-text="tag.name"></a>
+              </template>
+            </p>
+          </template>
+        </td>
+        <td class="text-right pr-4 text-xs">
+          <template x-if="entry.frequency > 0">
+            <span x-text="entry.order"></span>
+          </template>
+          <template x-if="entry.frequency == 0">
+            <span>(?)</span>
+          </template>
+        </td>
+      </tr>
+    </template>
+  </tbody>
 </table>
 
 
